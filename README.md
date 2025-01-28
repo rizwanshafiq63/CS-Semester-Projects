@@ -6,28 +6,31 @@ Welcome to my **Semester Projects Repository**! This repository organizes all th
 
 The repository is organized into semester-wise folders, with individual project files and directories. Here’s the updated folder structure:
 
+```
 semester-projects-repo/
 │
 ├── Semester-1-Project/
-│   ├── tictactoe.py
-│   ├── rock_paper_scissors.py
-│   ├── README.md
+│   ├── tictactoe.py               # Python implementation of Tic-Tac-Toe
+│   ├── rock_paper_scissors.py     # Python implementation of Rock, Paper, Scissors
+│   ├── README.md                  # README file for Semester-1 projects
 │
 ├── Semester-2-Project/
-│   ├── AddressBook.java
-│   ├── NumberGuessGame.java
-│   ├── Rock_paper_scissors.java
-│   ├── StringEncrypter.java
-│   ├── Vigenere.java
+│   ├── AddressBook.java           # Java implementation of Address Book
+│   ├── NumberGuessGame.java       # Java implementation of Number Guessing Game
+│   ├── Rock_paper_scissors.java  # Java implementation of Rock, Paper, Scissors
+│   ├── StringEncrypter.java       # Java implementation of String Encryption
+│   ├── Vigenere.java              # Java implementation of Vigenere Cipher
 │   ├── Database Management System/
-│   │   ├── DatabaseManagementSystem.java
-│   │   ├── User Manual.docx
+│   │   ├── DatabaseManagementSystem.java   # Main Java program for DBMS
+│   │   ├── User Manual.docx                # Detailed user guide for DBMS
 │   │   ├── Project Question Files/
-│   │   │   ├── CSC103 - PF Lab Project.pdf
-│   │   │   ├── PF Lab Project Groups.xlsx
-│   │   ├── DBMS_TABLES/  (working directory for program tables)
-│   │   ├── README.md
-│   └── README.md
+│   │   │   ├── CSC103 - PF Lab Project.pdf # Original project requirements
+│   │   │   ├── PF Lab Project Groups.xlsx  # Group and syntax assignments
+│   │   ├── DBMS_TABLES/                   # Directory for storing generated table files
+│   │   ├── README.md                      # README file for DBMS project
+│
+└── README.md                            # Main README file for the repository
+```
 
 
 ## 📚 Project Details
