@@ -1,0 +1,5 @@
+name,regno,address
+Usama,078,ryk
+zainab,099,sargodha
+parnia,084,isb
+Rehmooz,105,isb
