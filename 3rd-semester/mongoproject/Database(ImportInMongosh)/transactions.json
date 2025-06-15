@@ -1,0 +1,60 @@
+[
+  {
+    "transactionid": 201,
+    "accountid": 101,
+    "type": "Deposit",
+    "amount": 10000,
+    "datetime": "2025-04-20T15:31:46",
+    "channel": "ATM"
+  },
+  {
+    "transactionid": 202,
+    "accountid": 102,
+    "type": "Withdrawal",
+    "amount": 2000,
+    "datetime": "2025-04-22T10:00:00",
+    "channel": "Branch"
+  },
+  {
+    "transactionid": 203,
+    "accountid": 103,
+    "type": "Transfer",
+    "amount": 5000,
+    "datetime": "2025-04-25T08:45:00",
+    "receiver_account": 101,
+    "channel": "Mobile App"
+  },
+  {
+    "transactionid": 204,
+    "accountid": 104,
+    "type": "Deposit",
+    "amount": 30000,
+    "datetime": "2025-05-01T09:00:00",
+    "channel": "ATM"
+  },
+  {
+    "transactionid": 205,
+    "accountid": 105,
+    "type": "Transfer",
+    "amount": 15000,
+    "datetime": "2025-05-03T13:20:00",
+    "receiver_account": 106,
+    "channel": "Mobile App"
+  },
+  {
+    "transactionid": 206,
+    "accountid": 106,
+    "type": "Withdrawal",
+    "amount": 4000,
+    "datetime": "2025-05-10T11:30:00",
+    "channel": "Branch"
+  },
+  {
+    "transactionid": 207,
+    "accountid": 106,
+    "type": "Failed Withdrawal",
+    "amount": 1000,
+    "datetime": "2025-05-11T15:00:00",
+    "channel": "ATM"
+  }
+]

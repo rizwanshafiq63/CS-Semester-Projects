@@ -1,0 +1,34 @@
+[
+  {
+    "billid": 401,
+    "accountid": 101,
+    "biller": "K-Electric",
+    "consumer_number": "KE1234567",
+    "amount": 5800,
+    "payment_date": "2024-04-10"
+  },
+  {
+    "billid": 402,
+    "accountid": 102,
+    "biller": "SNGPL",
+    "consumer_number": "SN1234567",
+    "amount": 3400,
+    "payment_date": "2024-04-15"
+  },
+  {
+    "billid": 403,
+    "accountid": 104,
+    "biller": "PTCL",
+    "consumer_number": "PT1234567",
+    "amount": 2500,
+    "payment_date": "2024-05-10"
+  },
+  {
+    "billid": 404,
+    "accountid": 106,
+    "biller": "LESCO",
+    "consumer_number": "LE1234567",
+    "amount": 7600,
+    "payment_date": "2024-06-01"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "customerid": 1,
+    "name": "Ahmed Raza",
+    "cnic": "35202-7894561-1",
+    "email": "ahmed.raza@gmail.com",
+    "phone": "03001234501",
+    "address": "Lahore",
+    "payees": [
+      {
+        "payeename": "Hassan Ali",
+        "account": "98761234000011",
+        "bank": "HBL"
+      },
+      {
+        "payeename": "Ayesha Khan",
+        "account": "98761234000022",
+        "bank": "MCB"
+      }
+    ],
+    "loans": [
+      {
+        "type": "Home Loan",
+        "amount": 1500000,
+        "status": "Approved",
+        "applydate": "2023-08-01"
+      }
+    ],
+    "complaints": [
+      {
+        "description": "ATM cash not dispensed but deducted.",
+        "date": "2024-03-12",
+        "status": "Resolved"
+      },
+      {
+        "description": "Excess ATM withdrawal limit issue.",
+        "date": "2024-04-05",
+        "status": "Closed"
+      }
+    ],
+    "service_requests": [
+      {
+        "type": "Cheque Book Request",
+        "date": "2024-04-01",
+        "status": "Completed"
+      }
+    ]
+  },
+  {
+    "customerid": 2,
+    "name": "Zainab Khan",
+    "cnic": "35202-7894561-2",
+    "email": "zainab.khan@gmail.com",
+    "phone": "03001234502",
+    "address": "Karachi",
+    "payees": [],
+    "loans": [],
+    "complaints": [],
+    "service_requests": []
+  },
+  {
+    "customerid": 3,
+    "name": "Bilal Ahmed",
+    "cnic": "35202-1234567-3",
+    "email": "bilal.ahmed@gmail.com",
+    "phone": "03001234503",
+    "address": "Islamabad",
+    "payees": [
+      {
+        "payeename": "Saad Malik",
+        "account": "98761234000033",
+        "bank": "UBL"
+      }
+    ],
+    "loans": [],
+    "complaints": [],
+    "service_requests": []
+  },
+  {
+    "customerid": 4,
+    "name": "Mehwish Bukhari",
+    "cnic": "35202-1234567-4",
+    "email": "mehwish.b@gmail.com",
+    "phone": "03001234504",
+    "address": "Multan",
+    "payees": [],
+    "loans": [
+      {
+        "type": "Car Loan",
+        "amount": 800000,
+        "status": "Pending",
+        "applydate": "2024-12-20"
+      }
+    ],
+    "complaints": [
+      {
+        "description": "Incorrect service charge deduction",
+        "date": "2024-10-01",
+        "status": "Open"
+      }
+    ],
+    "service_requests": [
+      {
+        "type": "Debit Card Replacement",
+        "date": "2025-01-15",
+        "status": "In Progress"
+      }
+    ]
+  }
+]

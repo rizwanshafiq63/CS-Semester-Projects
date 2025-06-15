@@ -1,0 +1,50 @@
+[
+  {
+    "accountid": 101,
+    "customerid": 1,
+    "type": "Savings",
+    "balance": 125000,
+    "opendate": "2022-02-10",
+    "status": "Active"
+  },
+  {
+    "accountid": 102,
+    "customerid": 1,
+    "type": "Current",
+    "balance": 53000,
+    "opendate": "2023-03-15",
+    "status": "Active"
+  },
+  {
+    "accountid": 103,
+    "customerid": 2,
+    "type": "Savings",
+    "balance": 87000,
+    "opendate": "2023-06-10",
+    "status": "Active"
+  },
+  {
+    "accountid": 104,
+    "customerid": 3,
+    "type": "Savings",
+    "balance": 200000,
+    "opendate": "2021-07-01",
+    "status": "Active"
+  },
+  {
+    "accountid": 105,
+    "customerid": 3,
+    "type": "Fixed Deposit",
+    "balance": 500000,
+    "opendate": "2023-05-01",
+    "status": "Active"
+  },
+  {
+    "accountid": 106,
+    "customerid": 4,
+    "type": "Current",
+    "balance": 15000,
+    "opendate": "2024-09-20",
+    "status": "Active"
+  }
+]
