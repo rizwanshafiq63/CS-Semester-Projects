@@ -28,19 +28,25 @@ semester-projects-repo/
 │   │   │   ├── PF Lab Project Groups.xlsx  # Group and syntax assignments
 │   │   ├── DBMS_TABLES/                   # Directory for storing generated table files
 │   │   ├── README.md                      # README file for DBMS project
-│
+
+├── 3rd-semester/
+│ ├── DSA-with-Cpp/ # Data Structures & Algorithms using C++
+│ ├── OOP-with-Java/ # Object-Oriented Programming in Java
+│ ├── SmartCityProject-OOP-/ # Java Swing project integrating OOP and GUI
+│ ├── MongoDBProject/ # JavaFX + Swing-based GUI project with MongoDB
+
 └── README.md                            # Main README file for the repository
 ```
 
 
 ## 📚 Project Details
 
-### **Semester-1-Project**:
+### **1st-Semester**:
 Contains the projects completed during the first semester. These projects focus on basic programming concepts and problem-solving in Python.  
   - **tictactoe.py**: A Python-based implementation of the Tic-Tac-Toe game, demonstrating basic control structures and user interaction.  
   - **rock_paper_scissors.py**: A Python version of the Rock-Paper-Scissors game, showcasing loops and conditional statements.
 
-### **Semester-2-Project**:
+### **2nd-Semester**:
 Contains the projects completed during the second semester. These projects were developed using Java, focusing on basic programming techniques, file handling, and encryption concepts.  
   - **AddressBook.java**: A basic Java application that uses arrays to store and manage contact information.  
   - **NumberGuessGame.java**: A simple number guessing game written in Java, demonstrating loops and control structures.  
@@ -54,6 +60,24 @@ Contains the projects completed during the second semester. These projects were 
       - **CSC103 - PF Lab Project.pdf**: The original project question provided by the instructor.  
       - **PF Lab Project Groups.xlsx**: Contains the assigned groups and method syntax for each group.  
     - **DBMS_TABLES**: A working directory created by the program to store the database tables.  
+
+### **3rd-semester**:
+Projects from the third semester focus on core programming disciplines including data structures, object-oriented design, and advanced Java concepts with GUI.  
+- **DSA-with-Cpp**: A complete collection of lab tasks, assignments, and a comprehensive semester project based on real-world datasets. Implementations include:
+  - Linked lists, stacks, queues, binary search trees, AVL trees
+  - Sorting/searching algorithms
+  - Hashing, graphs (BFS, DFS, Dijkstra, Prim, Kruskal)
+- **OOP-with-Java**: Practice projects, assignments, and lab tasks that focus on object-oriented principles in Java:
+  - Encapsulation, inheritance, abstraction, polymorphism
+  - Interfaces, generics, file handling, exception handling
+- **SmartCityProject-OOP-**: A full-featured Java Swing GUI project that integrates public transportation, energy grids, and emergency services. Designed using:
+  - OOP concepts (abstract classes, interfaces, composition)
+  - File handling using GSON
+  - GUI design with Swing components
+- **MongoDBProject**: A database-driven desktop application built using **JavaFX** and **Java Swing**, as part of the Database Systems course:
+  - GUI-based CRUD operations interacting with a MongoDB backend
+  - Combines form-based user input, dynamic data visualization, and responsive layout
+  - Demonstrates integration of database functionality into Java desktop environments
 
 ---
 
