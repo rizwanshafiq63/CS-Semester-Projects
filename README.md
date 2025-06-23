@@ -1,6 +1,10 @@
-# Semester Projects Repository
+# CS Semester Projects
+> A semester-wise journey through my CS projects — from fundamentals to full-featured apps.
 
-Welcome to my **Semester Projects Repository**! This repository organizes all the programming projects I’ve worked on during my academic semesters. Each semester folder contains the projects I completed during that term, including descriptions, source code, and related documentation.
+Welcome to my **CS Semester Projects** repository! 🎓  
+This repository serves as a structured portfolio of all the programming and software development projects I’ve completed throughout my academic journey as a Computer Science student.
+
+Each semester is organized into its own folder, showcasing projects, assignments, lab tasks, and major semester projects across multiple domains — from basic Python games to advanced Java Swing GUIs and C++ data structure implementations.
 
 ## 📁 Folder Structure
 
