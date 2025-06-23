@@ -1,3 +1,4 @@
+![CS Semester Projects Banner](./cs-semester-projects-banner.png)
 # CS Semester Projects
 ![Repo Size](https://img.shields.io/github/repo-size/rizwanshafiq63/CS-Semester-Projects?color=orange&style=flat-square)
 ![Languages](https://img.shields.io/github/languages/top/rizwanshafiq63/CS-Semester-Projects?style=flat-square)
