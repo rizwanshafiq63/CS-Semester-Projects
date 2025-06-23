@@ -1,4 +1,9 @@
 # CS Semester Projects
+![Repo Size](https://img.shields.io/github/repo-size/rizwanshafiq63/CS-Semester-Projects?color=orange&style=flat-square)
+![Languages](https://img.shields.io/github/languages/top/rizwanshafiq63/CS-Semester-Projects?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/rizwanshafiq63/CS-Semester-Projects?color=green&style=flat-square)
+![Stars](https://img.shields.io/github/stars/rizwanshafiq63/CS-Semester-Projects?style=flat-square)
+![License](https://img.shields.io/github/license/rizwanshafiq63/CS-Semester-Projects?style=flat-square)
 > A semester-wise journey through my CS projects — from fundamentals to full-featured apps.
 
 Welcome to my **CS Semester Projects** repository! 🎓  
