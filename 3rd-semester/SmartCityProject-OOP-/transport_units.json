@@ -1,0 +1,18 @@
+[
+  {
+    "passengerCount": 45,
+    "fuelConsumptionRate": 0.12,
+    "routeNumber": "B12",
+    "resourceID": "TU001",
+    "location": "Station 1",
+    "status": "Running"
+  },
+  {
+    "passengerCount": 150,
+    "fuelConsumptionRate": 0.3,
+    "routeNumber": "T9",
+    "resourceID": "TU002",
+    "location": "Central",
+    "status": "Running"
+  }
+]
