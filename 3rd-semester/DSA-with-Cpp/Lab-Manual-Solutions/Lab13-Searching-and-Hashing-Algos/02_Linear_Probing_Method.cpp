@@ -10,7 +10,7 @@ using namespace std;
 int h[TABLE_SIZE] = {NULL};
 
 void insert() {
-  int key, index, i, flag = 0, hkey;
+  int key, index, i, hkey;
   cout<<"\nEnter a value to insert into hash table: ";
   cin>>key;
   hkey = key % TABLE_SIZE;
@@ -26,7 +26,7 @@ void insert() {
 }
 
 void search() {
-  int key, index, i, flag = 0, hkey;
+  int key, index, i, hkey;
   cout<<"\nEnter search element: ";
   cin>>key;
   hkey=key%TABLE_SIZE;
@@ -44,7 +44,7 @@ void search() {
 void display() {
   int i;
   cout<<"\nElements in the hash table are: \n";
-  for(i=0;i< TABLE_SIZE; i++)
+  for (i = 0; i < TABLE_SIZE; i++)
     cout<<"\n At index "<<i<<" \t value = "<<h[i];
 }
 

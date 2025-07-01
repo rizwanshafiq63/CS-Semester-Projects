@@ -33,25 +33,67 @@ void printList(Node* head) {
   cout << endl;
 }
 
-// Bubble Sort on linked list
+// Bubble Sort on linked list (swapping of data)
 void bubbleSortLinkedList(Node* head) {
-  if (!head) {
-    return;
-  }
+  if (!head) return;
+
   bool swapped;
-  Node* ptr1;
-  Node* lptr = nullptr;
+  Node* current;
+  Node* lastSorted = nullptr;
+
   do {
     swapped = false;
-    ptr1 = head;
-    while (ptr1->next != lptr) {
-      if (ptr1->data > ptr1->next->data) {
-        swap(ptr1->data, ptr1->next->data);
+    current = head;
+
+    while (current->next != lastSorted) {
+      if (current->data > current->next->data) {
+        // Swap the data, not the nodes
+        swap(current->data, current->next->data);
         swapped = true;
       }
-      ptr1 = ptr1->next;
+      current = current->next;
     }
-    lptr = ptr1;
+
+    lastSorted = current; // The last node is now sorted
+  } while (swapped);
+}
+
+// Bubble Sort on linked list (swapping of actual nodes)
+void bubbleSortLL(Node*& head) {
+  if (!head || !head->next) return;
+
+  bool swapped;
+  Node* lastSorted = nullptr;
+
+  do {
+    swapped = false;
+    Node* curr = head;
+    Node* prev = nullptr;
+
+    while (curr->next != lastSorted) {
+      Node* next = curr->next;
+      if (curr->data > next->data) {
+        // Swap needed
+        curr->next = next->next;
+        next->next = curr;
+
+        if (prev == nullptr) {
+          // Swapping at the head
+          head = next;
+        } else {
+          prev->next = next;
+        }
+
+        // Update pointers
+        prev = next;
+        swapped = true;
+      } else {
+        // No swap
+        prev = curr;
+        curr = curr->next;
+      }
+    }
+    lastSorted = curr; // Everything after this is sorted
   } while (swapped);
 }
 
@@ -60,7 +102,8 @@ int main() {
   Node* head = nullptr;
 
   insertEnd(head, 64);
-  insertEnd(head, 25);
+  insertEnd(head, 75);
+  insertEnd(head, 23);
   insertEnd(head, 12);
   insertEnd(head, 22);
   insertEnd(head, 11);
@@ -68,7 +111,8 @@ int main() {
   cout << "Original linked list: ";
   printList(head);
 
-  bubbleSortLinkedList(head);
+  //bubbleSortLinkedList(head);
+  bubbleSortLL(head);
 
   cout << "Sorted linked list: ";
   printList(head);

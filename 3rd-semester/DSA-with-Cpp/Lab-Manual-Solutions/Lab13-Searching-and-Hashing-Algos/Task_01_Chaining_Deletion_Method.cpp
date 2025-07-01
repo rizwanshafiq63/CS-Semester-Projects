@@ -5,44 +5,51 @@
 #include<iostream>
 using namespace std;
 
-#define size 7
+#define size 10
 
 struct node {
   int data;
-  struct node *next;
+  node *next;
 };
 
-struct node *chain[size];
+node *chain[size];
 
 void init() {
-  int i;
-  for(i = 0; i < size; i++)
+  for (int i = 0; i < size; i++)
     chain[i] = NULL;
 }
 
 void deleteValue(int value) {
   int key = value % size;
-  struct node *temp = chain[key];
-  struct node *prev = NULL;
+  node *temp = chain[key];
+  node *prev = NULL;
+  bool deleted = false;
 
   while(temp != NULL) {
     if(temp->data == value) {
+      node *todelete = temp;
       if(prev == NULL) {
         // Deleting the head node
         chain[key] = temp->next;
+        temp = chain[key]; // Move to the new head
       } else {
         // Deleting a middle or last node
         prev->next = temp->next;
+        temp = temp->next; // Continue from the next node
       }
-      delete temp;
-      cout << "Value " << value << " deleted from chain[" << key << "]\n";
-      return;
+      delete todelete;
+      deleted = true;
+      continue; // Skip updating prev here
     }
     prev = temp;
     temp = temp->next;
   }
 
-  cout << "Value " << value << " not found in chain[" << key << "]\n";
+  if(deleted){
+    cout << "Value " << value << " deleted from chain[" << key << "]\n";
+  } else {
+    cout << "Value " << value << " no	1t found in chain[" << key << "]\n";
+  }
 }
 
 void insert(int value) {
@@ -57,7 +64,7 @@ void insert(int value) {
     chain[key] = newNode; //collision
   } else {
     //add the node at the end of chain[key].
-    struct node *temp = chain[key];
+    node *temp = chain[key];
     while(temp->next) {
       temp = temp->next;
     }
@@ -68,7 +75,7 @@ void insert(int value) {
 void print() {
   int i;
   for(i = 0; i < size; i++) {
-    struct node *temp = chain[i];
+    node *temp = chain[i];
     cout<<"chain["<<i<<"]-->";
     if (temp == NULL) {
       cout<<" NULL\n";
@@ -87,7 +94,9 @@ int main() {
 
   insert(7);
   insert(0);
+  insert(13);
   insert(3);
+  insert(13);
   insert(10);
   insert(4);
   insert(5);
@@ -98,6 +107,7 @@ int main() {
   deleteValue(10);
   deleteValue(7);
   deleteValue(99); // not in hash table
+  deleteValue(13);
 
   cout << "\nAfter deletion:\n";
   print();

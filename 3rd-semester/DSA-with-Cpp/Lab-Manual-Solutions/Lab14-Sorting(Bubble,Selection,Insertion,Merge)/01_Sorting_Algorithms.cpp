@@ -101,21 +101,6 @@ void merge(int list[], int first, int mid, int last) {
   int lastB = last;
   int index = first;
 
-  /*
-  // Copy first subarray into tempArray
-  while (firstA <= lastA) {
-    tempArray[index] = list[firstA];
-    firstA++;
-    index++;
-  }
-
-  // Copy second subarray into tempArray
-  while (firstB <= lastB) {
-    tempArray[index] = list[firstB];
-    firstB++;
-    index++;
-  }
-  */
   while (firstA <= lastA && firstB <= lastB) {
     if (list[firstA] < list[firstB])
       tempArray[index++] = list[firstA++];

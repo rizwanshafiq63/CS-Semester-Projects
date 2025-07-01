@@ -28,11 +28,13 @@ int height(node *T) {
 int Height(node *p) {
   int x, y;
   if (p == NULL) {
-    return 0;
+    return -1;
   }
+  if (p->left == NULL && p->right == NULL)
+    return 0;
   x = Height(p->left);
   y = Height(p->right);
-  return x > y ? x + 1 : y + 1;
+  return x >= y ? x + 1 : y + 1;
 }
 
 // ==============================================

@@ -76,7 +76,7 @@ void printHeap() {
   cout << endl;
 }
 
-// M=Function to Heapify
+// Function to Heapify
 void heapify() {
   for (int i = (heapSize - 1) / 2; i >= 0; --i) {
     shiftDown(i);

@@ -9,14 +9,13 @@ using namespace std;
 
 struct node {
   int data;
-  struct node *next;
+  node *next;
 };
 
-struct node *chain[size];
+node *chain[size];
 
 void init() {
-  int i;
-  for(i = 0; i < size; i++)
+  for (int i = 0; i < size; i++)
     chain[i] = NULL;
 }
 
@@ -32,7 +31,7 @@ void insert(int value) {
     chain[key] = newNode; //collision
   } else {
     //add the node at the end of chain[key].
-    struct node *temp = chain[key];
+    node *temp = chain[key];
     while(temp->next) {
       temp = temp->next;
     }
@@ -41,9 +40,8 @@ void insert(int value) {
 }
 
 void print() {
-  int i;
-  for(i = 0; i < size; i++) {
-    struct node *temp = chain[i];
+  for (int i = 0; i < size; i++) {
+    node *temp = chain[i];
     cout<<"chain["<<i<<"]-->";
     if (temp == NULL) {
       cout<<" NULL\n";

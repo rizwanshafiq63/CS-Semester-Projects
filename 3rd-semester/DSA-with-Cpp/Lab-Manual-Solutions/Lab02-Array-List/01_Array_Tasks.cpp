@@ -91,14 +91,15 @@ void insertBeforeSpecific(int value, int specific){
         arr[i - 1] = arr[i];
       }
       startIndex--;
+      arr[index - 1] = value;
     } else if (isEmptyFromLast()) {
       //Right Shift
       for(int i = lastIndex; i >= index; i--){
         arr[i + 1] = arr[i];
       }
       lastIndex++;
+      arr[index] = value;
     }
-    arr[index - 1] = value;
     cout<<"Inserted "<<value<<" before "<<specific<<endl;
   }
 }
@@ -119,14 +120,15 @@ void insertAfterSpecific(int value, int specific){
         arr[i - 1] = arr[i];
       }
       startIndex--;
+      arr[index] = value;
     } else if (isEmptyFromLast()) {
       // Right Shift
       for (int i = lastIndex; i > index; i--) {
         arr[i + 1] = arr[i];
       }
       lastIndex++;
+      arr[index + 1] = value;
     }
-    arr[index + 1] = value;
     cout<<"Inserted "<<value<<" after "<<specific<<endl;
   }
 }

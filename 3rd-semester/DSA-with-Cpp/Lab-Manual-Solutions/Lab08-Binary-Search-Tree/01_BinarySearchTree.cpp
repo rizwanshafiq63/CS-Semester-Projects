@@ -1,3 +1,4 @@
+#include <cstddef>
 #include <iostream>
 using namespace std;
 
@@ -92,13 +93,18 @@ public:
   }
   void Sum() {
     cout << "Sum of all nodes: ";
-    sum(root);
-    cout << add << endl;
+    int sumOfNodes = Sum(root);
+    cout << sumOfNodes << endl;
     cout << "Count of all nodes: ";
-    cout << count << endl;
+    int nodes = CountNodes(root);
+    cout << nodes << endl;
   }
-  int Height() {
-    return Height(root);
+  void Height() {
+    if (root == NULL) {
+      cout << "Tree is Empty" << endl;
+    }
+    int h = Height(root);
+    cout << "Height: " << h << endl; 
   }
   // Lab Task 1: Implement the methods for Tree Traversal with Right Branch Priority i.e. Pre Order (NRL), Post Order (RLN) and In Order (RNL).
   void Inorder() {
@@ -194,12 +200,16 @@ private:
   int Height(BST *p) {
     int x, y;
     if (p == NULL) {
+      return -1;
+    }
+    if (p->left == NULL && p->right == NULL) {
       return 0;
     }
     x = Height(p->left);
     y = Height(p->right);
-    return x > y ? x + 1 : y + 1;
+    return x >= y ? x + 1 : y + 1;
   }
+
   void insertRecursive(BST *node, int val) {
     if (node == NULL) {
       node = new BST(val);
@@ -283,6 +293,24 @@ private:
       sum(s->right);
     }
   }
+
+  int Sum(BST* s) {
+    if (s == NULL) {
+      return 0;
+    }
+    int leftSum = Sum(s->left);
+    int rightSum = Sum(s->right);
+    return s->data + leftSum + rightSum;
+  }
+
+  int CountNodes(BST* s) {
+    if (s == NULL) {
+      return 0;
+    }
+    int leftCount = CountNodes(s->left);
+    int rightCount = CountNodes(s->right);
+    return 1 + leftCount + rightCount;
+  }
 };
 
 int main() {
@@ -304,6 +332,7 @@ int main() {
     cout << "11. Print Leaf Nodes\n";
     cout << "12. Count Leaf Nodes\n";
     cout << "13. Sum and Count of all Nodes\n";
+    cout << "14. Print Height of Tree\n";
     cout << "0. Exit\n";
     cout << "Enter your choice: ";
     cin >> choice;
@@ -361,6 +390,9 @@ int main() {
         break;
       case 13:
         bst.Sum();
+        break;
+      case 14:
+        bst.Height();
         break;
       case 0:
         cout << "Exiting program..." << endl;

@@ -113,7 +113,6 @@ int main() {
   cin >> numVariables;
 
   for (int i = 0; i < numVariables; i++) {
-    char var;
     double value;
     cout << "Enter the value for variable " << (char)('a' + i) << ": ";
     cin >> value;

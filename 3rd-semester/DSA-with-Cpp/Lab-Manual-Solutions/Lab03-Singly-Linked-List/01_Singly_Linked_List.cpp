@@ -161,6 +161,17 @@ void printReverseIterative() {
   cout << endl;
 }
 
+void displayList() {
+  Nodetype* temp;
+  temp = first;
+  cout << "Linked List: ";
+  while (temp != NULL) {
+    cout << temp->data << " -> ";
+    temp = temp->next;
+  }
+  cout << "NULL\n";
+}
+
 
 int main() {
   int choice, key;
@@ -201,14 +212,7 @@ int main() {
         remove_spec(key);
         break;
       case 7:
-        Nodetype* temp;
-        temp = first;
-        cout << "Linked List: ";
-        while (temp != NULL) {
-          cout << temp->data << " -> ";
-          temp = temp->next;
-        }
-        cout << "NULL\n";
+        displayList();
         break;
       case 8:
         cout << "Exiting...\n";
