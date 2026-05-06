@@ -4,7 +4,9 @@
     "accountid": 101,
     "type": "Deposit",
     "amount": 10000,
-    "datetime": "2025-04-20T15:31:46",
+    "datetime": {
+      "$date": "2025-04-20T15:31:46.000Z"
+    },
     "channel": "ATM"
   },
   {
@@ -12,7 +14,9 @@
     "accountid": 102,
     "type": "Withdrawal",
     "amount": 2000,
-    "datetime": "2025-04-22T10:00:00",
+    "datetime": {
+      "$date": "2025-04-22T10:00:00.000Z"
+    },
     "channel": "Branch"
   },
   {
@@ -20,7 +24,9 @@
     "accountid": 103,
     "type": "Transfer",
     "amount": 5000,
-    "datetime": "2025-04-25T08:45:00",
+    "datetime": {
+      "$date": "2025-04-25T08:45:00.000Z"
+    },
     "receiver_account": 101,
     "channel": "Mobile App"
   },
@@ -29,7 +35,9 @@
     "accountid": 104,
     "type": "Deposit",
     "amount": 30000,
-    "datetime": "2025-05-01T09:00:00",
+    "datetime": {
+      "$date": "2025-05-01T09:00:00.000Z"
+    },
     "channel": "ATM"
   },
   {
@@ -37,7 +45,9 @@
     "accountid": 105,
     "type": "Transfer",
     "amount": 15000,
-    "datetime": "2025-05-03T13:20:00",
+    "datetime": {
+      "$date": "2025-05-03T13:20:00.000Z"
+    },
     "receiver_account": 106,
     "channel": "Mobile App"
   },
@@ -46,7 +56,9 @@
     "accountid": 106,
     "type": "Withdrawal",
     "amount": 4000,
-    "datetime": "2025-05-10T11:30:00",
+    "datetime": {
+      "$date": "2025-05-10T11:30:00.000Z"
+    },
     "channel": "Branch"
   },
   {
@@ -54,7 +66,9 @@
     "accountid": 106,
     "type": "Failed Withdrawal",
     "amount": 1000,
-    "datetime": "2025-05-11T15:00:00",
+    "datetime": {
+      "$date": "2025-05-11T15:00:00.000Z"
+    },
     "channel": "ATM"
   }
 ]
