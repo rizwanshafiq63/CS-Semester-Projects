@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "passengerCount": 40,
+    "fuelConsumptionRate": 0.25,
+    "routeNumber": "B1",
+    "active": true,
+    "resourceID": "TRANS-0001",
+    "location": "Sector A",
+    "status": "Active",
+    "type": "TransportUnit"
+  },
+  {
+    "energyOutputRate": 0.0,
+    "isOutageProne": false,
+    "resourceID": "PWR-0001",
+    "location": "Sector A",
+    "status": "Offline",
+    "type": "PowerStation"
+  },
+  {
+    "serviceType": "Fire",
+    "responseTime": 6.0,
+    "resourceID": "EMER-0001",
+    "location": "Sector A",
+    "status": "Active",
+    "type": "EmergencyService"
+  },
+  {
+    "energyOutputRate": 500.0,
+    "isOutageProne": false,
+    "resourceID": "PWR-0002",
+    "location": "Sector A",
+    "status": "Active",
+    "type": "PowerStation"
+  },
+  {
+    "passengerCount": 40,
+    "fuelConsumptionRate": 0.25,
+    "routeNumber": "B1",
+    "active": true,
+    "resourceID": "TRANS-0002",
+    "location": "Sector B",
+    "status": "Maintenance",
+    "type": "TransportUnit"
+  },
+  {
+    "energyOutputRate": 500.0,
+    "isOutageProne": false,
+    "resourceID": "PWR-0003",
+    "location": "Sector B ",
+    "status": "Active",
+    "type": "PowerStation"
+  },
+  {
+    "energyOutputRate": 500.0,
+    "isOutageProne": false,
+    "resourceID": "PWR-0004",
+    "location": "Sector C",
+    "status": "Active",
+    "type": "PowerStation"
+  }
+]
