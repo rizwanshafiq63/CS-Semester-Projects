@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block title %}Dashboard · Streaming Analytics{% endblock %}
+
+{% block content %}
+{% set prefs = user.get('preferences', {}) %}
+{% set favorite_genres = prefs.get('favorite_genres', []) %}
+{% set notifications = prefs.get('notifications', {}) %}
+
+<div id="userDashboardPage" class="container py-4">
+  <div class="row mb-4">
+    <div class="col-md-8">
+      <h2 class="mb-1">Welcome back, {{ user.profile.name or user.username }} 👋</h2>
+      <p class="text-muted mb-0">
+        You’re on the
+        <strong>{{ (user.subscription.plan or 'free')|capitalize }}</strong> plan.
+      </p>
+    </div>
+    <div class="col-md-4 text-md-end mt-3 mt-md-0">
+      <span class="badge bg-primary me-2">
+        Role: {{ (role or user.role or 'user')|capitalize }}
+      </span>
+      <span class="badge {% if user.subscription.status == 'active' %}bg-success{% else %}bg-warning{% endif %}">
+        {{ (user.subscription.status or 'free')|capitalize }}
+      </span>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Left column: quick stats -->
+    <div class="col-lg-4">
+      <div class="card soft-card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Quick Stats</h5>
+          <div class="row text-center">
+            <div class="col-6 mb-3">
+              <div class="h3 mb-0">{{ user.statistics.movies_watched|default(0) }}</div>
+              <small class="text-muted">Movies Watched</small>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="h3 mb-0">{{ user.statistics.ratings_given|default(0) }}</div>
+              <small class="text-muted">Ratings Given</small>
+            </div>
+            <div class="col-6">
+              <div class="h3 mb-0">
+                {{ (user.statistics.total_watch_time|default(0)|int // 60) }}
+              </div>
+              <small class="text-muted">Hours Watched</small>
+            </div>
+            <div class="col-6">
+              <div class="h3 mb-0">{{ user.statistics.reviews_written|default(0) }}</div>
+              <small class="text-muted">Reviews</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preferences summary -->
+      <div class="card soft-card mb-3">
+        <div class="card-body">
+          <h6 class="card-title">Your Preferences</h6>
+          <p class="mb-1">
+            <strong>Language:</strong>
+            {{ prefs.get('language', 'en')|upper }}
+          </p>
+          <p class="mb-1"><strong>Favorite Genres:</strong></p>
+          <div>
+            {% if favorite_genres %}
+              {% for g in favorite_genres %}
+                <span class="badge bg-secondary me-1 mb-1">{{ g }}</span>
+              {% endfor %}
+            {% else %}
+              <small class="text-muted">No genres selected yet</small>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column: activity/recommendations -->
+    <div class="col-lg-8">
+      <!-- Recent Activity -->
+      <div class="card soft-card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Recent Activity</h5>
+          <div id="dashboardActivity">
+            <div class="text-center py-4">
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <p class="mt-2 text-muted">Loading your recent ratings, reviews, and watch history...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommended Movies (placeholder for JS) -->
+      <div class="card soft-card">
+        <div class="card-body">
+          <h5 class="card-title">Recommended For You</h5>
+          <div id="dashboardRecommendations">
+            <p class="text-muted mb-0">
+              We’ll show movie recommendations here based on your favorite genres and watch history.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/profile.js') }}"></script>
+<script>
+  // Optional: additional dashboard logic can be added here
+</script>
+{% endblock %}

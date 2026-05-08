@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+{% block title %}My Watchlist · Streaming Platform{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <div class="row mb-4">
+    <div class="col-md-8">
+      <h2 class="mb-1">My Watchlist</h2>
+      <p class="text-muted mb-0">
+        {% if user.watchlist_count > 0 %}
+          {{ user.watchlist_count }} movie{% if user.watchlist_count != 1 %}s{% endif %} saved
+        {% else %}
+          Your personal movie collection
+        {% endif %}
+      </p>
+    </div>
+    <div class="col-md-4 text-md-end">
+      <a href="{{ url_for('user_movies_page') }}" class="btn btn-primary btn-sm">
+        <i class="bi bi-plus-circle me-1"></i> Browse Movies
+      </a>
+    </div>
+  </div>
+
+  <div class="card soft-card">
+    <div class="card-body">
+      <div id="watchlistContent">
+        <div class="text-center py-5">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <p class="mt-2 text-muted">Loading your watchlist...</p>
+        </div>
+      </div>
+      
+      {% if not user.watchlist_count or user.watchlist_count == 0 %}
+      <div class="text-center py-5" id="emptyWatchlist" style="display: none;">
+        <i class="bi bi-bookmark-heart display-1 text-muted"></i>
+        <h4 class="mt-3">Your watchlist is empty</h4>
+        <p class="text-muted mb-4">Movies you add to your watchlist will appear here.</p>
+        <a href="{{ url_for('user_movies_page') }}" class="btn btn-primary">
+          <i class="bi bi-film me-1"></i> Browse Movies
+        </a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Watchlist page functionality
+async function loadWatchlistPage() {
+  try {
+    const response = await fetch('/api/user/watchlist');
+    const data = await response.json();
+    
+    if (!response.ok) {
+      throw new Error(data.error || 'Failed to load watchlist');
+    }
+    
+    const contentDiv = document.getElementById('watchlistContent');
+    const emptyDiv = document.getElementById('emptyWatchlist');
+    
+    if (!data.movies || data.movies.length === 0) {
+      if (contentDiv) contentDiv.style.display = 'none';
+      if (emptyDiv) emptyDiv.style.display = 'block';
+      return;
+    }
+    
+    if (emptyDiv) emptyDiv.style.display = 'none';
+    
+    let html = '<div class="row g-3">';
+    
+    data.movies.forEach(movie => {
+      const rating = movie.rating_avg ? movie.rating_avg.toFixed(1) : 'N/A';
+      const year = movie.release_year || '';
+      const duration = movie.duration_min ? `${movie.duration_min} min` : '';
+      
+      html += `
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h6 class="card-title mb-0 flex-grow-1" style="min-height: 2.5em;">
+                  ${movie.title || 'Untitled'}
+                </h6>
+                <button class="btn btn-outline-danger btn-sm ms-2" 
+                        onclick="removeFromWatchlistPage('${movie._id}', this)">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </div>
+              
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-primary">${year}</span>
+                <span class="badge bg-warning text-dark">⭐ ${rating}</span>
+              </div>
+              
+              <p class="small text-muted mb-3">
+                ${duration}
+              </p>
+              
+              <div class="d-flex gap-2">
+                <button class="btn btn-outline-primary btn-sm flex-fill" 
+                        onclick="viewMovieDetails('${movie._id}')">
+                  <i class="bi bi-info-circle"></i> Details
+                </button>
+                <button class="btn btn-outline-success btn-sm flex-fill" 
+                        onclick="rateMovie('${movie._id}', '${movie.title || ''}')">
+                  <i class="bi bi-star"></i> Rate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+    
+    html += '</div>';
+    
+    if (contentDiv) {
+      contentDiv.innerHTML = html;
+      contentDiv.style.display = 'block';
+    }
+    
+  } catch (error) {
+    console.error('Error loading watchlist:', error);
+    const contentDiv = document.getElementById('watchlistContent');
+    if (contentDiv) {
+      contentDiv.innerHTML = `
+        <div class="alert alert-danger">
+          <i class="bi bi-exclamation-triangle me-2"></i>
+          Error loading watchlist: ${error.message}
+        </div>
+      `;
+    }
+  }
+}
+
+async function removeFromWatchlistPage(movieId, button) {
+  if (!confirm('Remove this movie from your watchlist?')) return;
+  
+  try {
+    button.disabled = true;
+    button.innerHTML = '<span class="spinner-border spinner-border-sm" role="status"></span>';
+    
+    const response = await fetch('/api/user/toggle-watchlist', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ movie_id: movieId })
+    });
+    
+    const data = await response.json();
+    
+    if (!response.ok) {
+      throw new Error(data.error || 'Failed to remove from watchlist');
+    }
+    
+    // Show success message
+    if (typeof showToast === 'function') {
+      showToast(data.message, 'success');
+    }
+    
+    // Reload watchlist
+    loadWatchlistPage();
+    
+  } catch (error) {
+    console.error('Error removing from watchlist:', error);
+    if (typeof showToast === 'function') {
+      showToast(`Error: ${error.message}`, 'danger');
+    }
+    button.disabled = false;
+    button.innerHTML = '<i class="bi bi-trash"></i>';
+  }
+}
+
+function viewMovieDetails(movieId) {
+  window.location.href = '/user/movies?movie=' + movieId;
+}
+
+function rateMovie(movieId, title) {
+  window.location.href = '/user/movies?rate=' + movieId;
+}
+
+// Load watchlist when page loads
+document.addEventListener('DOMContentLoaded', loadWatchlistPage);
+</script>
+{% endblock %}

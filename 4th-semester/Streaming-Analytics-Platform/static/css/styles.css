@@ -1,0 +1,191 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top left, #e0f2fe 0, #f9fafb 45%, #f1f5f9 100%);
+  color: #111827;
+  min-height: 100vh;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.auth-card {
+  border-radius: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.auth-card .form-control {
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e5e7eb;
+  transition: all 0.3s;
+}
+
+.auth-card .form-control:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.bg-body-tertiary {
+  background: linear-gradient(145deg, #f9fafb 0%, #f1f5f9 40%, #e5e7eb 100%);
+}
+
+main.container {
+  max-width: 1200px;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.navbar-brand {
+  font-size: 1.1rem;
+}
+
+.navbar .nav-link.active {
+  border-bottom: 2px solid #0ea5e9;
+}
+
+.soft-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 0.35rem 1.4rem rgba(15, 23, 42, 0.10);
+  background: radial-gradient(circle at top left, #ffffff 0, #f9fafb 60%, #e5e7eb 100%);
+  color: #111827;
+}
+
+.soft-card .card-title,
+.soft-card h5,
+.soft-card h6 {
+  color: #0f172a;
+}
+
+#summaryRow .card {
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, #6366f1, #ec4899);
+  color: #f9fafb;
+}
+
+#summaryRow .small {
+  color: #e5e7eb;
+}
+
+.table {
+  color: #111827;
+}
+
+.table thead {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(59, 130, 246, 0.08);
+}
+
+.card .form-control,
+.card .form-select {
+  background-color: #ffffff;
+  border-color: #cbd5f5;
+  color: #111827;
+}
+
+.card .form-control::placeholder {
+  color: #9ca3af;
+}
+
+.card .form-control:focus,
+.card .form-select:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 0.1rem rgba(56, 189, 248, 0.35);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb, #22c55e);
+  border: none;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.06);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border: none;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #ef4444, #f97316);
+  border: none;
+}
+
+.btn-outline-primary {
+  border-color: #2563eb;
+  color: #1d4ed8;
+}
+
+.btn-outline-primary:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 0.78rem;
+}
+
+#readOnlyBanner {
+  border-radius: 0.75rem;
+}
+
+canvas {
+  max-height: 260px;
+}
+
+.navbar .badge {
+  font-size: 0.8rem;
+}
+
+.roleBtn {
+  min-width: 90px;
+}
+
+.pagination-text {
+  color: #6b7280;
+}
+
+.btn-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.lock-status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.lock-status.locked {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.lock-status.unlocked {
+  background-color: #d1fae5;
+  color: #059669;
+}
+
+.lock-status.conflict {
+  background-color: #fef3c7;
+  color: #d97706;
+}

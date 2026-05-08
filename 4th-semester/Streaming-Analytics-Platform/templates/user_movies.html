@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+{% block title %}Movies · Streaming Platform{% endblock %}
+
+{% block head_extra %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+  .transaction-toast {
+    min-width: 350px;
+    border-left: 4px solid;
+  }
+  .transaction-toast.bg-info {
+    border-left-color: #0dcaf0;
+  }
+  .transaction-toast.bg-warning {
+    border-left-color: #ffc107;
+  }
+  .transaction-toast.bg-success {
+    border-left-color: #198754;
+  }
+  .transaction-toast.bg-danger {
+    border-left-color: #dc3545;
+  }
+  .concurrent-warning {
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <div class="row mb-4">
+    <div class="col-md-8">
+      <h2 class="mb-1">Browse Movies</h2>
+      <p class="text-muted mb-0">Rate movies, add reviews, and manage your watchlist</p>
+    </div>
+    <div class="col-md-4 text-md-end">
+      <span class="badge bg-primary me-2">
+        Role: {{ (role or user.role or 'user')|capitalize }}
+      </span>
+      <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#watchlistModal">
+        <i class="bi bi-bookmark-heart"></i> My Watchlist
+      </button>
+    </div>
+  </div>
+
+  <!-- Transaction Info Panel -->
+  <div class="alert alert-info alert-dismissible fade show mb-4" role="alert">
+    <div class="d-flex align-items-center">
+      <i class="bi bi-shield-lock me-3 fs-4"></i>
+      <div>
+        <h6 class="alert-heading mb-1">Transaction & Locking System Active</h6>
+        <p class="mb-0 small">
+          The system now shows real-time transaction status, handles concurrent updates, 
+          and prevents conflicts when multiple users access the same movie.
+        </p>
+      </div>
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <!-- Movie Search & Filter -->
+  <div class="card soft-card mb-4">
+    <div class="card-body">
+      <h5 class="card-title mb-3">Find Movies</h5>
+      <div class="row g-2">
+        <div class="col-md-3">
+          <input type="text" class="form-control form-control-sm" id="searchTitle" placeholder="Search title...">
+        </div>
+        <div class="col-md-2">
+          <input type="number" class="form-control form-control-sm" id="minYear" placeholder="Min year">
+        </div>
+        <div class="col-md-2">
+          <input type="number" class="form-control form-control-sm" id="minRating" placeholder="Min rating" step="0.1">
+        </div>
+        <div class="col-md-2">
+          <select class="form-select form-select-sm" id="genreFilter">
+            <option value="">All Genres</option>
+            <option value="Action">Action</option>
+            <option value="Drama">Drama</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Thriller">Thriller</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <button id="btnSearch" class="btn btn-primary btn-sm w-100">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Movies Grid -->
+  <div class="row" id="moviesGrid">
+    <!-- Movies will be loaded here -->
+    <div class="col-12 text-center py-5">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p class="mt-2 text-muted">Loading movies...</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="d-flex justify-content-center mt-4">
+    <nav>
+      <ul class="pagination" id="moviesPagination">
+        <!-- Pagination will be generated here -->
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- Movie Detail Modal -->
+<div class="modal fade" id="movieModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="movieModalTitle">Movie Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="movieModalBody">
+        <!-- Movie details will be loaded here -->
+      </div>
+      <div class="modal-footer">
+        <small class="text-muted me-auto">
+          <i class="bi bi-info-circle"></i> Transaction info will appear here
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Rate Movie Modal -->
+<div class="modal fade" id="rateModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Rate Movie</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="rateForm">
+          <input type="hidden" id="rateMovieId">
+          <div class="mb-3">
+            <label class="form-label">Rating (1-10)</label>
+            <input type="number" id="ratingValue" class="form-control" min="1" max="10" value="8" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Review (optional)</label>
+            <textarea id="reviewText" class="form-control" rows="3" placeholder="Write your review..."></textarea>
+          </div>
+          <div class="alert alert-info small mb-3">
+            <i class="bi bi-info-circle me-1"></i>
+            Your rating will be processed with transaction safety. 
+            If another user is updating this movie, the system will automatically retry.
+          </div>
+          <div id="rateMessage"></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" id="btnSubmitRating">
+          <i class="bi bi-shield-check me-1"></i> Submit Rating
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Watchlist Modal -->
+<div class="modal fade" id="watchlistModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">My Watchlist</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="watchlistContent">
+          <!-- Watchlist will be loaded here -->
+          <div class="text-center py-4">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/user_movies.js') }}"></script>
+<script>
+  // Initialize transaction system
+  document.addEventListener('DOMContentLoaded', function() {
+    // Add transaction toast container to body if not present
+    if (!document.getElementById('transaction-toast-container')) {
+      const toastContainer = document.createElement('div');
+      toastContainer.id = 'transaction-toast-container';
+      toastContainer.className = 'toast-container position-fixed bottom-0 end-0 p-3';
+      toastContainer.style.zIndex = '9999';
+      document.body.appendChild(toastContainer);
+    }
+    
+    // Listen for movie modal show to add transaction info
+    const movieModal = document.getElementById('movieModal');
+    if (movieModal) {
+      movieModal.addEventListener('show.bs.modal', function() {
+        // This will be populated by showMovieDetails function
+      });
+    }
+    
+    // Listen for rate modal show to add transaction info
+    const rateModal = document.getElementById('rateModal');
+    if (rateModal) {
+      rateModal.addEventListener('show.bs.modal', function() {
+        // Clear any previous transaction messages
+        const rateMessage = document.getElementById('rateMessage');
+        if (rateMessage) {
+          rateMessage.innerHTML = '';
+        }
+      });
+    }
+    
+    // Test transaction system (for demo purposes)
+    setTimeout(() => {
+      if (window.showTransactionStatus && Math.random() > 0.5) {
+        // Show a demo transaction status on page load
+        window.showTransactionStatus('info', 'Transaction system ready. Movies are loaded.');
+      }
+    }, 1000);
+  });
+</script>
+{% endblock %}

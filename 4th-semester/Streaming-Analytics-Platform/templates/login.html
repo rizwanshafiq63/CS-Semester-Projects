@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}Login · Streaming Analytics{% endblock %}
+
+{% block content %}
+<div class="container py-5 d-flex justify-content-center">
+  <div class="col-md-5">
+    <div class="card auth-card p-4">
+      <h3 class="text-center mb-3">Sign In</h3>
+      <p class="text-center text-muted mb-4">Welcome back to Streaming Analytics</p>
+
+      <form id="loginForm">
+        <div class="mb-3">
+          <label class="form-label" for="loginUsername">Username</label>
+          <input type="text" id="loginUsername" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" class="form-control" required>
+        </div>
+
+        <div class="d-grid gap-2 mb-3">
+          <button type="submit" class="btn btn-primary btn-lg">Sign In</button>
+        </div>
+        <div class="d-flex justify-content-between mb-3">
+          <a href="{{ url_for('register_page') }}" class="small text-decoration-none">
+            Create an account
+          </a>
+          <a href="{{ url_for('guest_page') }}" class="small text-decoration-none">
+            Continue as Guest
+          </a>
+        </div>
+      </form>
+
+      <div id="loginMessage" class="mt-2"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  document.getElementById('loginForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const username = document.getElementById('loginUsername').value.trim();
+    const password = document.getElementById('loginPassword').value;
+    const msg = document.getElementById('loginMessage');
+    msg.innerHTML = '';
+
+    try {
+      const res = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        msg.innerHTML = `<div class="alert alert-danger">${data.error || 'Login failed'}</div>`;
+        return;
+      }
+
+      msg.innerHTML = `<div class="alert alert-success">Login successful. Redirecting...</div>`;
+      setTimeout(() => {
+        window.location.href = '/';
+      }, 800);
+    } catch (err) {
+      msg.innerHTML = `<div class="alert alert-danger">Error: ${err.message}</div>`;
+    }
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Subscriptions · Mini Dashboard{% endblock %}
+
+{% block head_extra %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="card soft-card mb-3">
+  <div class="card-body">
+    <h5 class="card-title mb-3">Subscriptions & Payments</h5>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="border rounded-3 p-3 h-100 bg-white">
+          <div class="small text-muted">Total Subscriptions</div>
+          <div class="h4 mb-0" id="subsTotal">-</div>
+          <div class="small text-muted mt-1" id="subsTotalMeta"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="border rounded-3 p-3 h-100 bg-white">
+          <div class="small text-muted">Active Subscriptions</div>
+          <div class="h4 mb-0" id="subsActive">-</div>
+          <div class="small text-muted mt-1" id="subsActiveMeta"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="border rounded-3 p-3 h-100 bg-white">
+          <div class="small text-muted mb-1">Plans</div>
+          <canvas id="subsPlanPie"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card soft-card">
+  <div class="card-body">
+    <div class="d-flex justify-content-between mb-2">
+      <h5 class="card-title mb-0">All Payments</h5>
+      <small class="text-muted">Paged list</small>
+    </div>
+    <div class="table-responsive small" style="max-height: 320px; overflow:auto;">
+      <table class="table table-hover align-middle" id="paymentsTable">
+        <thead>
+          <tr>
+            <th>User ID</th><th>Amount</th><th>Method</th><th>Paid At</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center mt-2">
+      <span id="paymentsPageInfo" class="small pagination-text"></span>
+      <div class="btn-group btn-group-sm">
+        <button id="paymentsPrev" class="btn btn-outline-secondary btn-arrow">
+          <span aria-hidden="true">&laquo;</span><span>Prev</span>
+        </button>
+        <button id="paymentsNext" class="btn btn-outline-secondary btn-arrow">
+          <span>Next</span><span aria-hidden="true">&raquo;</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/subscriptions.js') }}"></script>
+{% endblock %}

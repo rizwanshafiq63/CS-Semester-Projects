@@ -1,0 +1,3093 @@
+[
+  {
+    "_id": "movie_001",
+    "title": "My Country Road",
+    "release_year": 2024,
+    "duration_min": 150,
+    "rating_avg": 8.0,
+    "director_id": "director_036",
+    "actor_ids": [
+      "actor_105",
+      "actor_106",
+      "actor_127",
+      "actor_191",
+      "actor_150"
+    ],
+    "genre_ids": [
+      "genre_011",
+      "genre_004"
+    ],
+    "rating_sum": 216,
+    "rating_count": 27,
+    "version": 1
+  },
+  {
+    "_id": "movie_002",
+    "title": "My Island Mystery",
+    "release_year": 2022,
+    "duration_min": 91,
+    "rating_avg": 7.4,
+    "director_id": "director_010",
+    "actor_ids": [
+      "actor_121",
+      "actor_195",
+      "actor_074",
+      "actor_014",
+      "actor_163"
+    ],
+    "genre_ids": [
+      "genre_012",
+      "genre_003",
+      "genre_008"
+    ],
+    "rating_sum": 244,
+    "rating_count": 33,
+    "version": 1
+  },
+  {
+    "_id": "movie_003",
+    "title": "Echoes of Time: Legacy",
+    "release_year": 2006,
+    "duration_min": 91,
+    "rating_avg": 7.8,
+    "director_id": "director_050",
+    "actor_ids": [
+      "actor_143",
+      "actor_199",
+      "actor_071",
+      "actor_031",
+      "actor_113"
+    ],
+    "genre_ids": [
+      "genre_004",
+      "genre_002"
+    ],
+    "rating_sum": 233,
+    "rating_count": 30,
+    "version": 1
+  },
+  {
+    "_id": "movie_004",
+    "title": "Their Shadow Realm",
+    "release_year": 2021,
+    "duration_min": 154,
+    "rating_avg": 7.5,
+    "director_id": "director_011",
+    "actor_ids": [
+      "actor_055",
+      "actor_039",
+      "actor_077"
+    ],
+    "genre_ids": [
+      "genre_015",
+      "genre_005"
+    ],
+    "rating_sum": 279,
+    "rating_count": 37,
+    "version": 1
+  },
+  {
+    "_id": "movie_005",
+    "title": "Her Shadow Realm",
+    "release_year": 2016,
+    "duration_min": 99,
+    "rating_avg": 7.7,
+    "director_id": "director_002",
+    "actor_ids": [
+      "actor_132",
+      "actor_063",
+      "actor_133",
+      "actor_109",
+      "actor_072"
+    ],
+    "genre_ids": [
+      "genre_007"
+    ],
+    "rating_sum": 253,
+    "rating_count": 33,
+    "version": 1
+  },
+  {
+    "_id": "movie_006",
+    "title": "Solar Flare: Love",
+    "release_year": 2020,
+    "duration_min": 158,
+    "rating_avg": 8.4,
+    "director_id": "director_039",
+    "actor_ids": [
+      "actor_074",
+      "actor_159",
+      "actor_093"
+    ],
+    "genre_ids": [
+      "genre_011",
+      "genre_009",
+      "genre_002"
+    ],
+    "rating_sum": 285,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_007",
+    "title": "A Frozen Heart",
+    "release_year": 2007,
+    "duration_min": 94,
+    "rating_avg": 6.6,
+    "director_id": "director_001",
+    "actor_ids": [
+      "actor_102",
+      "actor_140",
+      "actor_006",
+      "actor_082"
+    ],
+    "genre_ids": [
+      "genre_011",
+      "genre_014",
+      "genre_005"
+    ],
+    "rating_sum": 191,
+    "rating_count": 29,
+    "version": 1
+  },
+  {
+    "_id": "movie_008",
+    "title": "His Forest Spirit",
+    "release_year": 2002,
+    "duration_min": 107,
+    "rating_avg": 7.5,
+    "director_id": "director_022",
+    "actor_ids": [
+      "actor_130",
+      "actor_075",
+      "actor_002"
+    ],
+    "genre_ids": [
+      "genre_006"
+    ],
+    "rating_sum": 256,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_009",
+    "title": "Their Silent Echo",
+    "release_year": 2013,
+    "duration_min": 172,
+    "rating_avg": 6.1,
+    "director_id": "director_007",
+    "actor_ids": [
+      "actor_059",
+      "actor_097",
+      "actor_130",
+      "actor_134",
+      "actor_009"
+    ],
+    "genre_ids": [
+      "genre_013"
+    ],
+    "rating_sum": 146,
+    "rating_count": 24,
+    "version": 1
+  },
+  {
+    "_id": "movie_010",
+    "title": "Shadow Realm: Promise",
+    "release_year": 2001,
+    "duration_min": 143,
+    "rating_avg": 6.7,
+    "director_id": "director_041",
+    "actor_ids": [
+      "actor_129",
+      "actor_029",
+      "actor_197",
+      "actor_076"
+    ],
+    "genre_ids": [
+      "genre_005"
+    ],
+    "rating_sum": 193,
+    "rating_count": 29,
+    "version": 1
+  },
+  {
+    "_id": "movie_011",
+    "title": "Desert Rose: Mystery",
+    "release_year": 2015,
+    "duration_min": 81,
+    "rating_avg": 5.3,
+    "director_id": "director_044",
+    "actor_ids": [
+      "actor_164",
+      "actor_096",
+      "actor_147",
+      "actor_086"
+    ],
+    "genre_ids": [
+      "genre_005",
+      "genre_001",
+      "genre_003"
+    ],
+    "rating_sum": 164,
+    "rating_count": 31,
+    "version": 1
+  },
+  {
+    "_id": "movie_012",
+    "title": "Shadow Realm: Journey",
+    "release_year": 2019,
+    "duration_min": 156,
+    "rating_avg": 6.0,
+    "director_id": "director_042",
+    "actor_ids": [
+      "actor_115",
+      "actor_107",
+      "actor_116",
+      "actor_128",
+      "actor_041"
+    ],
+    "genre_ids": [
+      "genre_008",
+      "genre_007",
+      "genre_001"
+    ],
+    "rating_sum": 199,
+    "rating_count": 33,
+    "version": 1
+  },
+  {
+    "_id": "movie_013",
+    "title": "Island Mystery: Love",
+    "release_year": 2024,
+    "duration_min": 152,
+    "rating_avg": 7.1,
+    "director_id": "director_011",
+    "actor_ids": [
+      "actor_014",
+      "actor_040",
+      "actor_078",
+      "actor_033",
+      "actor_115"
+    ],
+    "genre_ids": [
+      "genre_007",
+      "genre_011",
+      "genre_001"
+    ],
+    "rating_sum": 206,
+    "rating_count": 29,
+    "version": 1
+  },
+  {
+    "_id": "movie_014",
+    "title": "My Country Road",
+    "release_year": 2007,
+    "duration_min": 88,
+    "rating_avg": 7.3,
+    "director_id": "director_007",
+    "actor_ids": [
+      "actor_015",
+      "actor_024"
+    ],
+    "genre_ids": [
+      "genre_014"
+    ],
+    "rating_sum": 264,
+    "rating_count": 36,
+    "version": 1
+  },
+  {
+    "_id": "movie_015",
+    "title": "His Solar Flare",
+    "release_year": 2013,
+    "duration_min": 108,
+    "rating_avg": 7.1,
+    "director_id": "director_002",
+    "actor_ids": [
+      "actor_194",
+      "actor_005",
+      "actor_151",
+      "actor_022",
+      "actor_122"
+    ],
+    "genre_ids": [
+      "genre_011"
+    ],
+    "rating_sum": 142,
+    "rating_count": 20,
+    "version": 1
+  },
+  {
+    "_id": "movie_016",
+    "title": "Their Ocean's Whisper",
+    "release_year": 2002,
+    "duration_min": 88,
+    "rating_avg": 8.1,
+    "director_id": "director_025",
+    "actor_ids": [
+      "actor_005",
+      "actor_128",
+      "actor_183",
+      "actor_002",
+      "actor_012"
+    ],
+    "genre_ids": [
+      "genre_009",
+      "genre_001",
+      "genre_015"
+    ],
+    "rating_sum": 236,
+    "rating_count": 29,
+    "version": 1
+  },
+  {
+    "_id": "movie_017",
+    "title": "Their Midnight Run",
+    "release_year": 2015,
+    "duration_min": 163,
+    "rating_avg": 7.1,
+    "director_id": "director_014",
+    "actor_ids": [
+      "actor_071",
+      "actor_156",
+      "actor_105",
+      "actor_034"
+    ],
+    "genre_ids": [
+      "genre_004",
+      "genre_012"
+    ],
+    "rating_sum": 250,
+    "rating_count": 35,
+    "version": 1
+  },
+  {
+    "_id": "movie_018",
+    "title": "Shadow Realm: Secret",
+    "release_year": 2005,
+    "duration_min": 83,
+    "rating_avg": 7.6,
+    "director_id": "director_020",
+    "actor_ids": [
+      "actor_009",
+      "actor_068"
+    ],
+    "genre_ids": [
+      "genre_011"
+    ],
+    "rating_sum": 243,
+    "rating_count": 32,
+    "version": 1
+  },
+  {
+    "_id": "movie_019",
+    "title": "Ocean's Whisper: Mystery",
+    "release_year": 2009,
+    "duration_min": 160,
+    "rating_avg": 7.3,
+    "director_id": "director_019",
+    "actor_ids": [
+      "actor_124",
+      "actor_190",
+      "actor_166",
+      "actor_175"
+    ],
+    "genre_ids": [
+      "genre_005",
+      "genre_013"
+    ],
+    "rating_sum": 256,
+    "rating_count": 35,
+    "version": 1
+  },
+  {
+    "_id": "movie_020",
+    "title": "Frozen Heart: Hate",
+    "release_year": 2022,
+    "duration_min": 102,
+    "rating_avg": 6.3,
+    "director_id": "director_038",
+    "actor_ids": [
+      "actor_014",
+      "actor_058",
+      "actor_053",
+      "actor_181"
+    ],
+    "genre_ids": [
+      "genre_015"
+    ],
+    "rating_sum": 245,
+    "rating_count": 39,
+    "version": 1
+  },
+  {
+    "_id": "movie_021",
+    "title": "Your City Lights",
+    "release_year": 2015,
+    "duration_min": 114,
+    "rating_avg": 6.8,
+    "director_id": "director_029",
+    "actor_ids": [
+      "actor_076",
+      "actor_168"
+    ],
+    "genre_ids": [
+      "genre_007",
+      "genre_012"
+    ],
+    "rating_sum": 271,
+    "rating_count": 40,
+    "version": 1
+  },
+  {
+    "_id": "movie_022",
+    "title": "A Country Road",
+    "release_year": 2022,
+    "duration_min": 85,
+    "rating_avg": 7.5,
+    "director_id": "director_006",
+    "actor_ids": [
+      "actor_033",
+      "actor_126"
+    ],
+    "genre_ids": [
+      "genre_009"
+    ],
+    "rating_sum": 254,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_023",
+    "title": "Their Frozen Heart",
+    "release_year": 2021,
+    "duration_min": 129,
+    "rating_avg": 5.4,
+    "director_id": "director_050",
+    "actor_ids": [
+      "actor_107",
+      "actor_087",
+      "actor_148"
+    ],
+    "genre_ids": [
+      "genre_010",
+      "genre_002",
+      "genre_007"
+    ],
+    "rating_sum": 141,
+    "rating_count": 26,
+    "version": 1
+  },
+  {
+    "_id": "movie_024",
+    "title": "A The Last Horizon",
+    "release_year": 2009,
+    "duration_min": 145,
+    "rating_avg": 7.2,
+    "director_id": "director_006",
+    "actor_ids": [
+      "actor_049",
+      "actor_081"
+    ],
+    "genre_ids": [
+      "genre_014"
+    ],
+    "rating_sum": 296,
+    "rating_count": 41,
+    "version": 1
+  },
+  {
+    "_id": "movie_025",
+    "title": "Digital Ghost: Promise",
+    "release_year": 2014,
+    "duration_min": 115,
+    "rating_avg": 6.3,
+    "director_id": "director_037",
+    "actor_ids": [
+      "actor_058",
+      "actor_162",
+      "actor_111"
+    ],
+    "genre_ids": [
+      "genre_013",
+      "genre_011",
+      "genre_012"
+    ],
+    "rating_sum": 164,
+    "rating_count": 26,
+    "version": 1
+  },
+  {
+    "_id": "movie_026",
+    "title": "Mountain Peak: Hope",
+    "release_year": 2020,
+    "duration_min": 100,
+    "rating_avg": 7.5,
+    "director_id": "director_025",
+    "actor_ids": [
+      "actor_124",
+      "actor_187",
+      "actor_144",
+      "actor_090",
+      "actor_103"
+    ],
+    "genre_ids": [
+      "genre_005",
+      "genre_002"
+    ],
+    "rating_sum": 284,
+    "rating_count": 38,
+    "version": 1
+  },
+  {
+    "_id": "movie_027",
+    "title": "Solar Flare: Dream",
+    "release_year": 2023,
+    "duration_min": 89,
+    "rating_avg": 8.1,
+    "director_id": "director_022",
+    "actor_ids": [
+      "actor_165",
+      "actor_115",
+      "actor_187"
+    ],
+    "genre_ids": [
+      "genre_003",
+      "genre_014",
+      "genre_007"
+    ],
+    "rating_sum": 235,
+    "rating_count": 29,
+    "version": 1
+  },
+  {
+    "_id": "movie_028",
+    "title": "City Lights: Adventure",
+    "release_year": 2018,
+    "duration_min": 117,
+    "rating_avg": 5.9,
+    "director_id": "director_024",
+    "actor_ids": [
+      "actor_111",
+      "actor_125",
+      "actor_097"
+    ],
+    "genre_ids": [
+      "genre_007",
+      "genre_011"
+    ],
+    "rating_sum": 130,
+    "rating_count": 22,
+    "version": 1
+  },
+  {
+    "_id": "movie_029",
+    "title": "Silent Echo: Adventure",
+    "release_year": 2002,
+    "duration_min": 145,
+    "rating_avg": 5.5,
+    "director_id": "director_009",
+    "actor_ids": [
+      "actor_127",
+      "actor_080",
+      "actor_114",
+      "actor_104"
+    ],
+    "genre_ids": [
+      "genre_014"
+    ],
+    "rating_sum": 231,
+    "rating_count": 42,
+    "version": 1
+  },
+  {
+    "_id": "movie_030",
+    "title": "Digital Ghost: Promise",
+    "release_year": 2018,
+    "duration_min": 116,
+    "rating_avg": 6.3,
+    "director_id": "director_010",
+    "actor_ids": [
+      "actor_122",
+      "actor_041",
+      "actor_045",
+      "actor_056",
+      "actor_089"
+    ],
+    "genre_ids": [
+      "genre_008",
+      "genre_012",
+      "genre_002"
+    ],
+    "rating_sum": 241,
+    "rating_count": 38,
+    "version": 1
+  },
+  {
+    "_id": "movie_031",
+    "title": "His Island Mystery",
+    "release_year": 2008,
+    "duration_min": 146,
+    "rating_avg": 6.0,
+    "director_id": "director_040",
+    "actor_ids": [
+      "actor_092",
+      "actor_073",
+      "actor_126",
+      "actor_096",
+      "actor_148"
+    ],
+    "genre_ids": [
+      "genre_006",
+      "genre_014",
+      "genre_015"
+    ],
+    "rating_sum": 222,
+    "rating_count": 37,
+    "version": 1
+  },
+  {
+    "_id": "movie_032",
+    "title": "His City Lights",
+    "release_year": 2024,
+    "duration_min": 107,
+    "rating_avg": 6.3,
+    "director_id": "director_017",
+    "actor_ids": [
+      "actor_021",
+      "actor_130",
+      "actor_098",
+      "actor_133"
+    ],
+    "genre_ids": [
+      "genre_006",
+      "genre_007"
+    ],
+    "rating_sum": 171,
+    "rating_count": 27,
+    "version": 1
+  },
+  {
+    "_id": "movie_033",
+    "title": "City Lights: Adventure",
+    "release_year": 2017,
+    "duration_min": 150,
+    "rating_avg": 5.5,
+    "director_id": "director_032",
+    "actor_ids": [
+      "actor_049",
+      "actor_181",
+      "actor_144",
+      "actor_024"
+    ],
+    "genre_ids": [
+      "genre_009"
+    ],
+    "rating_sum": 143,
+    "rating_count": 26,
+    "version": 1
+  },
+  {
+    "_id": "movie_034",
+    "title": "Digital Ghost: Mystery",
+    "release_year": 2002,
+    "duration_min": 109,
+    "rating_avg": 7.0,
+    "director_id": "director_014",
+    "actor_ids": [
+      "actor_050",
+      "actor_033"
+    ],
+    "genre_ids": [
+      "genre_013",
+      "genre_003"
+    ],
+    "rating_sum": 190,
+    "rating_count": 27,
+    "version": 1
+  },
+  {
+    "_id": "movie_035",
+    "title": "My Mountain Peak",
+    "release_year": 2020,
+    "duration_min": 120,
+    "rating_avg": 6.3,
+    "director_id": "director_034",
+    "actor_ids": [
+      "actor_017",
+      "actor_122",
+      "actor_002"
+    ],
+    "genre_ids": [
+      "genre_015",
+      "genre_008",
+      "genre_010"
+    ],
+    "rating_sum": 232,
+    "rating_count": 37,
+    "version": 1
+  },
+  {
+    "_id": "movie_036",
+    "title": "Ocean's Whisper: Promise",
+    "release_year": 2017,
+    "duration_min": 76,
+    "rating_avg": 6.4,
+    "director_id": "director_015",
+    "actor_ids": [
+      "actor_050",
+      "actor_177",
+      "actor_064",
+      "actor_056",
+      "actor_086"
+    ],
+    "genre_ids": [
+      "genre_003",
+      "genre_001",
+      "genre_015"
+    ],
+    "rating_sum": 216,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_037",
+    "title": "The Mountain Peak",
+    "release_year": 2017,
+    "duration_min": 144,
+    "rating_avg": 8.1,
+    "director_id": "director_017",
+    "actor_ids": [
+      "actor_108",
+      "actor_129",
+      "actor_159",
+      "actor_042",
+      "actor_164"
+    ],
+    "genre_ids": [
+      "genre_014"
+    ],
+    "rating_sum": 258,
+    "rating_count": 32,
+    "version": 1
+  },
+  {
+    "_id": "movie_038",
+    "title": "Mountain Peak: Journey",
+    "release_year": 2002,
+    "duration_min": 161,
+    "rating_avg": 7.6,
+    "director_id": "director_039",
+    "actor_ids": [
+      "actor_064",
+      "actor_149",
+      "actor_150",
+      "actor_173"
+    ],
+    "genre_ids": [
+      "genre_009"
+    ],
+    "rating_sum": 252,
+    "rating_count": 33,
+    "version": 1
+  },
+  {
+    "_id": "movie_039",
+    "title": "River Flow: Legacy",
+    "release_year": 2020,
+    "duration_min": 82,
+    "rating_avg": 5.9,
+    "director_id": "director_042",
+    "actor_ids": [
+      "actor_105",
+      "actor_066",
+      "actor_036"
+    ],
+    "genre_ids": [
+      "genre_009",
+      "genre_004",
+      "genre_008"
+    ],
+    "rating_sum": 188,
+    "rating_count": 32,
+    "version": 1
+  },
+  {
+    "_id": "movie_040",
+    "title": "City Lights: Story",
+    "release_year": 2021,
+    "duration_min": 109,
+    "rating_avg": 5.7,
+    "director_id": "director_024",
+    "actor_ids": [
+      "actor_167",
+      "actor_063"
+    ],
+    "genre_ids": [
+      "genre_008",
+      "genre_007"
+    ],
+    "rating_sum": 226,
+    "rating_count": 40,
+    "version": 1
+  },
+  {
+    "_id": "movie_041",
+    "title": "Their River Flow",
+    "release_year": 2011,
+    "duration_min": 142,
+    "rating_avg": 7.8,
+    "director_id": "director_025",
+    "actor_ids": [
+      "actor_045",
+      "actor_009",
+      "actor_135"
+    ],
+    "genre_ids": [
+      "genre_001"
+    ],
+    "rating_sum": 211,
+    "rating_count": 27,
+    "version": 1
+  },
+  {
+    "_id": "movie_042",
+    "title": "Forest Spirit: Love",
+    "release_year": 2014,
+    "duration_min": 75,
+    "rating_avg": 7.2,
+    "director_id": "director_037",
+    "actor_ids": [
+      "actor_093",
+      "actor_004",
+      "actor_193",
+      "actor_057"
+    ],
+    "genre_ids": [
+      "genre_006",
+      "genre_011",
+      "genre_001"
+    ],
+    "rating_sum": 187,
+    "rating_count": 26,
+    "version": 1
+  },
+  {
+    "_id": "movie_043",
+    "title": "Our Island Mystery",
+    "release_year": 2014,
+    "duration_min": 147,
+    "rating_avg": 5.9,
+    "director_id": "director_025",
+    "actor_ids": [
+      "actor_190",
+      "actor_151",
+      "actor_027",
+      "actor_007"
+    ],
+    "genre_ids": [
+      "genre_002",
+      "genre_015"
+    ],
+    "rating_sum": 188,
+    "rating_count": 32,
+    "version": 1
+  },
+  {
+    "_id": "movie_044",
+    "title": "Our Crimson Tide",
+    "release_year": 2022,
+    "duration_min": 88,
+    "rating_avg": 7.3,
+    "director_id": "director_042",
+    "actor_ids": [
+      "actor_134",
+      "actor_138",
+      "actor_151",
+      "actor_016",
+      "actor_169"
+    ],
+    "genre_ids": [
+      "genre_014"
+    ],
+    "rating_sum": 190,
+    "rating_count": 26,
+    "version": 1
+  },
+  {
+    "_id": "movie_045",
+    "title": "My Solar Flare",
+    "release_year": 2006,
+    "duration_min": 173,
+    "rating_avg": 5.2,
+    "director_id": "director_033",
+    "actor_ids": [
+      "actor_099",
+      "actor_189",
+      "actor_026",
+      "actor_088"
+    ],
+    "genre_ids": [
+      "genre_006"
+    ],
+    "rating_sum": 136,
+    "rating_count": 26,
+    "version": 1
+  },
+  {
+    "_id": "movie_046",
+    "title": "Your Echoes of Time",
+    "release_year": 2000,
+    "duration_min": 180,
+    "rating_avg": 7.3,
+    "director_id": "director_004",
+    "actor_ids": [
+      "actor_010",
+      "actor_188",
+      "actor_187"
+    ],
+    "genre_ids": [
+      "genre_004",
+      "genre_009"
+    ],
+    "rating_sum": 248,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_047",
+    "title": "The River Flow",
+    "release_year": 2000,
+    "duration_min": 84,
+    "rating_avg": 8.4,
+    "director_id": "director_019",
+    "actor_ids": [
+      "actor_128",
+      "actor_090",
+      "actor_118"
+    ],
+    "genre_ids": [
+      "genre_008",
+      "genre_014"
+    ],
+    "rating_sum": 202,
+    "rating_count": 24,
+    "version": 1
+  },
+  {
+    "_id": "movie_048",
+    "title": "Solar Flare: Adventure",
+    "release_year": 2008,
+    "duration_min": 169,
+    "rating_avg": 7.1,
+    "director_id": "director_049",
+    "actor_ids": [
+      "actor_166",
+      "actor_065",
+      "actor_042"
+    ],
+    "genre_ids": [
+      "genre_012",
+      "genre_001",
+      "genre_008"
+    ],
+    "rating_sum": 242,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_049",
+    "title": "Island Mystery: Hate",
+    "release_year": 2022,
+    "duration_min": 147,
+    "rating_avg": 6.5,
+    "director_id": "director_020",
+    "actor_ids": [
+      "actor_184",
+      "actor_086",
+      "actor_040"
+    ],
+    "genre_ids": [
+      "genre_015",
+      "genre_011"
+    ],
+    "rating_sum": 196,
+    "rating_count": 30,
+    "version": 1
+  },
+  {
+    "_id": "movie_050",
+    "title": "Mountain Peak: Secret",
+    "release_year": 2008,
+    "duration_min": 153,
+    "rating_avg": 7.0,
+    "director_id": "director_019",
+    "actor_ids": [
+      "actor_114",
+      "actor_034",
+      "actor_059",
+      "actor_163",
+      "actor_022"
+    ],
+    "genre_ids": [
+      "genre_009",
+      "genre_007",
+      "genre_011"
+    ],
+    "rating_sum": 202,
+    "rating_count": 29,
+    "version": 1
+  },
+  {
+    "_id": "movie_051",
+    "title": "Shadow Realm: Hate",
+    "release_year": 2008,
+    "duration_min": 101,
+    "rating_avg": 7.8,
+    "director_id": "director_011",
+    "actor_ids": [
+      "actor_031",
+      "actor_105",
+      "actor_001",
+      "actor_014"
+    ],
+    "genre_ids": [
+      "genre_008",
+      "genre_002"
+    ],
+    "rating_sum": 273,
+    "rating_count": 35,
+    "version": 1
+  },
+  {
+    "_id": "movie_052",
+    "title": "My Frozen Heart",
+    "release_year": 2017,
+    "duration_min": 122,
+    "rating_avg": 6.4,
+    "director_id": "director_033",
+    "actor_ids": [
+      "actor_042",
+      "actor_168",
+      "actor_158",
+      "actor_149"
+    ],
+    "genre_ids": [
+      "genre_006"
+    ],
+    "rating_sum": 225,
+    "rating_count": 35,
+    "version": 1
+  },
+  {
+    "_id": "movie_053",
+    "title": "Echoes of Time: Mystery",
+    "release_year": 2022,
+    "duration_min": 115,
+    "rating_avg": 7.5,
+    "director_id": "director_032",
+    "actor_ids": [
+      "actor_110",
+      "actor_020"
+    ],
+    "genre_ids": [
+      "genre_002",
+      "genre_015"
+    ],
+    "rating_sum": 293,
+    "rating_count": 39,
+    "version": 1
+  },
+  {
+    "_id": "movie_054",
+    "title": "Shadow Realm: Love",
+    "release_year": 2000,
+    "duration_min": 134,
+    "rating_avg": 5.9,
+    "director_id": "director_026",
+    "actor_ids": [
+      "actor_069",
+      "actor_160",
+      "actor_187",
+      "actor_063",
+      "actor_022"
+    ],
+    "genre_ids": [
+      "genre_005",
+      "genre_001",
+      "genre_014"
+    ],
+    "rating_sum": 153,
+    "rating_count": 26,
+    "version": 1
+  },
+  {
+    "_id": "movie_055",
+    "title": "Our Forest Spirit",
+    "release_year": 2013,
+    "duration_min": 168,
+    "rating_avg": 6.6,
+    "director_id": "director_016",
+    "actor_ids": [
+      "actor_108",
+      "actor_113"
+    ],
+    "genre_ids": [
+      "genre_002",
+      "genre_012",
+      "genre_013"
+    ],
+    "rating_sum": 184,
+    "rating_count": 28,
+    "version": 1
+  },
+  {
+    "_id": "movie_056",
+    "title": "Mountain Peak: Adventure",
+    "release_year": 2003,
+    "duration_min": 169,
+    "rating_avg": 6.6,
+    "director_id": "director_010",
+    "actor_ids": [
+      "actor_004",
+      "actor_091",
+      "actor_093",
+      "actor_010"
+    ],
+    "genre_ids": [
+      "genre_010",
+      "genre_009"
+    ],
+    "rating_sum": 269,
+    "rating_count": 41,
+    "version": 1
+  },
+  {
+    "_id": "movie_057",
+    "title": "Arctic Fury: Story",
+    "release_year": 2016,
+    "duration_min": 170,
+    "rating_avg": 7.2,
+    "director_id": "director_030",
+    "actor_ids": [
+      "actor_063",
+      "actor_137",
+      "actor_103",
+      "actor_116"
+    ],
+    "genre_ids": [
+      "genre_002",
+      "genre_007"
+    ],
+    "rating_sum": 297,
+    "rating_count": 41,
+    "version": 1
+  },
+  {
+    "_id": "movie_058",
+    "title": "Neon Dreams: Love",
+    "release_year": 2010,
+    "duration_min": 157,
+    "rating_avg": 7.3,
+    "director_id": "director_030",
+    "actor_ids": [
+      "actor_106",
+      "actor_158",
+      "actor_199",
+      "actor_102",
+      "actor_080"
+    ],
+    "genre_ids": [
+      "genre_007"
+    ],
+    "rating_sum": 271,
+    "rating_count": 37,
+    "version": 1
+  },
+  {
+    "_id": "movie_059",
+    "title": "The Arctic Fury",
+    "release_year": 2011,
+    "duration_min": 77,
+    "rating_avg": 6.4,
+    "director_id": "director_038",
+    "actor_ids": [
+      "actor_038",
+      "actor_067"
+    ],
+    "genre_ids": [
+      "genre_001",
+      "genre_014",
+      "genre_003"
+    ],
+    "rating_sum": 235,
+    "rating_count": 37,
+    "version": 1
+  },
+  {
+    "_id": "movie_060",
+    "title": "The Neon Dreams",
+    "release_year": 2019,
+    "duration_min": 164,
+    "rating_avg": 6.9,
+    "director_id": "director_005",
+    "actor_ids": [
+      "actor_071",
+      "actor_108",
+      "actor_149"
+    ],
+    "genre_ids": [
+      "genre_003"
+    ],
+    "rating_sum": 215,
+    "rating_count": 31,
+    "version": 1
+  },
+  {
+    "_id": "movie_061",
+    "title": "Their Golden Hour",
+    "release_year": 2000,
+    "duration_min": 105,
+    "rating_avg": 8.5,
+    "director_id": "director_024",
+    "actor_ids": [
+      "actor_143",
+      "actor_195"
+    ],
+    "genre_ids": [
+      "genre_008"
+    ],
+    "rating_sum": 203,
+    "rating_count": 24,
+    "version": 1
+  },
+  {
+    "_id": "movie_062",
+    "title": "Our Arctic Fury",
+    "release_year": 2008,
+    "duration_min": 93,
+    "rating_avg": 5.7,
+    "director_id": "director_023",
+    "actor_ids": [
+      "actor_162",
+      "actor_146",
+      "actor_006",
+      "actor_124",
+      "actor_163"
+    ],
+    "genre_ids": [
+      "genre_005",
+      "genre_013"
+    ],
+    "rating_sum": 149,
+    "rating_count": 26,
+    "version": 1
+  },
+  {
+    "_id": "movie_063",
+    "title": "Arctic Fury: Hate",
+    "release_year": 2021,
+    "duration_min": 99,
+    "rating_avg": 7.5,
+    "director_id": "director_017",
+    "actor_ids": [
+      "actor_175",
+      "actor_183"
+    ],
+    "genre_ids": [
+      "genre_012",
+      "genre_003",
+      "genre_008"
+    ],
+    "rating_sum": 239,
+    "rating_count": 32,
+    "version": 1
+  },
+  {
+    "_id": "movie_064",
+    "title": "Forest Spirit: Hope",
+    "release_year": 2006,
+    "duration_min": 122,
+    "rating_avg": 6.3,
+    "director_id": "director_048",
+    "actor_ids": [
+      "actor_171",
+      "actor_021",
+      "actor_100"
+    ],
+    "genre_ids": [
+      "genre_003",
+      "genre_004"
+    ],
+    "rating_sum": 227,
+    "rating_count": 36,
+    "version": 1
+  },
+  {
+    "_id": "movie_065",
+    "title": "Silent Echo: Adventure",
+    "release_year": 2010,
+    "duration_min": 148,
+    "rating_avg": 8.1,
+    "director_id": "director_026",
+    "actor_ids": [
+      "actor_046",
+      "actor_196",
+      "actor_122",
+      "actor_142",
+      "actor_138"
+    ],
+    "genre_ids": [
+      "genre_009",
+      "genre_006"
+    ],
+    "rating_sum": 243,
+    "rating_count": 30,
+    "version": 1
+  },
+  {
+    "_id": "movie_066",
+    "title": "Our Echoes of Time",
+    "release_year": 2003,
+    "duration_min": 77,
+    "rating_avg": 6.4,
+    "director_id": "director_044",
+    "actor_ids": [
+      "actor_108",
+      "actor_127",
+      "actor_095"
+    ],
+    "genre_ids": [
+      "genre_009"
+    ],
+    "rating_sum": 217,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_067",
+    "title": "Echoes of Time: Mystery",
+    "release_year": 2008,
+    "duration_min": 160,
+    "rating_avg": 5.6,
+    "director_id": "director_009",
+    "actor_ids": [
+      "actor_172",
+      "actor_151",
+      "actor_156",
+      "actor_144"
+    ],
+    "genre_ids": [
+      "genre_014",
+      "genre_012"
+    ],
+    "rating_sum": 191,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_068",
+    "title": "Digital Ghost: Journey",
+    "release_year": 2008,
+    "duration_min": 89,
+    "rating_avg": 6.8,
+    "director_id": "director_005",
+    "actor_ids": [
+      "actor_004",
+      "actor_136"
+    ],
+    "genre_ids": [
+      "genre_013",
+      "genre_006"
+    ],
+    "rating_sum": 238,
+    "rating_count": 35,
+    "version": 1
+  },
+  {
+    "_id": "movie_069",
+    "title": "Crimson Tide: Adventure",
+    "release_year": 2019,
+    "duration_min": 125,
+    "rating_avg": 7.4,
+    "director_id": "director_012",
+    "actor_ids": [
+      "actor_098",
+      "actor_015",
+      "actor_149",
+      "actor_099",
+      "actor_108"
+    ],
+    "genre_ids": [
+      "genre_001",
+      "genre_014"
+    ],
+    "rating_sum": 206,
+    "rating_count": 28,
+    "version": 1
+  },
+  {
+    "_id": "movie_070",
+    "title": "Her Shadow Realm",
+    "release_year": 2012,
+    "duration_min": 90,
+    "rating_avg": 6.6,
+    "director_id": "director_037",
+    "actor_ids": [
+      "actor_101",
+      "actor_147",
+      "actor_184",
+      "actor_033",
+      "actor_007"
+    ],
+    "genre_ids": [
+      "genre_005"
+    ],
+    "rating_sum": 210,
+    "rating_count": 32,
+    "version": 1
+  },
+  {
+    "_id": "movie_071",
+    "title": "Shadow Realm: Secret",
+    "release_year": 2018,
+    "duration_min": 136,
+    "rating_avg": 7.5,
+    "director_id": "director_007",
+    "actor_ids": [
+      "actor_046",
+      "actor_035",
+      "actor_069"
+    ],
+    "genre_ids": [
+      "genre_002",
+      "genre_001",
+      "genre_011"
+    ],
+    "rating_sum": 248,
+    "rating_count": 33,
+    "version": 1
+  },
+  {
+    "_id": "movie_072",
+    "title": "Your Island Mystery",
+    "release_year": 2016,
+    "duration_min": 101,
+    "rating_avg": 8.0,
+    "director_id": "director_005",
+    "actor_ids": [
+      "actor_056",
+      "actor_174",
+      "actor_167",
+      "actor_180"
+    ],
+    "genre_ids": [
+      "genre_001",
+      "genre_007"
+    ],
+    "rating_sum": 193,
+    "rating_count": 24,
+    "version": 1
+  },
+  {
+    "_id": "movie_073",
+    "title": "Her Golden Hour",
+    "release_year": 2020,
+    "duration_min": 89,
+    "rating_avg": 6.9,
+    "director_id": "director_014",
+    "actor_ids": [
+      "actor_135",
+      "actor_194",
+      "actor_021",
+      "actor_175"
+    ],
+    "genre_ids": [
+      "genre_014",
+      "genre_007"
+    ],
+    "rating_sum": 250,
+    "rating_count": 36,
+    "version": 1
+  },
+  {
+    "_id": "movie_074",
+    "title": "The Last Horizon: Love",
+    "release_year": 2016,
+    "duration_min": 126,
+    "rating_avg": 6.0,
+    "director_id": "director_045",
+    "actor_ids": [
+      "actor_092",
+      "actor_027",
+      "actor_012",
+      "actor_101"
+    ],
+    "genre_ids": [
+      "genre_015"
+    ],
+    "rating_sum": 203,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_075",
+    "title": "Golden Hour: Adventure",
+    "release_year": 2006,
+    "duration_min": 145,
+    "rating_avg": 7.5,
+    "director_id": "director_035",
+    "actor_ids": [
+      "actor_139",
+      "actor_014",
+      "actor_057"
+    ],
+    "genre_ids": [
+      "genre_003",
+      "genre_011"
+    ],
+    "rating_sum": 240,
+    "rating_count": 32,
+    "version": 1
+  },
+  {
+    "_id": "movie_076",
+    "title": "Frozen Heart: Fear",
+    "release_year": 2004,
+    "duration_min": 160,
+    "rating_avg": 5.4,
+    "director_id": "director_050",
+    "actor_ids": [
+      "actor_182",
+      "actor_055"
+    ],
+    "genre_ids": [
+      "genre_009"
+    ],
+    "rating_sum": 134,
+    "rating_count": 25,
+    "version": 1
+  },
+  {
+    "_id": "movie_077",
+    "title": "Neon Dreams: Promise",
+    "release_year": 2005,
+    "duration_min": 85,
+    "rating_avg": 5.6,
+    "director_id": "director_013",
+    "actor_ids": [
+      "actor_062",
+      "actor_131",
+      "actor_010",
+      "actor_056"
+    ],
+    "genre_ids": [
+      "genre_014"
+    ],
+    "rating_sum": 235,
+    "rating_count": 42,
+    "version": 1
+  },
+  {
+    "_id": "movie_078",
+    "title": "Shadow Realm: Love",
+    "release_year": 2016,
+    "duration_min": 166,
+    "rating_avg": 6.6,
+    "director_id": "director_039",
+    "actor_ids": [
+      "actor_024",
+      "actor_045",
+      "actor_076"
+    ],
+    "genre_ids": [
+      "genre_014",
+      "genre_001",
+      "genre_012"
+    ],
+    "rating_sum": 224,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_079",
+    "title": "Digital Ghost: Journey",
+    "release_year": 2024,
+    "duration_min": 105,
+    "rating_avg": 7.3,
+    "director_id": "director_003",
+    "actor_ids": [
+      "actor_113",
+      "actor_111"
+    ],
+    "genre_ids": [
+      "genre_010",
+      "genre_014",
+      "genre_003"
+    ],
+    "rating_sum": 191,
+    "rating_count": 26,
+    "version": 1
+  },
+  {
+    "_id": "movie_080",
+    "title": "Mountain Peak: Mystery",
+    "release_year": 2010,
+    "duration_min": 136,
+    "rating_avg": 7.3,
+    "director_id": "director_016",
+    "actor_ids": [
+      "actor_049",
+      "actor_042"
+    ],
+    "genre_ids": [
+      "genre_013",
+      "genre_008"
+    ],
+    "rating_sum": 234,
+    "rating_count": 32,
+    "version": 1
+  },
+  {
+    "_id": "movie_081",
+    "title": "Solar Flare: Journey",
+    "release_year": 2001,
+    "duration_min": 119,
+    "rating_avg": 7.1,
+    "director_id": "director_003",
+    "actor_ids": [
+      "actor_102",
+      "actor_001",
+      "actor_011"
+    ],
+    "genre_ids": [
+      "genre_013",
+      "genre_003"
+    ],
+    "rating_sum": 241,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_082",
+    "title": "Country Road: Legacy",
+    "release_year": 2003,
+    "duration_min": 128,
+    "rating_avg": 6.5,
+    "director_id": "director_005",
+    "actor_ids": [
+      "actor_164",
+      "actor_110",
+      "actor_042",
+      "actor_007",
+      "actor_191"
+    ],
+    "genre_ids": [
+      "genre_012",
+      "genre_011"
+    ],
+    "rating_sum": 247,
+    "rating_count": 38,
+    "version": 1
+  },
+  {
+    "_id": "movie_083",
+    "title": "Their City Lights",
+    "release_year": 2005,
+    "duration_min": 180,
+    "rating_avg": 7.9,
+    "director_id": "director_046",
+    "actor_ids": [
+      "actor_059",
+      "actor_115"
+    ],
+    "genre_ids": [
+      "genre_010",
+      "genre_014"
+    ],
+    "rating_sum": 260,
+    "rating_count": 33,
+    "version": 1
+  },
+  {
+    "_id": "movie_084",
+    "title": "The City Lights",
+    "release_year": 2004,
+    "duration_min": 117,
+    "rating_avg": 6.5,
+    "director_id": "director_032",
+    "actor_ids": [
+      "actor_129",
+      "actor_147",
+      "actor_077",
+      "actor_051",
+      "actor_118"
+    ],
+    "genre_ids": [
+      "genre_013",
+      "genre_011",
+      "genre_009"
+    ],
+    "rating_sum": 220,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_085",
+    "title": "Digital Ghost: Mystery",
+    "release_year": 2022,
+    "duration_min": 80,
+    "rating_avg": 6.8,
+    "director_id": "director_046",
+    "actor_ids": [
+      "actor_196",
+      "actor_181",
+      "actor_032",
+      "actor_114"
+    ],
+    "genre_ids": [
+      "genre_013",
+      "genre_007",
+      "genre_005"
+    ],
+    "rating_sum": 183,
+    "rating_count": 27,
+    "version": 1
+  },
+  {
+    "_id": "movie_086",
+    "title": "Crimson Tide: Hope",
+    "release_year": 2021,
+    "duration_min": 157,
+    "rating_avg": 7.2,
+    "director_id": "director_026",
+    "actor_ids": [
+      "actor_136",
+      "actor_190",
+      "actor_072",
+      "actor_048"
+    ],
+    "genre_ids": [
+      "genre_008",
+      "genre_001"
+    ],
+    "rating_sum": 317,
+    "rating_count": 44,
+    "version": 1
+  },
+  {
+    "_id": "movie_087",
+    "title": "Crimson Tide: Secret",
+    "release_year": 2024,
+    "duration_min": 165,
+    "rating_avg": 7.7,
+    "director_id": "director_006",
+    "actor_ids": [
+      "actor_063",
+      "actor_059"
+    ],
+    "genre_ids": [
+      "genre_004",
+      "genre_011",
+      "genre_008"
+    ],
+    "rating_sum": 276,
+    "rating_count": 36,
+    "version": 1
+  },
+  {
+    "_id": "movie_088",
+    "title": "Our Mountain Peak",
+    "release_year": 2015,
+    "duration_min": 86,
+    "rating_avg": 7.5,
+    "director_id": "director_016",
+    "actor_ids": [
+      "actor_097",
+      "actor_039"
+    ],
+    "genre_ids": [
+      "genre_014",
+      "genre_006"
+    ],
+    "rating_sum": 164,
+    "rating_count": 22,
+    "version": 1
+  },
+  {
+    "_id": "movie_089",
+    "title": "Mountain Peak: Adventure",
+    "release_year": 2010,
+    "duration_min": 172,
+    "rating_avg": 6.9,
+    "director_id": "director_043",
+    "actor_ids": [
+      "actor_100",
+      "actor_108",
+      "actor_195",
+      "actor_097",
+      "actor_153"
+    ],
+    "genre_ids": [
+      "genre_005",
+      "genre_009"
+    ],
+    "rating_sum": 256,
+    "rating_count": 37,
+    "version": 1
+  },
+  {
+    "_id": "movie_090",
+    "title": "Solar Flare: Secret",
+    "release_year": 2003,
+    "duration_min": 95,
+    "rating_avg": 7.5,
+    "director_id": "director_041",
+    "actor_ids": [
+      "actor_091",
+      "actor_015",
+      "actor_137",
+      "actor_166"
+    ],
+    "genre_ids": [
+      "genre_008",
+      "genre_004"
+    ],
+    "rating_sum": 249,
+    "rating_count": 33,
+    "version": 1
+  },
+  {
+    "_id": "movie_091",
+    "title": "Golden Hour: Story",
+    "release_year": 2010,
+    "duration_min": 174,
+    "rating_avg": 5.4,
+    "director_id": "director_004",
+    "actor_ids": [
+      "actor_133",
+      "actor_096",
+      "actor_124",
+      "actor_114"
+    ],
+    "genre_ids": [
+      "genre_012"
+    ],
+    "rating_sum": 174,
+    "rating_count": 32,
+    "version": 1
+  },
+  {
+    "_id": "movie_092",
+    "title": "Their Golden Hour",
+    "release_year": 2008,
+    "duration_min": 169,
+    "rating_avg": 7.1,
+    "director_id": "director_038",
+    "actor_ids": [
+      "actor_019",
+      "actor_148"
+    ],
+    "genre_ids": [
+      "genre_001",
+      "genre_009",
+      "genre_005"
+    ],
+    "rating_sum": 235,
+    "rating_count": 33,
+    "version": 1
+  },
+  {
+    "_id": "movie_093",
+    "title": "Crimson Tide: Nightmare",
+    "release_year": 2024,
+    "duration_min": 163,
+    "rating_avg": 7.6,
+    "director_id": "director_008",
+    "actor_ids": [
+      "actor_065",
+      "actor_175"
+    ],
+    "genre_ids": [
+      "genre_002"
+    ],
+    "rating_sum": 235,
+    "rating_count": 31,
+    "version": 1
+  },
+  {
+    "_id": "movie_094",
+    "title": "Crimson Tide: Nightmare",
+    "release_year": 2015,
+    "duration_min": 83,
+    "rating_avg": 6.6,
+    "director_id": "director_028",
+    "actor_ids": [
+      "actor_198",
+      "actor_072"
+    ],
+    "genre_ids": [
+      "genre_003",
+      "genre_001",
+      "genre_014"
+    ],
+    "rating_sum": 246,
+    "rating_count": 37,
+    "version": 1
+  },
+  {
+    "_id": "movie_095",
+    "title": "Your Neon Dreams",
+    "release_year": 2010,
+    "duration_min": 111,
+    "rating_avg": 7.0,
+    "director_id": "director_006",
+    "actor_ids": [
+      "actor_022",
+      "actor_057",
+      "actor_084",
+      "actor_157"
+    ],
+    "genre_ids": [
+      "genre_006",
+      "genre_003",
+      "genre_014"
+    ],
+    "rating_sum": 216,
+    "rating_count": 31,
+    "version": 1
+  },
+  {
+    "_id": "movie_096",
+    "title": "Our River Flow",
+    "release_year": 2010,
+    "duration_min": 167,
+    "rating_avg": 7.8,
+    "director_id": "director_011",
+    "actor_ids": [
+      "actor_041",
+      "actor_171",
+      "actor_026"
+    ],
+    "genre_ids": [
+      "genre_014",
+      "genre_006"
+    ],
+    "rating_sum": 273,
+    "rating_count": 35,
+    "version": 1
+  },
+  {
+    "_id": "movie_097",
+    "title": "A Country Road",
+    "release_year": 2003,
+    "duration_min": 175,
+    "rating_avg": 8.0,
+    "director_id": "director_025",
+    "actor_ids": [
+      "actor_048",
+      "actor_047",
+      "actor_008"
+    ],
+    "genre_ids": [
+      "genre_006",
+      "genre_003"
+    ],
+    "rating_sum": 224,
+    "rating_count": 28,
+    "version": 1
+  },
+  {
+    "_id": "movie_098",
+    "title": "The Last Horizon: Legacy",
+    "release_year": 2017,
+    "duration_min": 148,
+    "rating_avg": 6.4,
+    "director_id": "director_013",
+    "actor_ids": [
+      "actor_017",
+      "actor_136",
+      "actor_156",
+      "actor_118"
+    ],
+    "genre_ids": [
+      "genre_004",
+      "genre_006"
+    ],
+    "rating_sum": 185,
+    "rating_count": 29,
+    "version": 1
+  },
+  {
+    "_id": "movie_099",
+    "title": "Neon Dreams: Nightmare",
+    "release_year": 2004,
+    "duration_min": 145,
+    "rating_avg": 6.8,
+    "director_id": "director_049",
+    "actor_ids": [
+      "actor_079",
+      "actor_142",
+      "actor_023",
+      "actor_090"
+    ],
+    "genre_ids": [
+      "genre_002",
+      "genre_008",
+      "genre_007"
+    ],
+    "rating_sum": 197,
+    "rating_count": 29,
+    "version": 1
+  },
+  {
+    "_id": "movie_100",
+    "title": "Frozen Heart: Fear",
+    "release_year": 2017,
+    "duration_min": 104,
+    "rating_avg": 7.1,
+    "director_id": "director_016",
+    "actor_ids": [
+      "actor_125",
+      "actor_195",
+      "actor_101",
+      "actor_132",
+      "actor_174"
+    ],
+    "genre_ids": [
+      "genre_002",
+      "genre_003"
+    ],
+    "rating_sum": 233,
+    "rating_count": 33,
+    "version": 1
+  },
+  {
+    "_id": "movie_101",
+    "title": "My Frozen Heart",
+    "release_year": 2003,
+    "duration_min": 77,
+    "rating_avg": 5.7,
+    "director_id": "director_042",
+    "actor_ids": [
+      "actor_019",
+      "actor_161",
+      "actor_135",
+      "actor_162",
+      "actor_136"
+    ],
+    "genre_ids": [
+      "genre_012"
+    ],
+    "rating_sum": 147,
+    "rating_count": 26,
+    "version": 1
+  },
+  {
+    "_id": "movie_102",
+    "title": "Your Golden Hour",
+    "release_year": 2000,
+    "duration_min": 149,
+    "rating_avg": 7.0,
+    "director_id": "director_014",
+    "actor_ids": [
+      "actor_083",
+      "actor_085",
+      "actor_063",
+      "actor_122"
+    ],
+    "genre_ids": [
+      "genre_012",
+      "genre_014",
+      "genre_009"
+    ],
+    "rating_sum": 217,
+    "rating_count": 31,
+    "version": 1
+  },
+  {
+    "_id": "movie_103",
+    "title": "Their Silent Echo",
+    "release_year": 2013,
+    "duration_min": 168,
+    "rating_avg": 7.1,
+    "director_id": "director_039",
+    "actor_ids": [
+      "actor_169",
+      "actor_059"
+    ],
+    "genre_ids": [
+      "genre_012",
+      "genre_006",
+      "genre_009"
+    ],
+    "rating_sum": 226,
+    "rating_count": 32,
+    "version": 1
+  },
+  {
+    "_id": "movie_104",
+    "title": "Shadow Realm: Journey",
+    "release_year": 2017,
+    "duration_min": 80,
+    "rating_avg": 7.1,
+    "director_id": "director_022",
+    "actor_ids": [
+      "actor_182",
+      "actor_025"
+    ],
+    "genre_ids": [
+      "genre_002",
+      "genre_010",
+      "genre_012"
+    ],
+    "rating_sum": 298,
+    "rating_count": 42,
+    "version": 1
+  },
+  {
+    "_id": "movie_105",
+    "title": "Their Neon Dreams",
+    "release_year": 2024,
+    "duration_min": 129,
+    "rating_avg": 7.0,
+    "director_id": "director_026",
+    "actor_ids": [
+      "actor_020",
+      "actor_112",
+      "actor_076"
+    ],
+    "genre_ids": [
+      "genre_005"
+    ],
+    "rating_sum": 323,
+    "rating_count": 46,
+    "version": 1
+  },
+  {
+    "_id": "movie_106",
+    "title": "River Flow: Secret",
+    "release_year": 2020,
+    "duration_min": 126,
+    "rating_avg": 7.3,
+    "director_id": "director_049",
+    "actor_ids": [
+      "actor_054",
+      "actor_199",
+      "actor_085",
+      "actor_178",
+      "actor_188"
+    ],
+    "genre_ids": [
+      "genre_007"
+    ],
+    "rating_sum": 364,
+    "rating_count": 50,
+    "version": 1
+  },
+  {
+    "_id": "movie_107",
+    "title": "My Ocean's Whisper",
+    "release_year": 2017,
+    "duration_min": 153,
+    "rating_avg": 6.8,
+    "director_id": "director_013",
+    "actor_ids": [
+      "actor_116",
+      "actor_112"
+    ],
+    "genre_ids": [
+      "genre_007",
+      "genre_009"
+    ],
+    "rating_sum": 217,
+    "rating_count": 32,
+    "version": 1
+  },
+  {
+    "_id": "movie_108",
+    "title": "Her Digital Ghost",
+    "release_year": 2016,
+    "duration_min": 153,
+    "rating_avg": 7.1,
+    "director_id": "director_027",
+    "actor_ids": [
+      "actor_090",
+      "actor_185",
+      "actor_168"
+    ],
+    "genre_ids": [
+      "genre_008",
+      "genre_012"
+    ],
+    "rating_sum": 171,
+    "rating_count": 24,
+    "version": 1
+  },
+  {
+    "_id": "movie_109",
+    "title": "Country Road: Journey",
+    "release_year": 2023,
+    "duration_min": 132,
+    "rating_avg": 6.5,
+    "director_id": "director_046",
+    "actor_ids": [
+      "actor_053",
+      "actor_069",
+      "actor_073",
+      "actor_160"
+    ],
+    "genre_ids": [
+      "genre_006"
+    ],
+    "rating_sum": 169,
+    "rating_count": 26,
+    "version": 1
+  },
+  {
+    "_id": "movie_110",
+    "title": "Neon Dreams: Mystery",
+    "release_year": 2011,
+    "duration_min": 85,
+    "rating_avg": 5.6,
+    "director_id": "director_033",
+    "actor_ids": [
+      "actor_136",
+      "actor_164",
+      "actor_040",
+      "actor_173",
+      "actor_119"
+    ],
+    "genre_ids": [
+      "genre_001",
+      "genre_013",
+      "genre_005"
+    ],
+    "rating_sum": 178,
+    "rating_count": 32,
+    "version": 1
+  },
+  {
+    "_id": "movie_111",
+    "title": "The Forest Spirit",
+    "release_year": 2009,
+    "duration_min": 161,
+    "rating_avg": 6.4,
+    "director_id": "director_016",
+    "actor_ids": [
+      "actor_107",
+      "actor_116",
+      "actor_075",
+      "actor_034"
+    ],
+    "genre_ids": [
+      "genre_001",
+      "genre_012",
+      "genre_003"
+    ],
+    "rating_sum": 274,
+    "rating_count": 43,
+    "version": 1
+  },
+  {
+    "_id": "movie_112",
+    "title": "Golden Hour: Fear",
+    "release_year": 2010,
+    "duration_min": 122,
+    "rating_avg": 7.2,
+    "director_id": "director_003",
+    "actor_ids": [
+      "actor_106",
+      "actor_034",
+      "actor_130"
+    ],
+    "genre_ids": [
+      "genre_015"
+    ],
+    "rating_sum": 172,
+    "rating_count": 24,
+    "version": 1
+  },
+  {
+    "_id": "movie_113",
+    "title": "The Solar Flare",
+    "release_year": 2006,
+    "duration_min": 159,
+    "rating_avg": 7.8,
+    "director_id": "director_036",
+    "actor_ids": [
+      "actor_189",
+      "actor_190",
+      "actor_050"
+    ],
+    "genre_ids": [
+      "genre_010",
+      "genre_015",
+      "genre_011"
+    ],
+    "rating_sum": 295,
+    "rating_count": 38,
+    "version": 1
+  },
+  {
+    "_id": "movie_114",
+    "title": "His Arctic Fury",
+    "release_year": 2013,
+    "duration_min": 117,
+    "rating_avg": 5.9,
+    "director_id": "director_027",
+    "actor_ids": [
+      "actor_079",
+      "actor_094",
+      "actor_090",
+      "actor_186"
+    ],
+    "genre_ids": [
+      "genre_006",
+      "genre_013"
+    ],
+    "rating_sum": 184,
+    "rating_count": 31,
+    "version": 1
+  },
+  {
+    "_id": "movie_115",
+    "title": "Their Country Road",
+    "release_year": 2005,
+    "duration_min": 100,
+    "rating_avg": 7.7,
+    "director_id": "director_024",
+    "actor_ids": [
+      "actor_164",
+      "actor_133",
+      "actor_058",
+      "actor_032",
+      "actor_111"
+    ],
+    "genre_ids": [
+      "genre_008",
+      "genre_005",
+      "genre_012"
+    ],
+    "rating_sum": 276,
+    "rating_count": 36,
+    "version": 1
+  },
+  {
+    "_id": "movie_116",
+    "title": "Her River Flow",
+    "release_year": 2022,
+    "duration_min": 170,
+    "rating_avg": 8.0,
+    "director_id": "director_029",
+    "actor_ids": [
+      "actor_131",
+      "actor_101",
+      "actor_031",
+      "actor_193"
+    ],
+    "genre_ids": [
+      "genre_001"
+    ],
+    "rating_sum": 296,
+    "rating_count": 37,
+    "version": 1
+  },
+  {
+    "_id": "movie_117",
+    "title": "His Arctic Fury",
+    "release_year": 2014,
+    "duration_min": 135,
+    "rating_avg": 7.1,
+    "director_id": "director_032",
+    "actor_ids": [
+      "actor_080",
+      "actor_112",
+      "actor_002"
+    ],
+    "genre_ids": [
+      "genre_010",
+      "genre_007",
+      "genre_001"
+    ],
+    "rating_sum": 241,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_118",
+    "title": "Our The Last Horizon",
+    "release_year": 2014,
+    "duration_min": 103,
+    "rating_avg": 6.3,
+    "director_id": "director_005",
+    "actor_ids": [
+      "actor_141",
+      "actor_091",
+      "actor_109",
+      "actor_192",
+      "actor_119"
+    ],
+    "genre_ids": [
+      "genre_002"
+    ],
+    "rating_sum": 190,
+    "rating_count": 30,
+    "version": 1
+  },
+  {
+    "_id": "movie_119",
+    "title": "Midnight Run: Secret",
+    "release_year": 2015,
+    "duration_min": 84,
+    "rating_avg": 5.3,
+    "director_id": "director_011",
+    "actor_ids": [
+      "actor_021",
+      "actor_059"
+    ],
+    "genre_ids": [
+      "genre_015"
+    ],
+    "rating_sum": 158,
+    "rating_count": 30,
+    "version": 1
+  },
+  {
+    "_id": "movie_120",
+    "title": "Neon Dreams: Nightmare",
+    "release_year": 2022,
+    "duration_min": 155,
+    "rating_avg": 7.7,
+    "director_id": "director_010",
+    "actor_ids": [
+      "actor_056",
+      "actor_144"
+    ],
+    "genre_ids": [
+      "genre_011",
+      "genre_005"
+    ],
+    "rating_sum": 200,
+    "rating_count": 26,
+    "version": 1
+  },
+  {
+    "_id": "movie_121",
+    "title": "Frozen Heart: Dream",
+    "release_year": 2007,
+    "duration_min": 137,
+    "rating_avg": 5.4,
+    "director_id": "director_040",
+    "actor_ids": [
+      "actor_061",
+      "actor_175",
+      "actor_034",
+      "actor_162",
+      "actor_174"
+    ],
+    "genre_ids": [
+      "genre_012",
+      "genre_010",
+      "genre_008"
+    ],
+    "rating_sum": 212,
+    "rating_count": 39,
+    "version": 1
+  },
+  {
+    "_id": "movie_122",
+    "title": "Your The Last Horizon",
+    "release_year": 2016,
+    "duration_min": 162,
+    "rating_avg": 7.0,
+    "director_id": "director_021",
+    "actor_ids": [
+      "actor_030",
+      "actor_174"
+    ],
+    "genre_ids": [
+      "genre_008"
+    ],
+    "rating_sum": 188,
+    "rating_count": 27,
+    "version": 1
+  },
+  {
+    "_id": "movie_123",
+    "title": "A Mountain Peak",
+    "release_year": 2014,
+    "duration_min": 110,
+    "rating_avg": 7.3,
+    "director_id": "director_032",
+    "actor_ids": [
+      "actor_165",
+      "actor_076",
+      "actor_190"
+    ],
+    "genre_ids": [
+      "genre_010",
+      "genre_011",
+      "genre_002"
+    ],
+    "rating_sum": 198,
+    "rating_count": 27,
+    "version": 1
+  },
+  {
+    "_id": "movie_124",
+    "title": "Our Digital Ghost",
+    "release_year": 2018,
+    "duration_min": 135,
+    "rating_avg": 7.2,
+    "director_id": "director_022",
+    "actor_ids": [
+      "actor_001",
+      "actor_116"
+    ],
+    "genre_ids": [
+      "genre_003",
+      "genre_011",
+      "genre_015"
+    ],
+    "rating_sum": 232,
+    "rating_count": 32,
+    "version": 1
+  },
+  {
+    "_id": "movie_125",
+    "title": "Golden Hour: Story",
+    "release_year": 2008,
+    "duration_min": 170,
+    "rating_avg": 6.7,
+    "director_id": "director_011",
+    "actor_ids": [
+      "actor_009",
+      "actor_187",
+      "actor_062"
+    ],
+    "genre_ids": [
+      "genre_012"
+    ],
+    "rating_sum": 182,
+    "rating_count": 27,
+    "version": 1
+  },
+  {
+    "_id": "movie_126",
+    "title": "Our Island Mystery",
+    "release_year": 2013,
+    "duration_min": 130,
+    "rating_avg": 7.3,
+    "director_id": "director_033",
+    "actor_ids": [
+      "actor_105",
+      "actor_138",
+      "actor_080"
+    ],
+    "genre_ids": [
+      "genre_012",
+      "genre_009",
+      "genre_014"
+    ],
+    "rating_sum": 190,
+    "rating_count": 26,
+    "version": 1
+  },
+  {
+    "_id": "movie_127",
+    "title": "The Last Horizon: Hope",
+    "release_year": 2017,
+    "duration_min": 142,
+    "rating_avg": 7.4,
+    "director_id": "director_028",
+    "actor_ids": [
+      "actor_141",
+      "actor_200"
+    ],
+    "genre_ids": [
+      "genre_005"
+    ],
+    "rating_sum": 295,
+    "rating_count": 40,
+    "version": 1
+  },
+  {
+    "_id": "movie_128",
+    "title": "The Last Horizon: Mystery",
+    "release_year": 2016,
+    "duration_min": 139,
+    "rating_avg": 7.6,
+    "director_id": "director_047",
+    "actor_ids": [
+      "actor_058",
+      "actor_027",
+      "actor_195"
+    ],
+    "genre_ids": [
+      "genre_006",
+      "genre_015"
+    ],
+    "rating_sum": 236,
+    "rating_count": 31,
+    "version": 1
+  },
+  {
+    "_id": "movie_129",
+    "title": "Shadow Realm: Adventure",
+    "release_year": 2017,
+    "duration_min": 144,
+    "rating_avg": 5.8,
+    "director_id": "director_020",
+    "actor_ids": [
+      "actor_123",
+      "actor_029",
+      "actor_069"
+    ],
+    "genre_ids": [
+      "genre_015",
+      "genre_007"
+    ],
+    "rating_sum": 157,
+    "rating_count": 27,
+    "version": 1
+  },
+  {
+    "_id": "movie_130",
+    "title": "Your Island Mystery",
+    "release_year": 2015,
+    "duration_min": 130,
+    "rating_avg": 6.7,
+    "director_id": "director_024",
+    "actor_ids": [
+      "actor_024",
+      "actor_134",
+      "actor_177",
+      "actor_107",
+      "actor_070"
+    ],
+    "genre_ids": [
+      "genre_008",
+      "genre_007",
+      "genre_003"
+    ],
+    "rating_sum": 209,
+    "rating_count": 31,
+    "version": 1
+  },
+  {
+    "_id": "movie_131",
+    "title": "Country Road: Story",
+    "release_year": 2019,
+    "duration_min": 107,
+    "rating_avg": 6.7,
+    "director_id": "director_006",
+    "actor_ids": [
+      "actor_013",
+      "actor_164",
+      "actor_177",
+      "actor_081"
+    ],
+    "genre_ids": [
+      "genre_004"
+    ],
+    "rating_sum": 229,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_132",
+    "title": "River Flow: Journey",
+    "release_year": 2018,
+    "duration_min": 173,
+    "rating_avg": 5.7,
+    "director_id": "director_012",
+    "actor_ids": [
+      "actor_119",
+      "actor_166",
+      "actor_112",
+      "actor_063",
+      "actor_170"
+    ],
+    "genre_ids": [
+      "genre_008",
+      "genre_010",
+      "genre_007"
+    ],
+    "rating_sum": 149,
+    "rating_count": 26,
+    "version": 1
+  },
+  {
+    "_id": "movie_133",
+    "title": "Arctic Fury: Love",
+    "release_year": 2005,
+    "duration_min": 143,
+    "rating_avg": 7.2,
+    "director_id": "director_031",
+    "actor_ids": [
+      "actor_063",
+      "actor_145",
+      "actor_089"
+    ],
+    "genre_ids": [
+      "genre_004",
+      "genre_011"
+    ],
+    "rating_sum": 281,
+    "rating_count": 39,
+    "version": 1
+  },
+  {
+    "_id": "movie_134",
+    "title": "Crimson Tide: Mystery",
+    "release_year": 2002,
+    "duration_min": 93,
+    "rating_avg": 7.0,
+    "director_id": "director_002",
+    "actor_ids": [
+      "actor_163",
+      "actor_117",
+      "actor_041",
+      "actor_058"
+    ],
+    "genre_ids": [
+      "genre_005",
+      "genre_006"
+    ],
+    "rating_sum": 265,
+    "rating_count": 38,
+    "version": 1
+  },
+  {
+    "_id": "movie_135",
+    "title": "The Island Mystery",
+    "release_year": 2023,
+    "duration_min": 179,
+    "rating_avg": 6.5,
+    "director_id": "director_037",
+    "actor_ids": [
+      "actor_179",
+      "actor_047",
+      "actor_137",
+      "actor_124"
+    ],
+    "genre_ids": [
+      "genre_004"
+    ],
+    "rating_sum": 226,
+    "rating_count": 35,
+    "version": 1
+  },
+  {
+    "_id": "movie_136",
+    "title": "A Shadow Realm",
+    "release_year": 2003,
+    "duration_min": 120,
+    "rating_avg": 6.7,
+    "director_id": "director_032",
+    "actor_ids": [
+      "actor_062",
+      "actor_110",
+      "actor_024",
+      "actor_046",
+      "actor_181"
+    ],
+    "genre_ids": [
+      "genre_014",
+      "genre_004"
+    ],
+    "rating_sum": 276,
+    "rating_count": 41,
+    "version": 1
+  },
+  {
+    "_id": "movie_137",
+    "title": "My Shadow Realm",
+    "release_year": 2020,
+    "duration_min": 174,
+    "rating_avg": 7.9,
+    "director_id": "director_006",
+    "actor_ids": [
+      "actor_088",
+      "actor_070"
+    ],
+    "genre_ids": [
+      "genre_015"
+    ],
+    "rating_sum": 278,
+    "rating_count": 35,
+    "version": 1
+  },
+  {
+    "_id": "movie_138",
+    "title": "My Desert Rose",
+    "release_year": 2022,
+    "duration_min": 104,
+    "rating_avg": 6.9,
+    "director_id": "director_022",
+    "actor_ids": [
+      "actor_055",
+      "actor_104",
+      "actor_195",
+      "actor_071"
+    ],
+    "genre_ids": [
+      "genre_002",
+      "genre_004",
+      "genre_011"
+    ],
+    "rating_sum": 250,
+    "rating_count": 36,
+    "version": 1
+  },
+  {
+    "_id": "movie_139",
+    "title": "Our Forest Spirit",
+    "release_year": 2007,
+    "duration_min": 156,
+    "rating_avg": 5.5,
+    "director_id": "director_031",
+    "actor_ids": [
+      "actor_067",
+      "actor_035"
+    ],
+    "genre_ids": [
+      "genre_003",
+      "genre_008",
+      "genre_007"
+    ],
+    "rating_sum": 176,
+    "rating_count": 32,
+    "version": 1
+  },
+  {
+    "_id": "movie_140",
+    "title": "City Lights: Nightmare",
+    "release_year": 2006,
+    "duration_min": 180,
+    "rating_avg": 7.0,
+    "director_id": "director_011",
+    "actor_ids": [
+      "actor_148",
+      "actor_109",
+      "actor_107",
+      "actor_018",
+      "actor_063"
+    ],
+    "genre_ids": [
+      "genre_009",
+      "genre_001",
+      "genre_006"
+    ],
+    "rating_sum": 237,
+    "rating_count": 34,
+    "version": 1
+  },
+  {
+    "_id": "movie_141",
+    "title": "Country Road: Story",
+    "release_year": 2013,
+    "duration_min": 135,
+    "rating_avg": 6.5,
+    "director_id": "director_034",
+    "actor_ids": [
+      "actor_048",
+      "actor_163"
+    ],
+    "genre_ids": [
+      "genre_010",
+      "genre_011",
+      "genre_003"
+    ],
+    "rating_sum": 215,
+    "rating_count": 33,
+    "version": 1
+  },
+  {
+    "_id": "movie_142",
+    "title": "River Flow: Love",
+    "release_year": 2015,
+    "duration_min": 108,
+    "rating_avg": 6.0,
+    "director_id": "director_046",
+    "actor_ids": [
+      "actor_093",
+      "actor_032"
+    ],
+    "genre_ids": [
+      "genre_002",
+      "genre_008"
+    ],
+    "rating_sum": 179,
+    "rating_count": 30,
+    "version": 1
+  },
+  {
+    "_id": "movie_143",
+    "title": "Arctic Fury: Journey",
+    "release_year": 2004,
+    "duration_min": 108,
+    "rating_avg": 7.0,
+    "director_id": "director_020",
+    "actor_ids": [
+      "actor_088",
+      "actor_146",
+      "actor_129",
+      "actor_060"
+    ],
+    "genre_ids": [
+      "genre_005",
+      "genre_006"
+    ],
+    "rating_sum": 204,
+    "rating_count": 29,
+    "version": 1
+  },
+  {
+    "_id": "movie_144",
+    "title": "Shadow Realm: Nightmare",
+    "release_year": 2016,
+    "duration_min": 109,
+    "rating_avg": 7.2,
+    "director_id": "director_007",
+    "actor_ids": [
+      "actor_194",
+      "actor_088",
+      "actor_054",
+      "actor_020"
+    ],
+    "genre_ids": [
+      "genre_007",
+      "genre_014",
+      "genre_012"
+    ],
+    "rating_sum": 281,
+    "rating_count": 39,
+    "version": 1
+  },
+  {
+    "_id": "movie_145",
+    "title": "Forest Spirit: Love",
+    "release_year": 2012,
+    "duration_min": 173,
+    "rating_avg": 7.3,
+    "director_id": "director_035",
+    "actor_ids": [
+      "actor_137",
+      "actor_199",
+      "actor_094"
+    ],
+    "genre_ids": [
+      "genre_006"
+    ],
+    "rating_sum": 294,
+    "rating_count": 40,
+    "version": 1
+  },
+  {
+    "_id": "movie_146",
+    "title": "Golden Hour: Promise",
+    "release_year": 2021,
+    "duration_min": 86,
+    "rating_avg": 7.4,
+    "director_id": "director_034",
+    "actor_ids": [
+      "actor_082",
+      "actor_102",
+      "actor_012",
+      "actor_194"
+    ],
+    "genre_ids": [
+      "genre_008",
+      "genre_005",
+      "genre_009"
+    ],
+    "rating_sum": 177,
+    "rating_count": 24,
+    "version": 1
+  },
+  {
+    "_id": "movie_147",
+    "title": "Her River Flow",
+    "release_year": 2009,
+    "duration_min": 136,
+    "rating_avg": 7.0,
+    "director_id": "director_042",
+    "actor_ids": [
+      "actor_066",
+      "actor_074",
+      "actor_123",
+      "actor_095",
+      "actor_025"
+    ],
+    "genre_ids": [
+      "genre_010",
+      "genre_004",
+      "genre_011"
+    ],
+    "rating_sum": 259,
+    "rating_count": 37,
+    "version": 1
+  },
+  {
+    "_id": "movie_148",
+    "title": "Island Mystery: Fear",
+    "release_year": 2007,
+    "duration_min": 170,
+    "rating_avg": 6.7,
+    "director_id": "director_037",
+    "actor_ids": [
+      "actor_064",
+      "actor_103"
+    ],
+    "genre_ids": [
+      "genre_006",
+      "genre_011"
+    ],
+    "rating_sum": 235,
+    "rating_count": 35,
+    "version": 1
+  },
+  {
+    "_id": "movie_149",
+    "title": "Her Neon Dreams",
+    "release_year": 2000,
+    "duration_min": 122,
+    "rating_avg": 6.0,
+    "director_id": "director_021",
+    "actor_ids": [
+      "actor_077",
+      "actor_087",
+      "actor_165"
+    ],
+    "genre_ids": [
+      "genre_007",
+      "genre_010",
+      "genre_012"
+    ],
+    "rating_sum": 174,
+    "rating_count": 29,
+    "version": 1
+  },
+  {
+    "_id": "movie_150",
+    "title": "Silent Echo: Hope",
+    "release_year": 2022,
+    "duration_min": 131,
+    "rating_avg": 7.2,
+    "director_id": "director_033",
+    "actor_ids": [
+      "actor_025",
+      "actor_168",
+      "actor_048",
+      "actor_178"
+    ],
+    "genre_ids": [
+      "genre_005"
+    ],
+    "rating_sum": 181,
+    "rating_count": 25,
+    "version": 1
+  }
+]

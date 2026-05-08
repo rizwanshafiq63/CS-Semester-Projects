@@ -1,0 +1,4062 @@
+[
+  {
+    "_id": "device_0001",
+    "user_id": "user_admin001",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-02-09T15:41:36Z"
+  },
+  {
+    "_id": "device_0002",
+    "user_id": "user_test001",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-12-01T21:07:26Z"
+  },
+  {
+    "_id": "device_0003",
+    "user_id": "user_0001",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-06-23T16:39:17Z"
+  },
+  {
+    "_id": "device_0004",
+    "user_id": "user_0001",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-08-21T22:03:43Z"
+  },
+  {
+    "_id": "device_0005",
+    "user_id": "user_0001",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-06-24T16:41:38Z"
+  },
+  {
+    "_id": "device_0006",
+    "user_id": "user_0002",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-11-15T04:12:39Z"
+  },
+  {
+    "_id": "device_0007",
+    "user_id": "user_0002",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-03-05T18:44:12Z"
+  },
+  {
+    "_id": "device_0008",
+    "user_id": "user_0002",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-03-05T20:32:12Z"
+  },
+  {
+    "_id": "device_0009",
+    "user_id": "user_0003",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-10-19T12:09:11Z"
+  },
+  {
+    "_id": "device_0010",
+    "user_id": "user_0004",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-07-03T13:12:09Z"
+  },
+  {
+    "_id": "device_0011",
+    "user_id": "user_0005",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-03-25T04:25:32Z"
+  },
+  {
+    "_id": "device_0012",
+    "user_id": "user_0005",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-08-07T22:36:46Z"
+  },
+  {
+    "_id": "device_0013",
+    "user_id": "user_0006",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-09-05T21:38:18Z"
+  },
+  {
+    "_id": "device_0014",
+    "user_id": "user_0007",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-01-18T14:38:45Z"
+  },
+  {
+    "_id": "device_0015",
+    "user_id": "user_0007",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-05-17T23:10:51Z"
+  },
+  {
+    "_id": "device_0016",
+    "user_id": "user_0007",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-11-28T15:23:29Z"
+  },
+  {
+    "_id": "device_0017",
+    "user_id": "user_0008",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-03-07T12:42:41Z"
+  },
+  {
+    "_id": "device_0018",
+    "user_id": "user_0008",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-10-06T06:23:26Z"
+  },
+  {
+    "_id": "device_0019",
+    "user_id": "user_0008",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-04-09T01:36:45Z"
+  },
+  {
+    "_id": "device_0020",
+    "user_id": "user_0009",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-03-22T11:29:42Z"
+  },
+  {
+    "_id": "device_0021",
+    "user_id": "user_0010",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-11-19T22:24:56Z"
+  },
+  {
+    "_id": "device_0022",
+    "user_id": "user_0011",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-01-20T12:18:07Z"
+  },
+  {
+    "_id": "device_0023",
+    "user_id": "user_0012",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-04-27T22:25:24Z"
+  },
+  {
+    "_id": "device_0024",
+    "user_id": "user_0012",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-12-04T17:29:40Z"
+  },
+  {
+    "_id": "device_0025",
+    "user_id": "user_0013",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-04-24T09:20:35Z"
+  },
+  {
+    "_id": "device_0026",
+    "user_id": "user_0013",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-11-10T16:45:33Z"
+  },
+  {
+    "_id": "device_0027",
+    "user_id": "user_0014",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-06-24T22:50:40Z"
+  },
+  {
+    "_id": "device_0028",
+    "user_id": "user_0014",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-10-10T18:58:01Z"
+  },
+  {
+    "_id": "device_0029",
+    "user_id": "user_0014",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-04-06T08:16:18Z"
+  },
+  {
+    "_id": "device_0030",
+    "user_id": "user_0015",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-06-06T16:25:40Z"
+  },
+  {
+    "_id": "device_0031",
+    "user_id": "user_0016",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-10-01T18:32:46Z"
+  },
+  {
+    "_id": "device_0032",
+    "user_id": "user_0017",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-03-28T22:30:35Z"
+  },
+  {
+    "_id": "device_0033",
+    "user_id": "user_0017",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-03-03T12:07:18Z"
+  },
+  {
+    "_id": "device_0034",
+    "user_id": "user_0017",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-10-27T18:30:56Z"
+  },
+  {
+    "_id": "device_0035",
+    "user_id": "user_0018",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-05-20T12:50:27Z"
+  },
+  {
+    "_id": "device_0036",
+    "user_id": "user_0018",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-01-16T18:53:43Z"
+  },
+  {
+    "_id": "device_0037",
+    "user_id": "user_0019",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-12-28T06:17:42Z"
+  },
+  {
+    "_id": "device_0038",
+    "user_id": "user_0020",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-09-07T04:51:38Z"
+  },
+  {
+    "_id": "device_0039",
+    "user_id": "user_0021",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-06-19T11:28:50Z"
+  },
+  {
+    "_id": "device_0040",
+    "user_id": "user_0022",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-06-27T13:33:17Z"
+  },
+  {
+    "_id": "device_0041",
+    "user_id": "user_0022",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-03-03T00:34:59Z"
+  },
+  {
+    "_id": "device_0042",
+    "user_id": "user_0022",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-04-06T07:16:20Z"
+  },
+  {
+    "_id": "device_0043",
+    "user_id": "user_0023",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-09-22T13:52:42Z"
+  },
+  {
+    "_id": "device_0044",
+    "user_id": "user_0023",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-11-06T01:52:37Z"
+  },
+  {
+    "_id": "device_0045",
+    "user_id": "user_0024",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-10-15T04:24:37Z"
+  },
+  {
+    "_id": "device_0046",
+    "user_id": "user_0024",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-01-03T12:34:54Z"
+  },
+  {
+    "_id": "device_0047",
+    "user_id": "user_0025",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-07-08T19:13:44Z"
+  },
+  {
+    "_id": "device_0048",
+    "user_id": "user_0025",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-01-11T03:23:14Z"
+  },
+  {
+    "_id": "device_0049",
+    "user_id": "user_0026",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-11-28T08:41:19Z"
+  },
+  {
+    "_id": "device_0050",
+    "user_id": "user_0027",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-04-24T16:04:18Z"
+  },
+  {
+    "_id": "device_0051",
+    "user_id": "user_0027",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-06-27T07:23:05Z"
+  },
+  {
+    "_id": "device_0052",
+    "user_id": "user_0028",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-10-06T06:39:14Z"
+  },
+  {
+    "_id": "device_0053",
+    "user_id": "user_0028",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-11-13T12:37:53Z"
+  },
+  {
+    "_id": "device_0054",
+    "user_id": "user_0029",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-07-22T20:54:56Z"
+  },
+  {
+    "_id": "device_0055",
+    "user_id": "user_0029",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-06-21T23:31:43Z"
+  },
+  {
+    "_id": "device_0056",
+    "user_id": "user_0029",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-11-04T22:12:54Z"
+  },
+  {
+    "_id": "device_0057",
+    "user_id": "user_0030",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-12-07T04:37:18Z"
+  },
+  {
+    "_id": "device_0058",
+    "user_id": "user_0030",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-08-19T22:20:31Z"
+  },
+  {
+    "_id": "device_0059",
+    "user_id": "user_0030",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-01-15T14:17:46Z"
+  },
+  {
+    "_id": "device_0060",
+    "user_id": "user_0031",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-03-19T07:41:35Z"
+  },
+  {
+    "_id": "device_0061",
+    "user_id": "user_0032",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-12-28T00:25:22Z"
+  },
+  {
+    "_id": "device_0062",
+    "user_id": "user_0032",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-11-23T15:29:52Z"
+  },
+  {
+    "_id": "device_0063",
+    "user_id": "user_0032",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-09-27T03:40:41Z"
+  },
+  {
+    "_id": "device_0064",
+    "user_id": "user_0033",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-01-05T08:21:27Z"
+  },
+  {
+    "_id": "device_0065",
+    "user_id": "user_0034",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-03-11T21:26:36Z"
+  },
+  {
+    "_id": "device_0066",
+    "user_id": "user_0034",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-02-23T04:27:08Z"
+  },
+  {
+    "_id": "device_0067",
+    "user_id": "user_0035",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-10-14T03:44:55Z"
+  },
+  {
+    "_id": "device_0068",
+    "user_id": "user_0036",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-09-19T07:07:24Z"
+  },
+  {
+    "_id": "device_0069",
+    "user_id": "user_0036",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-03-17T13:42:21Z"
+  },
+  {
+    "_id": "device_0070",
+    "user_id": "user_0036",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-12-22T01:15:44Z"
+  },
+  {
+    "_id": "device_0071",
+    "user_id": "user_0037",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-01-24T05:35:52Z"
+  },
+  {
+    "_id": "device_0072",
+    "user_id": "user_0038",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-05-15T15:45:45Z"
+  },
+  {
+    "_id": "device_0073",
+    "user_id": "user_0039",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-11-06T12:14:30Z"
+  },
+  {
+    "_id": "device_0074",
+    "user_id": "user_0039",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-05-15T17:18:18Z"
+  },
+  {
+    "_id": "device_0075",
+    "user_id": "user_0040",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-06-02T03:12:57Z"
+  },
+  {
+    "_id": "device_0076",
+    "user_id": "user_0041",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-04-15T21:12:03Z"
+  },
+  {
+    "_id": "device_0077",
+    "user_id": "user_0041",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-06-07T00:19:28Z"
+  },
+  {
+    "_id": "device_0078",
+    "user_id": "user_0042",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-05-17T01:33:24Z"
+  },
+  {
+    "_id": "device_0079",
+    "user_id": "user_0043",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-03-21T12:12:26Z"
+  },
+  {
+    "_id": "device_0080",
+    "user_id": "user_0044",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-04-26T08:41:40Z"
+  },
+  {
+    "_id": "device_0081",
+    "user_id": "user_0044",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-05-25T08:33:45Z"
+  },
+  {
+    "_id": "device_0082",
+    "user_id": "user_0044",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-02-14T15:11:46Z"
+  },
+  {
+    "_id": "device_0083",
+    "user_id": "user_0045",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-09-05T14:19:54Z"
+  },
+  {
+    "_id": "device_0084",
+    "user_id": "user_0045",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-11-02T02:02:31Z"
+  },
+  {
+    "_id": "device_0085",
+    "user_id": "user_0046",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-08-25T13:57:58Z"
+  },
+  {
+    "_id": "device_0086",
+    "user_id": "user_0046",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-05-12T17:45:02Z"
+  },
+  {
+    "_id": "device_0087",
+    "user_id": "user_0047",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-05-05T16:55:27Z"
+  },
+  {
+    "_id": "device_0088",
+    "user_id": "user_0048",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-07-02T02:10:57Z"
+  },
+  {
+    "_id": "device_0089",
+    "user_id": "user_0048",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-03-03T19:33:06Z"
+  },
+  {
+    "_id": "device_0090",
+    "user_id": "user_0049",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-10-23T11:01:32Z"
+  },
+  {
+    "_id": "device_0091",
+    "user_id": "user_0050",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-01-20T05:14:35Z"
+  },
+  {
+    "_id": "device_0092",
+    "user_id": "user_0050",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-07-18T03:49:03Z"
+  },
+  {
+    "_id": "device_0093",
+    "user_id": "user_0051",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-03-09T17:42:54Z"
+  },
+  {
+    "_id": "device_0094",
+    "user_id": "user_0051",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-06-05T16:01:36Z"
+  },
+  {
+    "_id": "device_0095",
+    "user_id": "user_0052",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-05-17T17:27:59Z"
+  },
+  {
+    "_id": "device_0096",
+    "user_id": "user_0052",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-08-21T02:49:49Z"
+  },
+  {
+    "_id": "device_0097",
+    "user_id": "user_0053",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-07-14T12:47:53Z"
+  },
+  {
+    "_id": "device_0098",
+    "user_id": "user_0054",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-08-12T00:51:54Z"
+  },
+  {
+    "_id": "device_0099",
+    "user_id": "user_0054",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-11-19T23:54:34Z"
+  },
+  {
+    "_id": "device_0100",
+    "user_id": "user_0054",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-07-02T03:38:52Z"
+  },
+  {
+    "_id": "device_0101",
+    "user_id": "user_0055",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-09-04T06:14:57Z"
+  },
+  {
+    "_id": "device_0102",
+    "user_id": "user_0055",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-07-25T11:44:12Z"
+  },
+  {
+    "_id": "device_0103",
+    "user_id": "user_0056",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-07-28T04:29:27Z"
+  },
+  {
+    "_id": "device_0104",
+    "user_id": "user_0056",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-05-10T00:44:57Z"
+  },
+  {
+    "_id": "device_0105",
+    "user_id": "user_0057",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-12-10T19:19:53Z"
+  },
+  {
+    "_id": "device_0106",
+    "user_id": "user_0057",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-02-22T19:23:14Z"
+  },
+  {
+    "_id": "device_0107",
+    "user_id": "user_0058",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-02-28T07:30:50Z"
+  },
+  {
+    "_id": "device_0108",
+    "user_id": "user_0058",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-03-14T21:29:17Z"
+  },
+  {
+    "_id": "device_0109",
+    "user_id": "user_0059",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-06-14T07:17:08Z"
+  },
+  {
+    "_id": "device_0110",
+    "user_id": "user_0060",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-08-09T20:36:05Z"
+  },
+  {
+    "_id": "device_0111",
+    "user_id": "user_0061",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-10-11T06:50:47Z"
+  },
+  {
+    "_id": "device_0112",
+    "user_id": "user_0061",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-12-27T12:51:45Z"
+  },
+  {
+    "_id": "device_0113",
+    "user_id": "user_0061",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-02-17T06:01:28Z"
+  },
+  {
+    "_id": "device_0114",
+    "user_id": "user_0062",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-07-16T14:40:44Z"
+  },
+  {
+    "_id": "device_0115",
+    "user_id": "user_0062",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-09-09T12:05:03Z"
+  },
+  {
+    "_id": "device_0116",
+    "user_id": "user_0063",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-04-06T11:07:51Z"
+  },
+  {
+    "_id": "device_0117",
+    "user_id": "user_0063",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-04-17T05:57:27Z"
+  },
+  {
+    "_id": "device_0118",
+    "user_id": "user_0063",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-01-21T06:17:33Z"
+  },
+  {
+    "_id": "device_0119",
+    "user_id": "user_0064",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-10-13T06:27:40Z"
+  },
+  {
+    "_id": "device_0120",
+    "user_id": "user_0064",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-07-18T21:33:01Z"
+  },
+  {
+    "_id": "device_0121",
+    "user_id": "user_0065",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-01-20T10:45:54Z"
+  },
+  {
+    "_id": "device_0122",
+    "user_id": "user_0066",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-07-16T03:44:27Z"
+  },
+  {
+    "_id": "device_0123",
+    "user_id": "user_0066",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-01-07T14:11:17Z"
+  },
+  {
+    "_id": "device_0124",
+    "user_id": "user_0067",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-08-01T16:54:48Z"
+  },
+  {
+    "_id": "device_0125",
+    "user_id": "user_0067",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-03-10T02:54:33Z"
+  },
+  {
+    "_id": "device_0126",
+    "user_id": "user_0068",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-03-28T09:56:10Z"
+  },
+  {
+    "_id": "device_0127",
+    "user_id": "user_0068",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-02-04T19:58:12Z"
+  },
+  {
+    "_id": "device_0128",
+    "user_id": "user_0069",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-02-01T05:46:31Z"
+  },
+  {
+    "_id": "device_0129",
+    "user_id": "user_0070",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-04-04T20:42:20Z"
+  },
+  {
+    "_id": "device_0130",
+    "user_id": "user_0070",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-01-25T19:12:16Z"
+  },
+  {
+    "_id": "device_0131",
+    "user_id": "user_0071",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-12-28T13:44:19Z"
+  },
+  {
+    "_id": "device_0132",
+    "user_id": "user_0071",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-12-10T15:54:34Z"
+  },
+  {
+    "_id": "device_0133",
+    "user_id": "user_0072",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-12-10T21:52:53Z"
+  },
+  {
+    "_id": "device_0134",
+    "user_id": "user_0073",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-10-09T18:56:12Z"
+  },
+  {
+    "_id": "device_0135",
+    "user_id": "user_0074",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-02-01T07:15:15Z"
+  },
+  {
+    "_id": "device_0136",
+    "user_id": "user_0075",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-03-11T20:49:35Z"
+  },
+  {
+    "_id": "device_0137",
+    "user_id": "user_0076",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-06-26T07:47:17Z"
+  },
+  {
+    "_id": "device_0138",
+    "user_id": "user_0076",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-03-17T16:36:08Z"
+  },
+  {
+    "_id": "device_0139",
+    "user_id": "user_0076",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-06-17T11:03:13Z"
+  },
+  {
+    "_id": "device_0140",
+    "user_id": "user_0077",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-01-27T02:52:05Z"
+  },
+  {
+    "_id": "device_0141",
+    "user_id": "user_0078",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-01-13T17:49:32Z"
+  },
+  {
+    "_id": "device_0142",
+    "user_id": "user_0079",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-01-08T10:46:12Z"
+  },
+  {
+    "_id": "device_0143",
+    "user_id": "user_0079",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-08-24T13:15:14Z"
+  },
+  {
+    "_id": "device_0144",
+    "user_id": "user_0080",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-06-25T15:33:58Z"
+  },
+  {
+    "_id": "device_0145",
+    "user_id": "user_0080",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-10-22T02:17:35Z"
+  },
+  {
+    "_id": "device_0146",
+    "user_id": "user_0080",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-04-03T00:45:29Z"
+  },
+  {
+    "_id": "device_0147",
+    "user_id": "user_0081",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-07-27T22:41:36Z"
+  },
+  {
+    "_id": "device_0148",
+    "user_id": "user_0081",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-01-06T13:15:54Z"
+  },
+  {
+    "_id": "device_0149",
+    "user_id": "user_0081",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-09-21T05:53:37Z"
+  },
+  {
+    "_id": "device_0150",
+    "user_id": "user_0082",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-02-27T02:17:10Z"
+  },
+  {
+    "_id": "device_0151",
+    "user_id": "user_0082",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-08-15T04:37:39Z"
+  },
+  {
+    "_id": "device_0152",
+    "user_id": "user_0083",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-07-15T23:22:01Z"
+  },
+  {
+    "_id": "device_0153",
+    "user_id": "user_0083",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-12-17T03:22:53Z"
+  },
+  {
+    "_id": "device_0154",
+    "user_id": "user_0084",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-10-25T16:14:03Z"
+  },
+  {
+    "_id": "device_0155",
+    "user_id": "user_0084",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-11-19T14:54:21Z"
+  },
+  {
+    "_id": "device_0156",
+    "user_id": "user_0085",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-09-01T06:35:46Z"
+  },
+  {
+    "_id": "device_0157",
+    "user_id": "user_0085",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-10-10T15:06:06Z"
+  },
+  {
+    "_id": "device_0158",
+    "user_id": "user_0086",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-01-08T23:32:43Z"
+  },
+  {
+    "_id": "device_0159",
+    "user_id": "user_0086",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-11-13T01:51:02Z"
+  },
+  {
+    "_id": "device_0160",
+    "user_id": "user_0087",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-03-05T07:03:58Z"
+  },
+  {
+    "_id": "device_0161",
+    "user_id": "user_0087",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-11-15T09:49:45Z"
+  },
+  {
+    "_id": "device_0162",
+    "user_id": "user_0087",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-04-20T00:22:39Z"
+  },
+  {
+    "_id": "device_0163",
+    "user_id": "user_0088",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-04-21T15:07:27Z"
+  },
+  {
+    "_id": "device_0164",
+    "user_id": "user_0088",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-11-10T00:37:05Z"
+  },
+  {
+    "_id": "device_0165",
+    "user_id": "user_0088",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-12-22T12:22:30Z"
+  },
+  {
+    "_id": "device_0166",
+    "user_id": "user_0089",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-04-21T09:55:23Z"
+  },
+  {
+    "_id": "device_0167",
+    "user_id": "user_0089",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-09-20T22:21:23Z"
+  },
+  {
+    "_id": "device_0168",
+    "user_id": "user_0089",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-10-01T22:45:02Z"
+  },
+  {
+    "_id": "device_0169",
+    "user_id": "user_0090",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-02-23T02:29:53Z"
+  },
+  {
+    "_id": "device_0170",
+    "user_id": "user_0091",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-08-27T02:37:39Z"
+  },
+  {
+    "_id": "device_0171",
+    "user_id": "user_0092",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-04-08T05:08:06Z"
+  },
+  {
+    "_id": "device_0172",
+    "user_id": "user_0093",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-12-05T17:11:17Z"
+  },
+  {
+    "_id": "device_0173",
+    "user_id": "user_0094",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-01-25T03:12:39Z"
+  },
+  {
+    "_id": "device_0174",
+    "user_id": "user_0094",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-07-05T03:02:11Z"
+  },
+  {
+    "_id": "device_0175",
+    "user_id": "user_0094",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-11-28T05:49:53Z"
+  },
+  {
+    "_id": "device_0176",
+    "user_id": "user_0095",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-03-16T12:01:57Z"
+  },
+  {
+    "_id": "device_0177",
+    "user_id": "user_0095",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-10-07T05:54:40Z"
+  },
+  {
+    "_id": "device_0178",
+    "user_id": "user_0095",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-07-22T05:50:05Z"
+  },
+  {
+    "_id": "device_0179",
+    "user_id": "user_0096",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-11-21T05:40:03Z"
+  },
+  {
+    "_id": "device_0180",
+    "user_id": "user_0096",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-12-12T13:39:12Z"
+  },
+  {
+    "_id": "device_0181",
+    "user_id": "user_0097",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-08-17T02:39:21Z"
+  },
+  {
+    "_id": "device_0182",
+    "user_id": "user_0097",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-01-04T22:50:21Z"
+  },
+  {
+    "_id": "device_0183",
+    "user_id": "user_0097",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-06-19T06:42:50Z"
+  },
+  {
+    "_id": "device_0184",
+    "user_id": "user_0098",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-07-07T13:35:17Z"
+  },
+  {
+    "_id": "device_0185",
+    "user_id": "user_0099",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-03-18T01:11:23Z"
+  },
+  {
+    "_id": "device_0186",
+    "user_id": "user_0100",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-09-07T12:04:45Z"
+  },
+  {
+    "_id": "device_0187",
+    "user_id": "user_0101",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-06-02T16:57:15Z"
+  },
+  {
+    "_id": "device_0188",
+    "user_id": "user_0101",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-04-17T10:27:46Z"
+  },
+  {
+    "_id": "device_0189",
+    "user_id": "user_0102",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-11-28T06:49:44Z"
+  },
+  {
+    "_id": "device_0190",
+    "user_id": "user_0102",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-11-27T10:09:43Z"
+  },
+  {
+    "_id": "device_0191",
+    "user_id": "user_0102",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-12-01T11:37:22Z"
+  },
+  {
+    "_id": "device_0192",
+    "user_id": "user_0103",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-06-07T12:46:44Z"
+  },
+  {
+    "_id": "device_0193",
+    "user_id": "user_0104",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-06-14T06:22:21Z"
+  },
+  {
+    "_id": "device_0194",
+    "user_id": "user_0104",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-06-01T23:52:51Z"
+  },
+  {
+    "_id": "device_0195",
+    "user_id": "user_0105",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-10-27T10:21:41Z"
+  },
+  {
+    "_id": "device_0196",
+    "user_id": "user_0106",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-12-09T11:47:26Z"
+  },
+  {
+    "_id": "device_0197",
+    "user_id": "user_0107",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-04-07T11:17:51Z"
+  },
+  {
+    "_id": "device_0198",
+    "user_id": "user_0108",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-02-20T17:24:33Z"
+  },
+  {
+    "_id": "device_0199",
+    "user_id": "user_0109",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-01-10T21:37:44Z"
+  },
+  {
+    "_id": "device_0200",
+    "user_id": "user_0109",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-11-14T03:32:47Z"
+  },
+  {
+    "_id": "device_0201",
+    "user_id": "user_0110",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-10-23T23:11:27Z"
+  },
+  {
+    "_id": "device_0202",
+    "user_id": "user_0110",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-08-06T06:41:56Z"
+  },
+  {
+    "_id": "device_0203",
+    "user_id": "user_0111",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-09-24T10:42:23Z"
+  },
+  {
+    "_id": "device_0204",
+    "user_id": "user_0111",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-02-20T10:58:26Z"
+  },
+  {
+    "_id": "device_0205",
+    "user_id": "user_0112",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-12-19T09:23:13Z"
+  },
+  {
+    "_id": "device_0206",
+    "user_id": "user_0112",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-03-08T04:01:13Z"
+  },
+  {
+    "_id": "device_0207",
+    "user_id": "user_0113",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-03-02T21:14:49Z"
+  },
+  {
+    "_id": "device_0208",
+    "user_id": "user_0114",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-02-01T12:18:18Z"
+  },
+  {
+    "_id": "device_0209",
+    "user_id": "user_0115",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-04-04T22:40:19Z"
+  },
+  {
+    "_id": "device_0210",
+    "user_id": "user_0115",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-07-21T09:20:24Z"
+  },
+  {
+    "_id": "device_0211",
+    "user_id": "user_0116",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-02-08T05:16:01Z"
+  },
+  {
+    "_id": "device_0212",
+    "user_id": "user_0117",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-12-02T06:42:20Z"
+  },
+  {
+    "_id": "device_0213",
+    "user_id": "user_0118",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-10-11T23:06:27Z"
+  },
+  {
+    "_id": "device_0214",
+    "user_id": "user_0118",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-05-03T00:19:12Z"
+  },
+  {
+    "_id": "device_0215",
+    "user_id": "user_0119",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-05-07T10:07:33Z"
+  },
+  {
+    "_id": "device_0216",
+    "user_id": "user_0119",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-04-07T21:46:53Z"
+  },
+  {
+    "_id": "device_0217",
+    "user_id": "user_0120",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-06-01T15:52:25Z"
+  },
+  {
+    "_id": "device_0218",
+    "user_id": "user_0120",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-11-17T17:14:30Z"
+  },
+  {
+    "_id": "device_0219",
+    "user_id": "user_0120",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-12-09T05:45:35Z"
+  },
+  {
+    "_id": "device_0220",
+    "user_id": "user_0121",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-06-09T09:25:09Z"
+  },
+  {
+    "_id": "device_0221",
+    "user_id": "user_0122",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-06-24T20:02:13Z"
+  },
+  {
+    "_id": "device_0222",
+    "user_id": "user_0122",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-01-27T21:54:10Z"
+  },
+  {
+    "_id": "device_0223",
+    "user_id": "user_0122",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-02-10T07:49:58Z"
+  },
+  {
+    "_id": "device_0224",
+    "user_id": "user_0123",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-03-27T16:58:06Z"
+  },
+  {
+    "_id": "device_0225",
+    "user_id": "user_0123",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-03-03T07:11:19Z"
+  },
+  {
+    "_id": "device_0226",
+    "user_id": "user_0123",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-01-07T11:30:28Z"
+  },
+  {
+    "_id": "device_0227",
+    "user_id": "user_0124",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-08-19T16:10:01Z"
+  },
+  {
+    "_id": "device_0228",
+    "user_id": "user_0124",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-10-26T06:14:13Z"
+  },
+  {
+    "_id": "device_0229",
+    "user_id": "user_0124",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-11-24T05:49:32Z"
+  },
+  {
+    "_id": "device_0230",
+    "user_id": "user_0125",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-07-18T18:40:29Z"
+  },
+  {
+    "_id": "device_0231",
+    "user_id": "user_0125",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-04-15T09:51:21Z"
+  },
+  {
+    "_id": "device_0232",
+    "user_id": "user_0126",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-07-17T02:59:51Z"
+  },
+  {
+    "_id": "device_0233",
+    "user_id": "user_0126",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-02-07T14:25:44Z"
+  },
+  {
+    "_id": "device_0234",
+    "user_id": "user_0126",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-09-03T17:26:29Z"
+  },
+  {
+    "_id": "device_0235",
+    "user_id": "user_0127",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-10-21T19:34:04Z"
+  },
+  {
+    "_id": "device_0236",
+    "user_id": "user_0127",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-03-16T02:16:00Z"
+  },
+  {
+    "_id": "device_0237",
+    "user_id": "user_0128",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-06-03T17:37:27Z"
+  },
+  {
+    "_id": "device_0238",
+    "user_id": "user_0129",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-03-02T08:55:27Z"
+  },
+  {
+    "_id": "device_0239",
+    "user_id": "user_0129",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-05-01T08:51:04Z"
+  },
+  {
+    "_id": "device_0240",
+    "user_id": "user_0129",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-02-28T14:02:34Z"
+  },
+  {
+    "_id": "device_0241",
+    "user_id": "user_0130",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-07-26T01:37:17Z"
+  },
+  {
+    "_id": "device_0242",
+    "user_id": "user_0131",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-06-06T21:38:02Z"
+  },
+  {
+    "_id": "device_0243",
+    "user_id": "user_0132",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-10-25T03:21:41Z"
+  },
+  {
+    "_id": "device_0244",
+    "user_id": "user_0132",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-09-14T18:12:33Z"
+  },
+  {
+    "_id": "device_0245",
+    "user_id": "user_0132",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-12-24T01:49:03Z"
+  },
+  {
+    "_id": "device_0246",
+    "user_id": "user_0133",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-12-10T21:02:00Z"
+  },
+  {
+    "_id": "device_0247",
+    "user_id": "user_0134",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-12-13T23:54:44Z"
+  },
+  {
+    "_id": "device_0248",
+    "user_id": "user_0135",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-08-21T00:19:46Z"
+  },
+  {
+    "_id": "device_0249",
+    "user_id": "user_0135",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-02-24T07:08:21Z"
+  },
+  {
+    "_id": "device_0250",
+    "user_id": "user_0136",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-09-20T06:09:08Z"
+  },
+  {
+    "_id": "device_0251",
+    "user_id": "user_0137",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-05-27T20:18:33Z"
+  },
+  {
+    "_id": "device_0252",
+    "user_id": "user_0138",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-12-27T00:39:18Z"
+  },
+  {
+    "_id": "device_0253",
+    "user_id": "user_0139",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-10-20T00:56:48Z"
+  },
+  {
+    "_id": "device_0254",
+    "user_id": "user_0139",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-05-28T02:08:21Z"
+  },
+  {
+    "_id": "device_0255",
+    "user_id": "user_0140",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-02-06T11:47:15Z"
+  },
+  {
+    "_id": "device_0256",
+    "user_id": "user_0140",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-04-03T03:30:19Z"
+  },
+  {
+    "_id": "device_0257",
+    "user_id": "user_0140",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-10-24T07:56:00Z"
+  },
+  {
+    "_id": "device_0258",
+    "user_id": "user_0141",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-08-26T18:46:19Z"
+  },
+  {
+    "_id": "device_0259",
+    "user_id": "user_0141",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-07-02T10:31:47Z"
+  },
+  {
+    "_id": "device_0260",
+    "user_id": "user_0142",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-02-17T14:00:02Z"
+  },
+  {
+    "_id": "device_0261",
+    "user_id": "user_0142",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-02-10T07:27:45Z"
+  },
+  {
+    "_id": "device_0262",
+    "user_id": "user_0142",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-05-10T01:08:29Z"
+  },
+  {
+    "_id": "device_0263",
+    "user_id": "user_0143",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-03-25T20:19:34Z"
+  },
+  {
+    "_id": "device_0264",
+    "user_id": "user_0144",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-11-24T12:35:38Z"
+  },
+  {
+    "_id": "device_0265",
+    "user_id": "user_0145",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-01-21T04:46:51Z"
+  },
+  {
+    "_id": "device_0266",
+    "user_id": "user_0146",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-08-16T02:41:24Z"
+  },
+  {
+    "_id": "device_0267",
+    "user_id": "user_0146",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-09-21T03:43:02Z"
+  },
+  {
+    "_id": "device_0268",
+    "user_id": "user_0146",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-07-02T15:47:06Z"
+  },
+  {
+    "_id": "device_0269",
+    "user_id": "user_0147",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-04-04T11:48:28Z"
+  },
+  {
+    "_id": "device_0270",
+    "user_id": "user_0147",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-12-03T18:31:52Z"
+  },
+  {
+    "_id": "device_0271",
+    "user_id": "user_0148",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-07-21T02:28:40Z"
+  },
+  {
+    "_id": "device_0272",
+    "user_id": "user_0149",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-04-24T15:06:31Z"
+  },
+  {
+    "_id": "device_0273",
+    "user_id": "user_0150",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-09-13T12:59:00Z"
+  },
+  {
+    "_id": "device_0274",
+    "user_id": "user_0150",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-07-28T19:38:06Z"
+  },
+  {
+    "_id": "device_0275",
+    "user_id": "user_0150",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-10-16T05:12:28Z"
+  },
+  {
+    "_id": "device_0276",
+    "user_id": "user_0151",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-07-10T15:16:43Z"
+  },
+  {
+    "_id": "device_0277",
+    "user_id": "user_0151",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-04-20T04:41:24Z"
+  },
+  {
+    "_id": "device_0278",
+    "user_id": "user_0151",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-07-27T11:44:24Z"
+  },
+  {
+    "_id": "device_0279",
+    "user_id": "user_0152",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-11-21T02:44:58Z"
+  },
+  {
+    "_id": "device_0280",
+    "user_id": "user_0152",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-06-16T03:38:56Z"
+  },
+  {
+    "_id": "device_0281",
+    "user_id": "user_0153",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-09-05T12:27:03Z"
+  },
+  {
+    "_id": "device_0282",
+    "user_id": "user_0153",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-03-07T23:28:25Z"
+  },
+  {
+    "_id": "device_0283",
+    "user_id": "user_0153",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-11-16T01:21:29Z"
+  },
+  {
+    "_id": "device_0284",
+    "user_id": "user_0154",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-12-12T05:17:25Z"
+  },
+  {
+    "_id": "device_0285",
+    "user_id": "user_0154",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-05-27T09:44:05Z"
+  },
+  {
+    "_id": "device_0286",
+    "user_id": "user_0154",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-09-21T23:13:09Z"
+  },
+  {
+    "_id": "device_0287",
+    "user_id": "user_0155",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-04-05T05:58:28Z"
+  },
+  {
+    "_id": "device_0288",
+    "user_id": "user_0155",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-02-11T22:44:44Z"
+  },
+  {
+    "_id": "device_0289",
+    "user_id": "user_0156",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-12-04T19:58:11Z"
+  },
+  {
+    "_id": "device_0290",
+    "user_id": "user_0156",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-11-13T18:15:06Z"
+  },
+  {
+    "_id": "device_0291",
+    "user_id": "user_0156",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-02-06T13:18:32Z"
+  },
+  {
+    "_id": "device_0292",
+    "user_id": "user_0157",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-03-24T11:35:59Z"
+  },
+  {
+    "_id": "device_0293",
+    "user_id": "user_0158",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-04-09T11:03:26Z"
+  },
+  {
+    "_id": "device_0294",
+    "user_id": "user_0159",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-01-11T21:37:21Z"
+  },
+  {
+    "_id": "device_0295",
+    "user_id": "user_0159",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-05-10T00:11:14Z"
+  },
+  {
+    "_id": "device_0296",
+    "user_id": "user_0159",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-09-20T11:04:31Z"
+  },
+  {
+    "_id": "device_0297",
+    "user_id": "user_0160",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-12-19T03:35:25Z"
+  },
+  {
+    "_id": "device_0298",
+    "user_id": "user_0161",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-05-13T23:15:04Z"
+  },
+  {
+    "_id": "device_0299",
+    "user_id": "user_0162",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-02-09T14:15:14Z"
+  },
+  {
+    "_id": "device_0300",
+    "user_id": "user_0162",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-07-12T01:33:43Z"
+  },
+  {
+    "_id": "device_0301",
+    "user_id": "user_0162",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-03-27T05:41:16Z"
+  },
+  {
+    "_id": "device_0302",
+    "user_id": "user_0163",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-01-11T03:11:36Z"
+  },
+  {
+    "_id": "device_0303",
+    "user_id": "user_0163",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-04-01T13:33:52Z"
+  },
+  {
+    "_id": "device_0304",
+    "user_id": "user_0164",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-10-01T16:13:55Z"
+  },
+  {
+    "_id": "device_0305",
+    "user_id": "user_0165",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-03-27T12:44:11Z"
+  },
+  {
+    "_id": "device_0306",
+    "user_id": "user_0165",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-04-21T09:53:34Z"
+  },
+  {
+    "_id": "device_0307",
+    "user_id": "user_0166",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-02-10T00:28:54Z"
+  },
+  {
+    "_id": "device_0308",
+    "user_id": "user_0167",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-11-01T13:07:08Z"
+  },
+  {
+    "_id": "device_0309",
+    "user_id": "user_0168",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-03-08T06:23:50Z"
+  },
+  {
+    "_id": "device_0310",
+    "user_id": "user_0168",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-07-28T11:53:22Z"
+  },
+  {
+    "_id": "device_0311",
+    "user_id": "user_0169",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-11-04T19:06:28Z"
+  },
+  {
+    "_id": "device_0312",
+    "user_id": "user_0170",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-03-19T14:10:53Z"
+  },
+  {
+    "_id": "device_0313",
+    "user_id": "user_0170",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-07-21T16:49:39Z"
+  },
+  {
+    "_id": "device_0314",
+    "user_id": "user_0170",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-05-10T19:20:13Z"
+  },
+  {
+    "_id": "device_0315",
+    "user_id": "user_0171",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-01-20T15:53:38Z"
+  },
+  {
+    "_id": "device_0316",
+    "user_id": "user_0171",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-09-05T22:20:02Z"
+  },
+  {
+    "_id": "device_0317",
+    "user_id": "user_0171",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-09-26T12:48:18Z"
+  },
+  {
+    "_id": "device_0318",
+    "user_id": "user_0172",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-01-10T01:55:42Z"
+  },
+  {
+    "_id": "device_0319",
+    "user_id": "user_0172",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-08-20T22:56:47Z"
+  },
+  {
+    "_id": "device_0320",
+    "user_id": "user_0172",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-03-25T09:36:14Z"
+  },
+  {
+    "_id": "device_0321",
+    "user_id": "user_0173",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-02-13T23:36:10Z"
+  },
+  {
+    "_id": "device_0322",
+    "user_id": "user_0173",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-07-16T21:55:55Z"
+  },
+  {
+    "_id": "device_0323",
+    "user_id": "user_0173",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-09-18T08:44:05Z"
+  },
+  {
+    "_id": "device_0324",
+    "user_id": "user_0174",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-04-14T08:38:56Z"
+  },
+  {
+    "_id": "device_0325",
+    "user_id": "user_0175",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-09-24T19:12:16Z"
+  },
+  {
+    "_id": "device_0326",
+    "user_id": "user_0176",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-11-14T08:25:24Z"
+  },
+  {
+    "_id": "device_0327",
+    "user_id": "user_0177",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-06-21T07:13:55Z"
+  },
+  {
+    "_id": "device_0328",
+    "user_id": "user_0177",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-12-27T08:41:12Z"
+  },
+  {
+    "_id": "device_0329",
+    "user_id": "user_0177",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-02-11T17:59:56Z"
+  },
+  {
+    "_id": "device_0330",
+    "user_id": "user_0178",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-11-15T02:06:10Z"
+  },
+  {
+    "_id": "device_0331",
+    "user_id": "user_0178",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-12-27T23:31:12Z"
+  },
+  {
+    "_id": "device_0332",
+    "user_id": "user_0178",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-11-22T10:26:54Z"
+  },
+  {
+    "_id": "device_0333",
+    "user_id": "user_0179",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-09-05T14:51:03Z"
+  },
+  {
+    "_id": "device_0334",
+    "user_id": "user_0179",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-11-15T01:53:33Z"
+  },
+  {
+    "_id": "device_0335",
+    "user_id": "user_0179",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-02-22T02:46:54Z"
+  },
+  {
+    "_id": "device_0336",
+    "user_id": "user_0180",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-02-08T23:46:43Z"
+  },
+  {
+    "_id": "device_0337",
+    "user_id": "user_0180",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-09-26T03:40:35Z"
+  },
+  {
+    "_id": "device_0338",
+    "user_id": "user_0181",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-02-05T04:22:21Z"
+  },
+  {
+    "_id": "device_0339",
+    "user_id": "user_0182",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-10-19T11:29:17Z"
+  },
+  {
+    "_id": "device_0340",
+    "user_id": "user_0183",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-07-25T05:49:42Z"
+  },
+  {
+    "_id": "device_0341",
+    "user_id": "user_0184",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-07-26T01:31:00Z"
+  },
+  {
+    "_id": "device_0342",
+    "user_id": "user_0185",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-08-09T19:40:11Z"
+  },
+  {
+    "_id": "device_0343",
+    "user_id": "user_0185",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-01-27T11:21:27Z"
+  },
+  {
+    "_id": "device_0344",
+    "user_id": "user_0185",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-03-16T05:57:30Z"
+  },
+  {
+    "_id": "device_0345",
+    "user_id": "user_0186",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-02-25T07:42:19Z"
+  },
+  {
+    "_id": "device_0346",
+    "user_id": "user_0186",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-04-21T18:01:48Z"
+  },
+  {
+    "_id": "device_0347",
+    "user_id": "user_0187",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-05-20T07:51:23Z"
+  },
+  {
+    "_id": "device_0348",
+    "user_id": "user_0188",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-01-25T11:30:01Z"
+  },
+  {
+    "_id": "device_0349",
+    "user_id": "user_0188",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-07-12T06:13:05Z"
+  },
+  {
+    "_id": "device_0350",
+    "user_id": "user_0188",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-08-19T20:38:23Z"
+  },
+  {
+    "_id": "device_0351",
+    "user_id": "user_0189",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-07-08T05:33:50Z"
+  },
+  {
+    "_id": "device_0352",
+    "user_id": "user_0189",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-11-15T13:54:09Z"
+  },
+  {
+    "_id": "device_0353",
+    "user_id": "user_0189",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-05-12T12:08:13Z"
+  },
+  {
+    "_id": "device_0354",
+    "user_id": "user_0190",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-02-22T09:18:30Z"
+  },
+  {
+    "_id": "device_0355",
+    "user_id": "user_0191",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-11-12T18:33:15Z"
+  },
+  {
+    "_id": "device_0356",
+    "user_id": "user_0192",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-11-22T21:24:44Z"
+  },
+  {
+    "_id": "device_0357",
+    "user_id": "user_0192",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-06-03T00:48:53Z"
+  },
+  {
+    "_id": "device_0358",
+    "user_id": "user_0193",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-03-05T07:24:54Z"
+  },
+  {
+    "_id": "device_0359",
+    "user_id": "user_0193",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-09-16T11:05:47Z"
+  },
+  {
+    "_id": "device_0360",
+    "user_id": "user_0194",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-11-18T09:51:26Z"
+  },
+  {
+    "_id": "device_0361",
+    "user_id": "user_0195",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-03-25T14:52:48Z"
+  },
+  {
+    "_id": "device_0362",
+    "user_id": "user_0196",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-07-15T01:28:34Z"
+  },
+  {
+    "_id": "device_0363",
+    "user_id": "user_0197",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-04-14T12:04:57Z"
+  },
+  {
+    "_id": "device_0364",
+    "user_id": "user_0197",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-01-20T23:35:50Z"
+  },
+  {
+    "_id": "device_0365",
+    "user_id": "user_0197",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-06-28T10:26:05Z"
+  },
+  {
+    "_id": "device_0366",
+    "user_id": "user_0198",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-12-27T04:32:33Z"
+  },
+  {
+    "_id": "device_0367",
+    "user_id": "user_0198",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-08-12T16:27:52Z"
+  },
+  {
+    "_id": "device_0368",
+    "user_id": "user_0199",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-01-28T12:31:43Z"
+  },
+  {
+    "_id": "device_0369",
+    "user_id": "user_0199",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-09-06T05:07:53Z"
+  },
+  {
+    "_id": "device_0370",
+    "user_id": "user_0199",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-07-02T23:29:15Z"
+  },
+  {
+    "_id": "device_0371",
+    "user_id": "user_0200",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-03-14T07:19:36Z"
+  },
+  {
+    "_id": "device_0372",
+    "user_id": "user_0201",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-06-08T23:08:43Z"
+  },
+  {
+    "_id": "device_0373",
+    "user_id": "user_0202",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-05-18T23:00:24Z"
+  },
+  {
+    "_id": "device_0374",
+    "user_id": "user_0202",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-12-20T10:33:49Z"
+  },
+  {
+    "_id": "device_0375",
+    "user_id": "user_0203",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-11-16T18:05:26Z"
+  },
+  {
+    "_id": "device_0376",
+    "user_id": "user_0203",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-02-23T09:30:02Z"
+  },
+  {
+    "_id": "device_0377",
+    "user_id": "user_0203",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-11-28T08:09:52Z"
+  },
+  {
+    "_id": "device_0378",
+    "user_id": "user_0204",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-05-02T00:30:59Z"
+  },
+  {
+    "_id": "device_0379",
+    "user_id": "user_0204",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-02-03T00:25:22Z"
+  },
+  {
+    "_id": "device_0380",
+    "user_id": "user_0204",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-02-21T01:47:37Z"
+  },
+  {
+    "_id": "device_0381",
+    "user_id": "user_0205",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-01-04T04:38:05Z"
+  },
+  {
+    "_id": "device_0382",
+    "user_id": "user_0205",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-04-23T02:34:51Z"
+  },
+  {
+    "_id": "device_0383",
+    "user_id": "user_0205",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-07-25T04:19:08Z"
+  },
+  {
+    "_id": "device_0384",
+    "user_id": "user_0206",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-02-10T12:34:51Z"
+  },
+  {
+    "_id": "device_0385",
+    "user_id": "user_0206",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-07-28T14:29:24Z"
+  },
+  {
+    "_id": "device_0386",
+    "user_id": "user_0206",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-07-03T10:17:47Z"
+  },
+  {
+    "_id": "device_0387",
+    "user_id": "user_0207",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-09-14T15:49:15Z"
+  },
+  {
+    "_id": "device_0388",
+    "user_id": "user_0208",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-01-09T10:09:16Z"
+  },
+  {
+    "_id": "device_0389",
+    "user_id": "user_0208",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-12-18T01:24:26Z"
+  },
+  {
+    "_id": "device_0390",
+    "user_id": "user_0208",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-02-22T08:03:36Z"
+  },
+  {
+    "_id": "device_0391",
+    "user_id": "user_0209",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-05-01T22:50:10Z"
+  },
+  {
+    "_id": "device_0392",
+    "user_id": "user_0210",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-12-16T13:57:06Z"
+  },
+  {
+    "_id": "device_0393",
+    "user_id": "user_0211",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-11-23T09:01:09Z"
+  },
+  {
+    "_id": "device_0394",
+    "user_id": "user_0211",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-01-09T14:37:55Z"
+  },
+  {
+    "_id": "device_0395",
+    "user_id": "user_0212",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-08-21T10:14:03Z"
+  },
+  {
+    "_id": "device_0396",
+    "user_id": "user_0212",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-07-22T09:15:11Z"
+  },
+  {
+    "_id": "device_0397",
+    "user_id": "user_0213",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-05-25T07:20:38Z"
+  },
+  {
+    "_id": "device_0398",
+    "user_id": "user_0213",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-11-14T12:48:54Z"
+  },
+  {
+    "_id": "device_0399",
+    "user_id": "user_0213",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-09-01T17:32:06Z"
+  },
+  {
+    "_id": "device_0400",
+    "user_id": "user_0214",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-09-21T14:30:08Z"
+  },
+  {
+    "_id": "device_0401",
+    "user_id": "user_0215",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-06-19T08:14:19Z"
+  },
+  {
+    "_id": "device_0402",
+    "user_id": "user_0216",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-04-08T07:37:30Z"
+  },
+  {
+    "_id": "device_0403",
+    "user_id": "user_0216",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-11-21T02:11:35Z"
+  },
+  {
+    "_id": "device_0404",
+    "user_id": "user_0216",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-12-02T15:43:02Z"
+  },
+  {
+    "_id": "device_0405",
+    "user_id": "user_0217",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-01-05T04:33:24Z"
+  },
+  {
+    "_id": "device_0406",
+    "user_id": "user_0217",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-03-13T04:44:39Z"
+  },
+  {
+    "_id": "device_0407",
+    "user_id": "user_0218",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-03-19T04:15:15Z"
+  },
+  {
+    "_id": "device_0408",
+    "user_id": "user_0218",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-07-15T19:18:08Z"
+  },
+  {
+    "_id": "device_0409",
+    "user_id": "user_0218",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-01-09T22:27:21Z"
+  },
+  {
+    "_id": "device_0410",
+    "user_id": "user_0219",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-08-25T12:58:55Z"
+  },
+  {
+    "_id": "device_0411",
+    "user_id": "user_0219",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-07-26T00:43:26Z"
+  },
+  {
+    "_id": "device_0412",
+    "user_id": "user_0220",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-05-08T17:15:20Z"
+  },
+  {
+    "_id": "device_0413",
+    "user_id": "user_0220",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-06-21T04:50:45Z"
+  },
+  {
+    "_id": "device_0414",
+    "user_id": "user_0221",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-06-16T15:31:55Z"
+  },
+  {
+    "_id": "device_0415",
+    "user_id": "user_0222",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-01-16T18:41:43Z"
+  },
+  {
+    "_id": "device_0416",
+    "user_id": "user_0222",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-11-22T18:34:48Z"
+  },
+  {
+    "_id": "device_0417",
+    "user_id": "user_0223",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-10-02T10:20:30Z"
+  },
+  {
+    "_id": "device_0418",
+    "user_id": "user_0223",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-06-22T13:59:04Z"
+  },
+  {
+    "_id": "device_0419",
+    "user_id": "user_0223",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-11-05T19:34:17Z"
+  },
+  {
+    "_id": "device_0420",
+    "user_id": "user_0224",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-08-06T15:16:40Z"
+  },
+  {
+    "_id": "device_0421",
+    "user_id": "user_0224",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-06-28T22:57:04Z"
+  },
+  {
+    "_id": "device_0422",
+    "user_id": "user_0224",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-05-27T08:45:29Z"
+  },
+  {
+    "_id": "device_0423",
+    "user_id": "user_0225",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-05-10T16:52:33Z"
+  },
+  {
+    "_id": "device_0424",
+    "user_id": "user_0225",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-12-06T16:07:05Z"
+  },
+  {
+    "_id": "device_0425",
+    "user_id": "user_0226",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-02-23T23:58:09Z"
+  },
+  {
+    "_id": "device_0426",
+    "user_id": "user_0226",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-05-16T12:49:08Z"
+  },
+  {
+    "_id": "device_0427",
+    "user_id": "user_0226",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-12-05T09:50:02Z"
+  },
+  {
+    "_id": "device_0428",
+    "user_id": "user_0227",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-05-10T03:21:25Z"
+  },
+  {
+    "_id": "device_0429",
+    "user_id": "user_0227",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-02-12T00:57:17Z"
+  },
+  {
+    "_id": "device_0430",
+    "user_id": "user_0227",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-04-11T04:10:53Z"
+  },
+  {
+    "_id": "device_0431",
+    "user_id": "user_0228",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-07-21T19:44:27Z"
+  },
+  {
+    "_id": "device_0432",
+    "user_id": "user_0229",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-01-21T21:04:00Z"
+  },
+  {
+    "_id": "device_0433",
+    "user_id": "user_0229",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-01-09T20:05:29Z"
+  },
+  {
+    "_id": "device_0434",
+    "user_id": "user_0229",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-04-25T22:08:56Z"
+  },
+  {
+    "_id": "device_0435",
+    "user_id": "user_0230",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-02-20T23:42:17Z"
+  },
+  {
+    "_id": "device_0436",
+    "user_id": "user_0230",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-01-25T07:52:13Z"
+  },
+  {
+    "_id": "device_0437",
+    "user_id": "user_0231",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-02-18T17:33:25Z"
+  },
+  {
+    "_id": "device_0438",
+    "user_id": "user_0232",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-04-19T00:03:48Z"
+  },
+  {
+    "_id": "device_0439",
+    "user_id": "user_0233",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-07-12T20:49:15Z"
+  },
+  {
+    "_id": "device_0440",
+    "user_id": "user_0234",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-12-22T08:32:18Z"
+  },
+  {
+    "_id": "device_0441",
+    "user_id": "user_0235",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-08-13T21:10:40Z"
+  },
+  {
+    "_id": "device_0442",
+    "user_id": "user_0235",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-04-22T04:22:42Z"
+  },
+  {
+    "_id": "device_0443",
+    "user_id": "user_0236",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-07-03T10:10:07Z"
+  },
+  {
+    "_id": "device_0444",
+    "user_id": "user_0236",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-05-26T22:26:20Z"
+  },
+  {
+    "_id": "device_0445",
+    "user_id": "user_0237",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-08-13T18:27:02Z"
+  },
+  {
+    "_id": "device_0446",
+    "user_id": "user_0237",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-02-09T20:24:50Z"
+  },
+  {
+    "_id": "device_0447",
+    "user_id": "user_0238",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-06-04T12:00:45Z"
+  },
+  {
+    "_id": "device_0448",
+    "user_id": "user_0238",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-05-20T19:44:42Z"
+  },
+  {
+    "_id": "device_0449",
+    "user_id": "user_0238",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-02-14T17:58:39Z"
+  },
+  {
+    "_id": "device_0450",
+    "user_id": "user_0239",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-01-09T23:12:00Z"
+  },
+  {
+    "_id": "device_0451",
+    "user_id": "user_0239",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-07-07T17:58:19Z"
+  },
+  {
+    "_id": "device_0452",
+    "user_id": "user_0239",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-06-03T17:09:45Z"
+  },
+  {
+    "_id": "device_0453",
+    "user_id": "user_0240",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-10-20T12:11:28Z"
+  },
+  {
+    "_id": "device_0454",
+    "user_id": "user_0240",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-08-05T08:29:01Z"
+  },
+  {
+    "_id": "device_0455",
+    "user_id": "user_0241",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-05-28T08:27:44Z"
+  },
+  {
+    "_id": "device_0456",
+    "user_id": "user_0241",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-09-22T03:16:11Z"
+  },
+  {
+    "_id": "device_0457",
+    "user_id": "user_0242",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-05-17T03:45:12Z"
+  },
+  {
+    "_id": "device_0458",
+    "user_id": "user_0242",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-07-04T14:33:08Z"
+  },
+  {
+    "_id": "device_0459",
+    "user_id": "user_0242",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-05-09T01:05:34Z"
+  },
+  {
+    "_id": "device_0460",
+    "user_id": "user_0243",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-02-12T18:05:33Z"
+  },
+  {
+    "_id": "device_0461",
+    "user_id": "user_0243",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-06-21T02:36:09Z"
+  },
+  {
+    "_id": "device_0462",
+    "user_id": "user_0243",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-06-07T03:44:03Z"
+  },
+  {
+    "_id": "device_0463",
+    "user_id": "user_0244",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-02-20T08:21:00Z"
+  },
+  {
+    "_id": "device_0464",
+    "user_id": "user_0245",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-01-19T12:57:35Z"
+  },
+  {
+    "_id": "device_0465",
+    "user_id": "user_0245",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-08-10T08:22:23Z"
+  },
+  {
+    "_id": "device_0466",
+    "user_id": "user_0245",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-08-08T03:34:22Z"
+  },
+  {
+    "_id": "device_0467",
+    "user_id": "user_0246",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-06-26T14:02:59Z"
+  },
+  {
+    "_id": "device_0468",
+    "user_id": "user_0246",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-07-23T10:45:48Z"
+  },
+  {
+    "_id": "device_0469",
+    "user_id": "user_0247",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-09-15T00:12:39Z"
+  },
+  {
+    "_id": "device_0470",
+    "user_id": "user_0247",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-07-13T16:32:19Z"
+  },
+  {
+    "_id": "device_0471",
+    "user_id": "user_0247",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-07-03T06:45:38Z"
+  },
+  {
+    "_id": "device_0472",
+    "user_id": "user_0248",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-01-16T09:06:48Z"
+  },
+  {
+    "_id": "device_0473",
+    "user_id": "user_0249",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-05-13T23:10:13Z"
+  },
+  {
+    "_id": "device_0474",
+    "user_id": "user_0249",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-01-02T20:36:42Z"
+  },
+  {
+    "_id": "device_0475",
+    "user_id": "user_0250",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-04-15T19:24:19Z"
+  },
+  {
+    "_id": "device_0476",
+    "user_id": "user_0250",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-05-09T21:47:42Z"
+  },
+  {
+    "_id": "device_0477",
+    "user_id": "user_0251",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-09-24T17:57:31Z"
+  },
+  {
+    "_id": "device_0478",
+    "user_id": "user_0251",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-02-28T05:29:30Z"
+  },
+  {
+    "_id": "device_0479",
+    "user_id": "user_0252",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-10-10T12:01:04Z"
+  },
+  {
+    "_id": "device_0480",
+    "user_id": "user_0252",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-08-06T08:09:05Z"
+  },
+  {
+    "_id": "device_0481",
+    "user_id": "user_0253",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-02-25T04:12:50Z"
+  },
+  {
+    "_id": "device_0482",
+    "user_id": "user_0253",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-03-12T11:18:57Z"
+  },
+  {
+    "_id": "device_0483",
+    "user_id": "user_0253",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-04-27T01:18:57Z"
+  },
+  {
+    "_id": "device_0484",
+    "user_id": "user_0254",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-01-01T10:26:51Z"
+  },
+  {
+    "_id": "device_0485",
+    "user_id": "user_0255",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-02-24T19:25:01Z"
+  },
+  {
+    "_id": "device_0486",
+    "user_id": "user_0255",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-07-12T19:25:20Z"
+  },
+  {
+    "_id": "device_0487",
+    "user_id": "user_0255",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-07-28T00:29:13Z"
+  },
+  {
+    "_id": "device_0488",
+    "user_id": "user_0256",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-05-08T18:29:41Z"
+  },
+  {
+    "_id": "device_0489",
+    "user_id": "user_0256",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-06-02T08:02:04Z"
+  },
+  {
+    "_id": "device_0490",
+    "user_id": "user_0256",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-05-12T04:33:24Z"
+  },
+  {
+    "_id": "device_0491",
+    "user_id": "user_0257",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-01-17T02:40:05Z"
+  },
+  {
+    "_id": "device_0492",
+    "user_id": "user_0257",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-09-08T10:15:31Z"
+  },
+  {
+    "_id": "device_0493",
+    "user_id": "user_0257",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-07-02T07:57:53Z"
+  },
+  {
+    "_id": "device_0494",
+    "user_id": "user_0258",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-05-02T21:23:48Z"
+  },
+  {
+    "_id": "device_0495",
+    "user_id": "user_0258",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-07-03T01:38:00Z"
+  },
+  {
+    "_id": "device_0496",
+    "user_id": "user_0258",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-04-23T23:34:01Z"
+  },
+  {
+    "_id": "device_0497",
+    "user_id": "user_0259",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-06-10T05:21:33Z"
+  },
+  {
+    "_id": "device_0498",
+    "user_id": "user_0259",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-11-25T22:23:51Z"
+  },
+  {
+    "_id": "device_0499",
+    "user_id": "user_0260",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-10-12T10:14:09Z"
+  },
+  {
+    "_id": "device_0500",
+    "user_id": "user_0260",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-03-23T21:56:33Z"
+  },
+  {
+    "_id": "device_0501",
+    "user_id": "user_0261",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-07-27T10:06:33Z"
+  },
+  {
+    "_id": "device_0502",
+    "user_id": "user_0262",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-09-27T09:41:20Z"
+  },
+  {
+    "_id": "device_0503",
+    "user_id": "user_0262",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-05-19T11:42:49Z"
+  },
+  {
+    "_id": "device_0504",
+    "user_id": "user_0262",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-01-07T01:18:48Z"
+  },
+  {
+    "_id": "device_0505",
+    "user_id": "user_0263",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-07-01T09:55:30Z"
+  },
+  {
+    "_id": "device_0506",
+    "user_id": "user_0263",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-10-11T11:06:04Z"
+  },
+  {
+    "_id": "device_0507",
+    "user_id": "user_0263",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-09-06T05:58:49Z"
+  },
+  {
+    "_id": "device_0508",
+    "user_id": "user_0264",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-01-17T05:28:54Z"
+  },
+  {
+    "_id": "device_0509",
+    "user_id": "user_0265",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-05-25T23:22:34Z"
+  },
+  {
+    "_id": "device_0510",
+    "user_id": "user_0265",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-09-25T09:41:06Z"
+  },
+  {
+    "_id": "device_0511",
+    "user_id": "user_0266",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-11-28T09:05:21Z"
+  },
+  {
+    "_id": "device_0512",
+    "user_id": "user_0266",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-10-09T06:32:21Z"
+  },
+  {
+    "_id": "device_0513",
+    "user_id": "user_0266",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-06-20T09:04:17Z"
+  },
+  {
+    "_id": "device_0514",
+    "user_id": "user_0267",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-01-21T20:05:49Z"
+  },
+  {
+    "_id": "device_0515",
+    "user_id": "user_0268",
+    "device_type": "smartphone",
+    "os_version": "Android 13",
+    "last_active": "2024-09-13T17:47:32Z"
+  },
+  {
+    "_id": "device_0516",
+    "user_id": "user_0269",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-05-16T12:45:11Z"
+  },
+  {
+    "_id": "device_0517",
+    "user_id": "user_0270",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-07-20T18:18:09Z"
+  },
+  {
+    "_id": "device_0518",
+    "user_id": "user_0270",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-09-20T20:35:04Z"
+  },
+  {
+    "_id": "device_0519",
+    "user_id": "user_0270",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-09-22T04:01:03Z"
+  },
+  {
+    "_id": "device_0520",
+    "user_id": "user_0271",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-11-20T19:59:15Z"
+  },
+  {
+    "_id": "device_0521",
+    "user_id": "user_0272",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-03-27T00:56:10Z"
+  },
+  {
+    "_id": "device_0522",
+    "user_id": "user_0272",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-09-03T01:25:37Z"
+  },
+  {
+    "_id": "device_0523",
+    "user_id": "user_0272",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-03-12T18:27:52Z"
+  },
+  {
+    "_id": "device_0524",
+    "user_id": "user_0273",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-05-14T06:47:37Z"
+  },
+  {
+    "_id": "device_0525",
+    "user_id": "user_0274",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-08-02T23:51:20Z"
+  },
+  {
+    "_id": "device_0526",
+    "user_id": "user_0274",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-07-14T02:45:16Z"
+  },
+  {
+    "_id": "device_0527",
+    "user_id": "user_0274",
+    "device_type": "smart_tv",
+    "os_version": "Roku OS 12",
+    "last_active": "2024-09-17T09:24:20Z"
+  },
+  {
+    "_id": "device_0528",
+    "user_id": "user_0275",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-09-26T01:49:01Z"
+  },
+  {
+    "_id": "device_0529",
+    "user_id": "user_0275",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-12-13T18:38:20Z"
+  },
+  {
+    "_id": "device_0530",
+    "user_id": "user_0276",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-06-04T11:23:28Z"
+  },
+  {
+    "_id": "device_0531",
+    "user_id": "user_0276",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-10-01T19:02:38Z"
+  },
+  {
+    "_id": "device_0532",
+    "user_id": "user_0277",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-07-07T19:10:05Z"
+  },
+  {
+    "_id": "device_0533",
+    "user_id": "user_0278",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-08-24T16:51:47Z"
+  },
+  {
+    "_id": "device_0534",
+    "user_id": "user_0278",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-01-05T00:38:55Z"
+  },
+  {
+    "_id": "device_0535",
+    "user_id": "user_0279",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-06-18T22:12:09Z"
+  },
+  {
+    "_id": "device_0536",
+    "user_id": "user_0279",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-09-19T15:28:56Z"
+  },
+  {
+    "_id": "device_0537",
+    "user_id": "user_0279",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-03-25T19:44:13Z"
+  },
+  {
+    "_id": "device_0538",
+    "user_id": "user_0280",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-02-03T08:01:22Z"
+  },
+  {
+    "_id": "device_0539",
+    "user_id": "user_0280",
+    "device_type": "tablet",
+    "os_version": "Android 14",
+    "last_active": "2024-12-01T16:50:33Z"
+  },
+  {
+    "_id": "device_0540",
+    "user_id": "user_0280",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-04-09T03:45:00Z"
+  },
+  {
+    "_id": "device_0541",
+    "user_id": "user_0281",
+    "device_type": "desktop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-02-07T23:24:28Z"
+  },
+  {
+    "_id": "device_0542",
+    "user_id": "user_0281",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-09-02T02:38:16Z"
+  },
+  {
+    "_id": "device_0543",
+    "user_id": "user_0282",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-04-19T05:04:21Z"
+  },
+  {
+    "_id": "device_0544",
+    "user_id": "user_0282",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-12-08T06:04:03Z"
+  },
+  {
+    "_id": "device_0545",
+    "user_id": "user_0283",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-11-14T17:01:44Z"
+  },
+  {
+    "_id": "device_0546",
+    "user_id": "user_0283",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-03-11T17:43:16Z"
+  },
+  {
+    "_id": "device_0547",
+    "user_id": "user_0283",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-04-06T14:33:00Z"
+  },
+  {
+    "_id": "device_0548",
+    "user_id": "user_0284",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-12-03T01:09:16Z"
+  },
+  {
+    "_id": "device_0549",
+    "user_id": "user_0284",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-03-08T23:40:49Z"
+  },
+  {
+    "_id": "device_0550",
+    "user_id": "user_0285",
+    "device_type": "smart_tv",
+    "os_version": "Android TV 11",
+    "last_active": "2024-09-20T23:14:57Z"
+  },
+  {
+    "_id": "device_0551",
+    "user_id": "user_0286",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-01-04T11:48:29Z"
+  },
+  {
+    "_id": "device_0552",
+    "user_id": "user_0286",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-05-23T23:23:02Z"
+  },
+  {
+    "_id": "device_0553",
+    "user_id": "user_0286",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-12-01T02:33:56Z"
+  },
+  {
+    "_id": "device_0554",
+    "user_id": "user_0287",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-07-22T10:00:09Z"
+  },
+  {
+    "_id": "device_0555",
+    "user_id": "user_0287",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-01-26T22:38:21Z"
+  },
+  {
+    "_id": "device_0556",
+    "user_id": "user_0287",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-10-19T12:58:38Z"
+  },
+  {
+    "_id": "device_0557",
+    "user_id": "user_0288",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-06-09T02:48:03Z"
+  },
+  {
+    "_id": "device_0558",
+    "user_id": "user_0288",
+    "device_type": "smartphone",
+    "os_version": "Android 14",
+    "last_active": "2024-10-21T05:21:25Z"
+  },
+  {
+    "_id": "device_0559",
+    "user_id": "user_0288",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-12-27T22:12:26Z"
+  },
+  {
+    "_id": "device_0560",
+    "user_id": "user_0289",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-06-09T16:06:42Z"
+  },
+  {
+    "_id": "device_0561",
+    "user_id": "user_0289",
+    "device_type": "desktop",
+    "os_version": "macOS Ventura",
+    "last_active": "2024-10-19T13:52:02Z"
+  },
+  {
+    "_id": "device_0562",
+    "user_id": "user_0289",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-03-22T10:38:39Z"
+  },
+  {
+    "_id": "device_0563",
+    "user_id": "user_0290",
+    "device_type": "desktop",
+    "os_version": "Windows 11",
+    "last_active": "2024-12-09T21:17:45Z"
+  },
+  {
+    "_id": "device_0564",
+    "user_id": "user_0291",
+    "device_type": "laptop",
+    "os_version": "Chrome OS",
+    "last_active": "2024-06-10T19:43:57Z"
+  },
+  {
+    "_id": "device_0565",
+    "user_id": "user_0291",
+    "device_type": "laptop",
+    "os_version": "Ubuntu 22.04",
+    "last_active": "2024-04-28T21:31:41Z"
+  },
+  {
+    "_id": "device_0566",
+    "user_id": "user_0291",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-09-20T04:06:20Z"
+  },
+  {
+    "_id": "device_0567",
+    "user_id": "user_0292",
+    "device_type": "laptop",
+    "os_version": "Windows 11",
+    "last_active": "2024-08-22T15:04:13Z"
+  },
+  {
+    "_id": "device_0568",
+    "user_id": "user_0292",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-04-04T03:53:26Z"
+  },
+  {
+    "_id": "device_0569",
+    "user_id": "user_0293",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-03-27T10:13:33Z"
+  },
+  {
+    "_id": "device_0570",
+    "user_id": "user_0293",
+    "device_type": "laptop",
+    "os_version": "macOS Sonoma",
+    "last_active": "2024-09-28T19:17:40Z"
+  },
+  {
+    "_id": "device_0571",
+    "user_id": "user_0293",
+    "device_type": "smartphone",
+    "os_version": "iOS 17",
+    "last_active": "2024-01-10T03:53:02Z"
+  },
+  {
+    "_id": "device_0572",
+    "user_id": "user_0294",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-05-02T02:50:15Z"
+  },
+  {
+    "_id": "device_0573",
+    "user_id": "user_0294",
+    "device_type": "tablet",
+    "os_version": "iPadOS 16",
+    "last_active": "2024-02-28T10:02:23Z"
+  },
+  {
+    "_id": "device_0574",
+    "user_id": "user_0295",
+    "device_type": "smart_tv",
+    "os_version": "Tizen 7",
+    "last_active": "2024-07-02T20:21:17Z"
+  },
+  {
+    "_id": "device_0575",
+    "user_id": "user_0295",
+    "device_type": "smart_tv",
+    "os_version": "webOS 22",
+    "last_active": "2024-02-07T19:32:21Z"
+  },
+  {
+    "_id": "device_0576",
+    "user_id": "user_0295",
+    "device_type": "tablet",
+    "os_version": "Android 13",
+    "last_active": "2024-05-26T16:43:36Z"
+  },
+  {
+    "_id": "device_0577",
+    "user_id": "user_0296",
+    "device_type": "smartphone",
+    "os_version": "iOS 16",
+    "last_active": "2024-04-03T01:13:19Z"
+  },
+  {
+    "_id": "device_0578",
+    "user_id": "user_0297",
+    "device_type": "desktop",
+    "os_version": "Windows 10",
+    "last_active": "2024-12-16T04:41:31Z"
+  },
+  {
+    "_id": "device_0579",
+    "user_id": "user_0297",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-07-12T11:11:35Z"
+  },
+  {
+    "_id": "device_0580",
+    "user_id": "user_0298",
+    "device_type": "tablet",
+    "os_version": "iPadOS 17",
+    "last_active": "2024-02-13T21:19:57Z"
+  }
+]

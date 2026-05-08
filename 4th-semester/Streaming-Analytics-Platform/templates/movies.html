@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}Movies · Streaming Analytics{% endblock %}
+
+{% block head_extra %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="card soft-card mb-3">
+  <div class="card-body">
+    <h5 class="card-title mb-3">Movies Overview</h5>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="border rounded-3 p-3 h-100 bg-white">
+          <div class="small text-muted">Total Movies</div>
+          <div class="h4 mb-0" id="moviesTotal">-</div>
+          <div class="small text-muted mt-1" id="moviesTotalMeta"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="border rounded-3 p-3 h-100 bg-white">
+          <div class="small text-muted">Average Rating</div>
+          <div class="h4 mb-0" id="moviesAvgRating">-</div>
+          <div class="small text-muted mt-1" id="moviesAvgMeta"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="border rounded-3 p-3 h-100 bg-white">
+          <div class="small text-muted">Max Duration (min)</div>
+          <div class="h4 mb-0" id="moviesMaxDuration">-</div>
+          <div class="small text-muted mt-1" id="moviesMaxMeta"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mb-3">
+  <div class="col-lg-6 mb-3">
+    <div class="card soft-card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Movies by Year</h5>
+        <canvas id="moviesByYearChart"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 mb-3">
+    <div class="card soft-card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Rating Distribution</h5>
+        <canvas id="moviesRatingChart"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card soft-card">
+  <div class="card-body">
+    <div class="d-flex justify-content-between mb-2">
+      <h5 class="card-title mb-0">Sample Movies (Paged)</h5>
+      <small class="text-muted">MongoDB sample with pagination</small>
+    </div>
+    <div class="table-responsive small" style="max-height: 320px; overflow:auto;">
+      <table class="table table-hover align-middle" id="moviesSampleTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Duration (min)</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center mt-2">
+      <span id="moviesPageInfo" class="small pagination-text"></span>
+      <div class="btn-group btn-group-sm">
+        <button id="moviesPrev" class="btn btn-outline-secondary btn-arrow">
+          <span aria-hidden="true">&laquo;</span><span>Prev</span>
+        </button>
+        <button id="moviesNext" class="btn btn-outline-secondary btn-arrow">
+          <span>Next</span><span aria-hidden="true">&raquo;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/movies.js') }}"></script>
+{% endblock %}

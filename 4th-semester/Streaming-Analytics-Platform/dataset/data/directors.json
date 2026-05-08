@@ -1,0 +1,302 @@
+[
+  {
+    "_id": "director_001",
+    "name": "James Fincher",
+    "birth_year": 1959,
+    "nationality": "Japan"
+  },
+  {
+    "_id": "director_002",
+    "name": "Ridley DuVernay",
+    "birth_year": 1947,
+    "nationality": "France"
+  },
+  {
+    "_id": "director_003",
+    "name": "Ridley Anderson",
+    "birth_year": 1957,
+    "nationality": "UK"
+  },
+  {
+    "_id": "director_004",
+    "name": "Peter Jackson",
+    "birth_year": 1958,
+    "nationality": "UK"
+  },
+  {
+    "_id": "director_005",
+    "name": "Tim Fincher",
+    "birth_year": 1953,
+    "nationality": "UK"
+  },
+  {
+    "_id": "director_006",
+    "name": "Wes Burton",
+    "birth_year": 1949,
+    "nationality": "Canada"
+  },
+  {
+    "_id": "director_007",
+    "name": "Denis Jackson",
+    "birth_year": 1957,
+    "nationality": "France"
+  },
+  {
+    "_id": "director_008",
+    "name": "Quentin Nolan",
+    "birth_year": 1951,
+    "nationality": "Canada"
+  },
+  {
+    "_id": "director_009",
+    "name": "Ryan Scorsese",
+    "birth_year": 1942,
+    "nationality": "USA"
+  },
+  {
+    "_id": "director_010",
+    "name": "Bong Jackson",
+    "birth_year": 1974,
+    "nationality": "USA"
+  },
+  {
+    "_id": "director_011",
+    "name": "Tim Spielberg",
+    "birth_year": 1954,
+    "nationality": "Canada"
+  },
+  {
+    "_id": "director_012",
+    "name": "Greta Peele",
+    "birth_year": 1949,
+    "nationality": "Japan"
+  },
+  {
+    "_id": "director_013",
+    "name": "Tim Villeneuve",
+    "birth_year": 1952,
+    "nationality": "UK"
+  },
+  {
+    "_id": "director_014",
+    "name": "Peter del Toro",
+    "birth_year": 1976,
+    "nationality": "Japan"
+  },
+  {
+    "_id": "director_015",
+    "name": "Denis Tarantino",
+    "birth_year": 1967,
+    "nationality": "Japan"
+  },
+  {
+    "_id": "director_016",
+    "name": "Peter Scott",
+    "birth_year": 1956,
+    "nationality": "Canada"
+  },
+  {
+    "_id": "director_017",
+    "name": "David Burton",
+    "birth_year": 1962,
+    "nationality": "Japan"
+  },
+  {
+    "_id": "director_018",
+    "name": "Greta Tarantino",
+    "birth_year": 1970,
+    "nationality": "UK"
+  },
+  {
+    "_id": "director_019",
+    "name": "David Scott",
+    "birth_year": 1943,
+    "nationality": "UK"
+  },
+  {
+    "_id": "director_020",
+    "name": "Guillermo Villeneuve",
+    "birth_year": 1974,
+    "nationality": "Japan"
+  },
+  {
+    "_id": "director_021",
+    "name": "James Gerwig",
+    "birth_year": 1958,
+    "nationality": "Japan"
+  },
+  {
+    "_id": "director_022",
+    "name": "Ryan Nolan",
+    "birth_year": 1948,
+    "nationality": "Japan"
+  },
+  {
+    "_id": "director_023",
+    "name": "Tim Coogler",
+    "birth_year": 1963,
+    "nationality": "USA"
+  },
+  {
+    "_id": "director_024",
+    "name": "Peter Gerwig",
+    "birth_year": 1949,
+    "nationality": "Canada"
+  },
+  {
+    "_id": "director_025",
+    "name": "James Nolan",
+    "birth_year": 1946,
+    "nationality": "USA"
+  },
+  {
+    "_id": "director_026",
+    "name": "Steven Fincher",
+    "birth_year": 1974,
+    "nationality": "UK"
+  },
+  {
+    "_id": "director_027",
+    "name": "Bong Nolan",
+    "birth_year": 1955,
+    "nationality": "USA"
+  },
+  {
+    "_id": "director_028",
+    "name": "Guillermo Anderson",
+    "birth_year": 1985,
+    "nationality": "Canada"
+  },
+  {
+    "_id": "director_029",
+    "name": "Guillermo Spielberg",
+    "birth_year": 1942,
+    "nationality": "USA"
+  },
+  {
+    "_id": "director_030",
+    "name": "Christopher Joon-ho",
+    "birth_year": 1952,
+    "nationality": "UK"
+  },
+  {
+    "_id": "director_031",
+    "name": "Jordan del Toro",
+    "birth_year": 1950,
+    "nationality": "Japan"
+  },
+  {
+    "_id": "director_032",
+    "name": "Tim Scott",
+    "birth_year": 1972,
+    "nationality": "Japan"
+  },
+  {
+    "_id": "director_033",
+    "name": "Martin Anderson",
+    "birth_year": 1958,
+    "nationality": "UK"
+  },
+  {
+    "_id": "director_034",
+    "name": "Steven del Toro",
+    "birth_year": 1951,
+    "nationality": "UK"
+  },
+  {
+    "_id": "director_035",
+    "name": "Martin Cameron",
+    "birth_year": 1962,
+    "nationality": "France"
+  },
+  {
+    "_id": "director_036",
+    "name": "Tim Burton",
+    "birth_year": 1980,
+    "nationality": "USA"
+  },
+  {
+    "_id": "director_037",
+    "name": "Denis Fincher",
+    "birth_year": 1944,
+    "nationality": "UK"
+  },
+  {
+    "_id": "director_038",
+    "name": "James Fincher",
+    "birth_year": 1962,
+    "nationality": "Canada"
+  },
+  {
+    "_id": "director_039",
+    "name": "Steven Villeneuve",
+    "birth_year": 1952,
+    "nationality": "France"
+  },
+  {
+    "_id": "director_040",
+    "name": "Steven Jackson",
+    "birth_year": 1946,
+    "nationality": "UK"
+  },
+  {
+    "_id": "director_041",
+    "name": "Peter Coogler",
+    "birth_year": 1947,
+    "nationality": "UK"
+  },
+  {
+    "_id": "director_042",
+    "name": "Guillermo Scott",
+    "birth_year": 1942,
+    "nationality": "France"
+  },
+  {
+    "_id": "director_043",
+    "name": "Quentin DuVernay",
+    "birth_year": 1985,
+    "nationality": "Japan"
+  },
+  {
+    "_id": "director_044",
+    "name": "Wes Coogler",
+    "birth_year": 1941,
+    "nationality": "Japan"
+  },
+  {
+    "_id": "director_045",
+    "name": "Tim Tarantino",
+    "birth_year": 1966,
+    "nationality": "France"
+  },
+  {
+    "_id": "director_046",
+    "name": "Jordan Burton",
+    "birth_year": 1956,
+    "nationality": "Japan"
+  },
+  {
+    "_id": "director_047",
+    "name": "Ryan Scott",
+    "birth_year": 1963,
+    "nationality": "USA"
+  },
+  {
+    "_id": "director_048",
+    "name": "Ryan Spielberg",
+    "birth_year": 1941,
+    "nationality": "UK"
+  },
+  {
+    "_id": "director_049",
+    "name": "Christopher Nolan",
+    "birth_year": 1964,
+    "nationality": "Canada"
+  },
+  {
+    "_id": "director_050",
+    "name": "Ridley del Toro",
+    "birth_year": 1984,
+    "nationality": "Canada"
+  }
+]

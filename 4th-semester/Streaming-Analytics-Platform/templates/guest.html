@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Guest · Streaming Analytics{% endblock %}
+
+{% block content %}
+<div class="container py-5 d-flex justify-content-center">
+  <div class="col-md-5">
+    <div class="card auth-card p-4">
+      <h3 class="text-center mb-3">Continue as Guest</h3>
+      <p class="text-muted text-center">
+        You’ll be able to browse dashboards with limited access.
+      </p>
+      <div class="d-grid gap-2 mt-4">
+        <button id="btnGuestContinue" class="btn btn-primary btn-lg">
+          Continue as Guest
+        </button>
+        <a href="{{ url_for('login_page') }}" class="btn btn-outline-secondary">
+          Back to Login
+        </a>
+      </div>
+      <div id="guestMessage" class="mt-3"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  document.getElementById('btnGuestContinue').addEventListener('click', async () => {
+    const msg = document.getElementById('guestMessage');
+    msg.innerHTML = '';
+    try {
+      const res = await fetch('/api/auth/guest');
+      const data = await res.json();
+      if (!res.ok) {
+        msg.innerHTML = `<div class="alert alert-danger">${data.error || 'Guest login failed'}</div>`;
+        return;
+      }
+      msg.innerHTML = `<div class="alert alert-success">Guest session created. Redirecting...</div>`;
+      setTimeout(() => {
+        window.location.href = '/';
+      }, 800);
+    } catch (err) {
+      msg.innerHTML = `<div class="alert alert-danger">Error: ${err.message}</div>`;
+    }
+  });
+</script>
+{% endblock %}

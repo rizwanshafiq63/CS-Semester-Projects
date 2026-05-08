@@ -1,0 +1,319 @@
+{% extends "base.html" %}
+{% block title %}My Profile · Streaming Analytics{% endblock %}
+
+{% block content %}
+<div id="profilePage" class="container py-4">
+  <div class="row">
+    <!-- Left Sidebar - Profile Info -->
+    <div class="col-md-4">
+      <div class="card soft-card mb-4">
+        <div class="card-body text-center">
+          <img src="{{ user.profile.profile_picture }}"
+               class="rounded-circle mb-3"
+               width="120" height="120"
+               alt="{{ user.username }}">
+
+          <h4 class="mb-1">{{ user.profile.name }}</h4>
+          <p class="text-muted mb-3">@{{ user.username }}</p>
+
+          <div class="d-flex justify-content-center mb-3">
+            <span class="badge bg-primary me-2">
+              {{ (role or user.role or 'user')|capitalize }}
+            </span>
+            <span class="badge {% if user.subscription.status == 'active' %}bg-success{% else %}bg-warning{% endif %}">
+              {{ (user.subscription.plan or 'free')|capitalize }} Plan
+            </span>
+          </div>
+
+          <div class="text-start small">
+            <p><i class="bi bi-envelope me-2"></i> {{ user.email }}</p>
+            {% if user.profile.country %}
+            <p><i class="bi bi-globe me-2"></i> {{ user.profile.country }}</p>
+            {% endif %}
+            <p>
+              <i class="bi bi-calendar me-2"></i>
+              Joined {{ (user.created_at or user.profile.join_date)[:10] if (user.created_at or user.profile.join_date) else 'N/A' }}
+            </p>
+            <p>
+              <i class="bi bi-clock me-2"></i>
+              Last login:
+              {% if user.last_login %}
+                {{ user.last_login[:16] }}
+              {% else %}
+                Never
+              {% endif %}
+            </p>
+          </div>
+
+          <button class="btn btn-outline-primary btn-sm w-100 mt-2"
+                  data-bs-toggle="modal" data-bs-target="#editProfileModal">
+            Edit Profile
+          </button>
+
+          <a href="/api/auth/logout" class="btn btn-outline-danger btn-sm w-100 mt-2">
+            <i class="bi bi-box-arrow-right me-1"></i> Logout
+          </a>
+
+          {% if error %}
+          <div class="alert alert-danger mt-3 small">{{ error }}</div>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Statistics Card -->
+      <div class="card soft-card">
+        <div class="card-body">
+          <h6 class="card-title mb-3">Your Statistics</h6>
+          <div class="row text-center">
+            <div class="col-6 mb-3">
+              <div class="display-6">
+                {{ user.statistics.movies_watched|default(0) }}
+              </div>
+              <small class="text-muted">Movies Watched</small>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="display-6">
+                {{ user.statistics.ratings_given|default(0) }}
+              </div>
+              <small class="text-muted">Ratings Given</small>
+            </div>
+            <div class="col-6">
+              <div class="display-6">
+                {{ (user.statistics.total_watch_time|default(0)|int // 60) }}
+              </div>
+              <small class="text-muted">Hours Watched</small>
+            </div>
+            <div class="col-6">
+              <div class="display-6">
+                {{ user.statistics.reviews_written|default(0) }}
+              </div>
+              <small class="text-muted">Reviews Written</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-8">
+      <!-- Subscription Card -->
+      <div class="card soft-card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="card-title mb-0">Subscription Plan</h5>
+            <span class="badge {% if user.subscription.status == 'active' %}bg-success{% else %}bg-warning{% endif %}">
+              {{ (user.subscription.status or 'free')|capitalize }}
+            </span>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="mb-0">
+                {{ (user.subscription.plan or 'free')|capitalize }}
+                {% if user.subscription.plan == 'premium' %}
+                  <span class="fs-6 text-success">$9.99/month</span>
+                {% elif user.subscription.plan == 'family' %}
+                  <span class="fs-6 text-success">$14.99/month</span>
+                {% elif user.subscription.plan == 'basic' %}
+                  <span class="fs-6 text-success">$4.99/month</span>
+                {% else %}
+                  <span class="fs-6 text-muted">Free</span>
+                {% endif %}
+              </h2>
+
+              {% if user.subscription.start_date %}
+              <div class="mt-3">
+                <small class="text-muted">Start Date:</small>
+                <div>{{ user.subscription.start_date[:10] }}</div>
+              </div>
+              {% endif %}
+
+              {% if user.subscription.end_date %}
+              <div class="mt-2">
+                <small class="text-muted">Renewal Date:</small>
+                <div>{{ user.subscription.end_date[:10] }}</div>
+              </div>
+              {% endif %}
+            </div>
+
+            <div class="col-md-6">
+              <h6>Plan Features:</h6>
+              <ul class="small">
+                {% if user.subscription.plan == 'premium' %}
+                  <li>HD Streaming</li>
+                  <li>4 Screens Simultaneously</li>
+                  <li>Offline Downloads</li>
+                  <li>No Ads</li>
+                {% elif user.subscription.plan == 'family' %}
+                  <li>Ultra HD Streaming</li>
+                  <li>6 Screens Simultaneously</li>
+                  <li>Offline Downloads</li>
+                  <li>No Ads + Kids Profile</li>
+                {% elif user.subscription.plan == 'basic' %}
+                  <li>SD Streaming</li>
+                  <li>1 Screen</li>
+                  <li>Limited Ads</li>
+                  <li>Basic Content</li>
+                {% else %}
+                  <li>Limited SD Streaming</li>
+                  <li>With Ads</li>
+                  <li>Single Device</li>
+                  <li>Basic Catalog</li>
+                {% endif %}
+              </ul>
+
+              {% if role == 'user' or role == 'premium_user' %}
+              <button class="btn btn-primary btn-sm mt-2"
+                      data-bs-toggle="modal" data-bs-target="#upgradeModal">
+                Upgrade Plan
+              </button>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preferences Card -->
+      <div class="card soft-card mb-4">
+        <div class="card-body">
+          <h5 class="card-title mb-3">Preferences</h5>
+
+          <div class="row">
+            <div class="col-md-6">
+              <h6>Favorite Genres</h6>
+              <div id="favoriteGenres">
+                {% if user.preferences.favorite_genres %}
+                  {% for genre in user.preferences.favorite_genres %}
+                    <span class="badge bg-secondary me-1 mb-1">{{ genre }}</span>
+                  {% endfor %}
+                {% else %}
+                  <small class="text-muted">No genres selected</small>
+                {% endif %}
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <h6>Language</h6>
+              <p>{{ (user.preferences.language or 'en')|upper }}</p>
+
+              <h6 class="mt-3">Notifications</h6>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                       {% if user.preferences.notifications.email %}checked{% endif %} disabled>
+                <label class="form-check-label small">Email Notifications</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                       {% if user.preferences.notifications.push %}checked{% endif %} disabled>
+                <label class="form-check-label small">Push Notifications</label>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-outline-secondary btn-sm mt-3"
+                  data-bs-toggle="modal" data-bs-target="#editPreferencesModal">
+            Edit Preferences
+          </button>
+        </div>
+      </div>
+
+      <!-- Recent Activity -->
+      <div class="card soft-card">
+        <div class="card-body">
+          <h5 class="card-title mb-3">Recent Activity</h5>
+
+          <div id="activityContent">
+            <div class="text-center py-4">
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <p class="mt-2 text-muted">Loading your activity...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Edit Profile Modal -->
+<div class="modal fade" id="editProfileModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Edit Profile</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="editProfileForm">
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="editName"
+                   value="{{ user.profile.name }}">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Country</label>
+            <input type="text" class="form-control" id="editCountry"
+                   value="{{ user.profile.country }}" placeholder="e.g., Pakistan">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Bio</label>
+            <textarea class="form-control" id="editBio" rows="3">{{ user.profile.bio }}</textarea>
+          </div>
+
+          <div id="profileEditMessage"></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" id="saveProfileBtn">Save Changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Edit Preferences Modal -->
+<div class="modal fade" id="editPreferencesModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Edit Preferences</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="editPreferencesForm">
+          <div class="mb-3">
+            <label class="form-label">Favorite Genres (comma separated)</label>
+            <input type="text" class="form-control" id="editGenres"
+                   value="{{ user.preferences.favorite_genres|join(', ') }}"
+                   placeholder="e.g., Action, Drama, Comedy">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Language</label>
+            <select class="form-select" id="editLanguage">
+              <option value="en" {% if user.preferences.language == 'en' %}selected{% endif %}>English</option>
+              <option value="ur" {% if user.preferences.language == 'ur' %}selected{% endif %}>Urdu</option>
+              <option value="es" {% if user.preferences.language == 'es' %}selected{% endif %}>Spanish</option>
+              <option value="fr" {% if user.preferences.language == 'fr' %}selected{% endif %}>French</option>
+            </select>
+          </div>
+
+          <div id="preferencesEditMessage"></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" id="savePreferencesBtn">Save Changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/profile.js') }}"></script>
+{% endblock %}

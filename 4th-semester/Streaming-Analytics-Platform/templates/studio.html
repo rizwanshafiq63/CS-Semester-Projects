@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block title %}Data Studio · CRUD & Filters{% endblock %}
+
+{% block content %}
+<div class="card soft-card">
+  <div class="card-body">
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h5 class="card-title mb-0">Data Studio (All Collections)</h5>
+
+      <div class="d-flex gap-2 align-items-center">
+        <span class="small text-muted">Collection:</span>
+        <select id="collectionSelect" class="form-select form-select-sm"></select>
+      </div>
+    </div>
+
+    <div id="readOnlyBanner" class="alert alert-warning py-2 small d-none">
+      <i class="bi bi-eye-fill me-1"></i>
+      This is a <strong>MongoDB View</strong> and is <strong>read-only</strong>.
+      Views are computed collections that cannot be modified.
+    </div>
+
+    <ul class="nav nav-tabs mb-3">
+      <li class="nav-item">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#crudTabPane">
+          Browse Documents
+        </button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#filterTabPane">
+          Filter & Search
+        </button>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+
+      <!-- BROWSE TAB -->
+      <div class="tab-pane fade show active" id="crudTabPane">
+        <div class="row g-3">
+
+          <div class="col-md-5">
+            <div class="border rounded-3 p-3 h-100 bg-light">
+              <h6 class="fw-semibold mb-3">Document Editor</h6>
+
+              <input type="text" id="docId" class="form-control form-control-sm mb-2"
+                     placeholder="_id (leave empty for new document)" />
+
+              <div id="crudFields"></div>
+
+              <div class="d-flex gap-2 mt-3 mb-1">
+                <button id="btnSaveDoc" class="btn btn-success btn-sm flex-fill">
+                  Save
+                </button>
+                <button id="btnDeleteDoc" class="btn btn-outline-danger btn-sm flex-fill">
+                  Delete
+                </button>
+                <button id="btnClearForm" class="btn btn-outline-secondary btn-sm flex-fill">
+                  Clear
+                </button>
+              </div>
+
+              <small class="text-muted">Click a table row to edit it. Views are read-only.</small>
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <div class="border rounded-3 p-3 h-100">
+              <div class="d-flex justify-content-between mb-2">
+                <h6 class="fw-semibold mb-0">Documents</h6>
+                <button id="btnRefreshDocs" class="btn btn-primary btn-sm">
+                  <i class="bi bi-arrow-clockwise"></i> Refresh
+                </button>
+              </div>
+
+              <div class="table-responsive small" style="max-height: 420px; overflow:auto;">
+                <table class="table table-hover align-middle" id="crudTable">
+                  <thead>
+                    <tr id="crudTableHead"></tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <span id="crudPageInfo" class="small pagination-text"></span>
+                <div class="btn-group btn-group-sm">
+                  <button id="crudPrev" class="btn btn-outline-secondary btn-arrow">
+                    <span aria-hidden="true">&laquo;</span><span>Prev</span>
+                  </button>
+                  <button id="crudNext" class="btn btn-outline-secondary btn-arrow">
+                    <span>Next</span><span aria-hidden="true">&raquo;</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FILTER TAB -->
+      <div class="tab-pane fade" id="filterTabPane">
+        <div class="row g-3">
+
+          <div class="col-md-4">
+            <div class="border rounded-3 p-3 bg-light h-100">
+              <h6 class="fw-semibold mb-3">Simple Filter</h6>
+
+              <label class="form-label">Field</label>
+              <select id="filterField" class="form-select form-select-sm mb-2"></select>
+
+              <label class="form-label">Value</label>
+              <input type="text" id="filterValue" class="form-control form-control-sm mb-2" />
+
+              <label class="form-label">Limit (0 = all)</label>
+              <input type="number" id="filterLimit" class="form-control form-control-sm mb-3" value="10" />
+
+              <button id="btnApplyFilter" class="btn btn-primary btn-sm w-100">Apply Filter</button>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="border rounded-3 p-3">
+              <h6 class="fw-semibold mb-2">Filter Results</h6>
+
+              <div class="table-responsive small" style="max-height: 420px; overflow:auto;">
+                <table class="table table-hover align-middle" id="filterTable">
+                  <thead>
+                    <tr id="filterTableHead"></tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/datastudio.js') }}"></script>
+{% endblock %}

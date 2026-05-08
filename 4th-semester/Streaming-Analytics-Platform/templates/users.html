@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}Users · Streaming Analytics{% endblock %}
+
+{% block head_extra %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="card soft-card mb-3">
+  <div class="card-body">
+    <h5 class="card-title mb-3">Users Overview</h5>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="border rounded-3 p-3 h-100 bg-white">
+          <div class="small text-muted">Total Users</div>
+          <div class="h4 mb-0" id="usersTotal">-</div>
+          <div class="small text-muted mt-1" id="usersMeta"></div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="border rounded-3 p-3 h-100 bg-white">
+          <div class="small text-muted mb-1">Top Countries</div>
+          <canvas id="usersCountryChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card soft-card">
+  <div class="card-body">
+    <div class="d-flex justify-content-between mb-2">
+      <h5 class="card-title mb-0">Sample Users (Paged)</h5>
+      <small class="text-muted">MongoDB sample with pagination</small>
+    </div>
+    <div class="table-responsive small" style="max-height: 320px; overflow:auto;">
+      <table class="table table-hover align-middle" id="usersTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>Join Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center mt-2">
+      <span id="usersPageInfo" class="small pagination-text"></span>
+      <div class="btn-group btn-group-sm">
+        <button id="usersPrev" class="btn btn-outline-secondary btn-arrow">
+          <span aria-hidden="true">&laquo;</span><span>Prev</span>
+        </button>
+        <button id="usersNext" class="btn btn-outline-secondary btn-arrow">
+          <span>Next</span><span aria-hidden="true">&raquo;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/users.js') }}"></script>
+{% endblock %}

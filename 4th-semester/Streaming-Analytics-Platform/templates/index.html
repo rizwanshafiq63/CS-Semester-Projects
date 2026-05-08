@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% block title %}Admin Dashboard · Streaming Analytics{% endblock %}
+
+{% block head_extra %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="row" id="summaryRow">
+  <div class="col-md-4 mb-3">
+    <div class="card p-3">
+      <div class="small">Total Users</div>
+      <div class="h3 mb-0" id="statUsers">-</div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card p-3">
+      <div class="small">Movies</div>
+      <div class="h3 mb-0" id="statMovies">-</div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card p-3">
+      <div class="small">Actors</div>
+      <div class="h3 mb-0" id="statActors">-</div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card p-3">
+      <div class="small">Directors</div>
+      <div class="h3 mb-0" id="statDirectors">-</div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card p-3">
+      <div class="small">Active Subscriptions</div>
+      <div class="h3 mb-0" id="statSubs">-</div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card p-3">
+      <div class="small">Total Revenue (USD)</div>
+      <div class="h3 mb-0" id="statRevenue">-</div>
+    </div>
+  </div>
+</div>
+
+<div class="card soft-card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">Top Movies</h5>
+    <canvas id="topMoviesChart"></canvas>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6 mb-3">
+    <div class="card soft-card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Top Genres</h5>
+        <canvas id="topGenresChart"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 mb-3">
+    <div class="card soft-card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Most Active Users</h5>
+        <canvas id="activeUsersChart"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card soft-card mb-3">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="card-title mb-0">Reviews per Month</h5>
+      <div class="d-flex align-items-center gap-2">
+        <span class="small text-muted">Year</span>
+        <input type="number" id="reviewsYear" class="form-control form-control-sm" value="2025" style="max-width: 90px;">
+      </div>
+    </div>
+    <canvas id="reviewsChart"></canvas>
+  </div>
+</div>
+
+<div class="card soft-card">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="card-title mb-0">Movies Table</h5>
+      <small class="text-muted">Filter & sort from MongoDB</small>
+    </div>
+
+    <div class="row g-2 mb-3">
+      <div class="col-md-2">
+        <label class="form-label small">Min Year</label>
+        <input type="number" id="minYear" class="form-control form-control-sm" placeholder="0">
+      </div>
+      <div class="col-md-2">
+        <label class="form-label small">Min Rating</label>
+        <input type="number" step="0.1" id="minRating" class="form-control form-control-sm" placeholder="0">
+      </div>
+      <div class="col-md-2">
+        <label class="form-label small">Limit</label>
+        <input type="number" id="limit" class="form-control form-control-sm" placeholder="0 = all">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label small">Sort By</label>
+        <select id="sortBy" class="form-select form-select-sm">
+          <option value="rating">Rating</option>
+          <option value="year">Year</option>
+          <option value="duration">Duration</option>
+          <option value="title">Title</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label class="form-label small">Direction</label>
+        <select id="sortDir" class="form-select form-select-sm">
+          <option value="desc">Desc</option>
+          <option value="asc">Asc</option>
+        </select>
+      </div>
+      <div class="col-md-1 d-flex align-items-end">
+        <button id="btnLoadMovies" class="btn btn-primary btn-sm w-100">Load</button>
+      </div>
+    </div>
+
+    <div class="table-responsive small" style="max-height: 320px; overflow:auto;">
+      <table class="table table-hover align-middle" id="moviesTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Duration (min)</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% endblock %}

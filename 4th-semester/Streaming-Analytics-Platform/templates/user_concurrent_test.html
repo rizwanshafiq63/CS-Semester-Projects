@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+{% block title %}Concurrent Test · Streaming Platform{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <h2 class="mb-4">Concurrent Update Test</h2>
+  
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card soft-card">
+        <div class="card-body">
+          <h5 class="card-title">Test Concurrent Movie Ratings</h5>
+          <p class="text-muted small">
+            Open this page in <strong>two different browser tabs</strong> and try to rate the same movie at the same time.
+          </p>
+          
+          <div class="mb-3">
+            <label class="form-label">Movie ID to Test</label>
+            <input type="text" id="testMovieId" class="form-control" value="movie_001">
+          </div>
+          
+          <div class="mb-3">
+            <label class="form-label">Your Rating (1-10)</label>
+            <input type="number" id="testRating" class="form-control" min="1" max="10" value="8">
+          </div>
+          
+          <button id="btnConcurrentTest" class="btn btn-primary w-100">
+            <i class="bi bi-lightning-charge"></i> Submit Concurrent Rating
+          </button>
+          
+          <div class="mt-3">
+            <button id="btnOpenNewTab" class="btn btn-outline-secondary btn-sm w-100">
+              <i class="bi bi-window-stack"></i> Open Second Tab for Testing
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="card soft-card">
+        <div class="card-body">
+          <h5 class="card-title">Live Activity Monitor</h5>
+          <p class="text-muted small">
+            Shows what happens when multiple users interact simultaneously.
+          </p>
+          
+          <div id="activityMonitor" class="border rounded p-3 bg-light" style="height: 200px; overflow-y: auto;">
+            <div class="text-center text-muted py-4">
+              <i class="bi bi-activity display-6"></i>
+              <p class="mt-2">Activity log will appear here</p>
+            </div>
+          </div>
+          
+          <div class="mt-3">
+            <div class="d-flex justify-content-between">
+              <span class="badge bg-primary" id="tabCount">This Tab: 1</span>
+              <span class="badge bg-warning text-dark" id="conflictCount">Conflicts: 0</span>
+              <span class="badge bg-success" id="successCount">Success: 0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card soft-card mt-4">
+    <div class="card-body">
+      <h5 class="card-title">How It Works</h5>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-center p-3">
+            <i class="bi bi-people display-4 text-primary"></i>
+            <h6 class="mt-2">Multiple Users</h6>
+            <p class="small text-muted">Simulate multiple users rating the same movie</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center p-3">
+            <i class="bi bi-shield-check display-4 text-success"></i>
+            <h6 class="mt-2">Optimistic Locking</h6>
+            <p class="small text-muted">Version numbers prevent data corruption</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center p-3">
+            <i class="bi bi-arrow-repeat display-4 text-warning"></i>
+            <h6 class="mt-2">Auto Retry</h6>
+            <p class="small text-muted">Failed updates automatically retry with new version</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Concurrent test functionality
+let tabNumber = 1;
+let conflictCount = 0;
+let successCount = 0;
+
+// Generate unique tab ID
+if (!sessionStorage.getItem('concurrentTabId')) {
+  sessionStorage.setItem('concurrentTabId', 'tab_' + Date.now() + '_' + Math.random());
+}
+const tabId = sessionStorage.getItem('concurrentTabId');
+
+// Update tab count (simulate multiple tabs)
+function updateTabCount() {
+  const tabs = parseInt(localStorage.getItem('concurrentTabs') || '1');
+  document.getElementById('tabCount').textContent = `Active Tabs: ${tabs}`;
+}
+
+// Log activity
+function logActivity(message, type = 'info') {
+  const monitor = document.getElementById('activityMonitor');
+  const timestamp = new Date().toLocaleTimeString();
+  
+  const logEntry = document.createElement('div');
+  logEntry.className = `mb-1 p-2 border-start border-3 border-${type}`;
+  logEntry.innerHTML = `
+    <div class="d-flex justify-content-between">
+      <small><strong>${tabId.substring(0, 8)}:</strong> ${message}</small>
+      <small class="text-muted">${timestamp}</small>
+    </div>
+  `;
+  
+  monitor.prepend(logEntry);
+  
+  // Keep only last 10 entries
+  const entries = monitor.querySelectorAll('div');
+  if (entries.length > 10) {
+    entries[entries.length - 1].remove();
+  }
+}
+
+// Concurrent rating test
+async function testConcurrentRating() {
+  const movieId = document.getElementById('testMovieId').value;
+  const rating = document.getElementById('testRating').value;
+  
+  if (!movieId || !rating) {
+    logActivity('Please enter movie ID and rating', 'danger');
+    return;
+  }
+  
+  // Update tab count
+  let tabs = parseInt(localStorage.getItem('concurrentTabs') || '1');
+  localStorage.setItem('concurrentTabs', Math.min(tabs + 1, 5));
+  updateTabCount();
+  
+  logActivity(`Starting rating: ${rating} for movie ${movieId}`, 'info');
+  
+  try {
+    // Add random delay to simulate real users
+    const delay = Math.random() * 2000; // 0-2 seconds
+    logActivity(`Waiting ${Math.round(delay)}ms to simulate user delay`, 'secondary');
+    
+    await new Promise(resolve => setTimeout(resolve, delay));
+    
+    const result = await fetchJSON('/api/user/rate-movie', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        movie_id: movieId,
+        rating: parseInt(rating),
+        test_concurrent: true  // Flag for backend to add extra logging
+      })
+    });
+    
+    successCount++;
+    document.getElementById('successCount').textContent = `Success: ${successCount}`;
+    logActivity(`✓ Rating successful! ${result.message}`, 'success');
+    
+  } catch (error) {
+    if (error.message.includes('version') || error.message.includes('conflict')) {
+      conflictCount++;
+      document.getElementById('conflictCount').textContent = `Conflicts: ${conflictCount}`;
+      logActivity(`⚡ Version conflict detected! Auto-retrying...`, 'warning');
+      
+      // Auto-retry
+      setTimeout(testConcurrentRating, 1000);
+    } else {
+      logActivity(`✗ Error: ${error.message}`, 'danger');
+    }
+  }
+}
+
+// Open new tab for testing
+function openNewTestTab() {
+  const url = window.location.href;
+  window.open(url, '_blank');
+  logActivity('Opened new tab for concurrent testing', 'info');
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('btnConcurrentTest').addEventListener('click', testConcurrentRating);
+  document.getElementById('btnOpenNewTab').addEventListener('click', openNewTestTab);
+  
+  updateTabCount();
+  
+  // Check for existing tabs
+  window.addEventListener('storage', function(e) {
+    if (e.key === 'concurrentTabs') {
+      updateTabCount();
+    }
+  });
+  
+  // Log tab opened
+  logActivity('Tab opened for concurrent testing', 'info');
+});
+</script>
+{% endblock %}

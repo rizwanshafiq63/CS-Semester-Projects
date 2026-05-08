@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "genre_001",
+    "name": "History"
+  },
+  {
+    "_id": "genre_002",
+    "name": "Documentary"
+  },
+  {
+    "_id": "genre_003",
+    "name": "Comedy"
+  },
+  {
+    "_id": "genre_004",
+    "name": "Drama"
+  },
+  {
+    "_id": "genre_005",
+    "name": "Fantasy"
+  },
+  {
+    "_id": "genre_006",
+    "name": "Action"
+  },
+  {
+    "_id": "genre_007",
+    "name": "War"
+  },
+  {
+    "_id": "genre_008",
+    "name": "Family"
+  },
+  {
+    "_id": "genre_009",
+    "name": "Horror"
+  },
+  {
+    "_id": "genre_010",
+    "name": "Romance"
+  },
+  {
+    "_id": "genre_011",
+    "name": "Crime"
+  },
+  {
+    "_id": "genre_012",
+    "name": "Thriller"
+  },
+  {
+    "_id": "genre_013",
+    "name": "Music"
+  },
+  {
+    "_id": "genre_014",
+    "name": "Sci-Fi"
+  },
+  {
+    "_id": "genre_015",
+    "name": "Adventure"
+  }
+]
