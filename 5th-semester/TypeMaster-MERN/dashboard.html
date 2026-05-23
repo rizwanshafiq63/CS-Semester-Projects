@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TypeMaster</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/dashboard.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar-container"></div>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-container">
+        <div class="container">
+            <!-- Welcome Section -->
+            <div class="welcome-section">
+                <div class="welcome-content">
+                    <h1 class="welcome-title">
+                        Welcome back, <span id="user-name">User</span>!
+                    </h1>
+                    <p class="welcome-subtitle">
+                        Ready to improve your typing speed today?
+                    </p>
+                </div>
+                <a href="typing-test.html" class="btn btn-primary btn-lg">
+                    Start New Test
+                </a>
+            </div>
+
+            <!-- Stats Overview -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-value" id="tests-taken">0</div>
+                    <div class="stat-label">Tests Taken</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🚀</div>
+                    <div class="stat-value" id="avg-wpm">0</div>
+                    <div class="stat-label">Average WPM</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-value" id="avg-accuracy">0%</div>
+                    <div class="stat-label">Average Accuracy</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-value" id="best-wpm">0</div>
+                    <div class="stat-label">Best WPM</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">⏱️</div>
+                    <div class="stat-value" id="total-time">0h</div>
+                    <div class="stat-label">Total Time</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-value" id="improvement">0%</div>
+                    <div class="stat-label">Improvement</div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <h2 class="section-title">Quick Actions</h2>
+                <div class="actions-grid">
+                    <a href="typing-test.html" class="action-card">
+                        <div class="action-icon">⌨️</div>
+                        <h3>Typing Test</h3>
+                        <p>Start a new typing test and improve your speed</p>
+                        <span class="action-arrow">→</span>
+                    </a>
+                    
+                    <a href="leaderboard.html" class="action-card">
+                        <div class="action-icon">🏅</div>
+                        <h3>Leaderboard</h3>
+                        <p>See how you rank against other typists</p>
+                        <span class="action-arrow">→</span>
+                    </a>
+                    
+                    <a href="profile.html" class="action-card">
+                        <div class="action-icon">👤</div>
+                        <h3>Profile</h3>
+                        <p>View and edit your profile settings</p>
+                        <span class="action-arrow">→</span>
+                    </a>
+                    
+                    <a href="typing-test.html?mode=practice" class="action-card">
+                        <div class="action-icon">🧠</div>
+                        <h3>Practice Mode</h3>
+                        <p>Practice specific keys or patterns</p>
+                        <span class="action-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Recent Tests -->
+            <div class="recent-tests">
+                <div class="section-header">
+                    <h2 class="section-title">Recent Tests</h2>
+                    <a href="profile.html?section=history" class="btn btn-secondary btn-sm">View All</a>
+                </div>
+                
+                <div class="tests-table-container">
+                    <table class="tests-table" id="recent-tests-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>WPM</th>
+                                <th>Accuracy</th>
+                                <th>Time</th>
+                                <th>Mistakes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tests-table-body">
+                            <!-- Will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="no-tests-message" class="no-data-message" style="display: none;">
+                    <p>No tests taken yet. Start your first typing test!</p>
+                    <a href="typing-test.html" class="btn btn-primary mt-2">Take a Test</a>
+                </div>
+            </div>
+
+            <!-- Progress Chart -->
+            <div class="progress-section">
+                <h2 class="section-title">Progress Over Time</h2>
+                <div class="chart-container">
+                    <canvas id="progress-chart"></canvas>
+                </div>
+                <div id="no-chart-data" class="no-data-message" style="display: none;">
+                    <p>Complete at least 2 tests to see your progress chart</p>
+                </div>
+            </div>
+
+            <!-- Tips Section -->
+            <div class="tips-section">
+                <h2 class="section-title">Typing Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-number">01</div>
+                        <h4>Maintain Proper Posture</h4>
+                        <p>Sit straight, keep your feet flat on the floor, and position your keyboard at elbow height.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-number">02</div>
+                        <h4>Use All Fingers</h4>
+                        <p>Place your fingers on the home row keys (ASDF - JKL;) and use all fingers for typing.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-number">03</div>
+                        <h4>Don't Look at Keyboard</h4>
+                        <p>Keep your eyes on the screen to improve muscle memory and typing speed.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-number">04</div>
+                        <h4>Practice Regularly</h4>
+                        <p>Consistent practice, even 15 minutes daily, yields better results than long sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

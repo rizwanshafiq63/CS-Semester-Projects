@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/image_pipeline.dir/link.d CMakeFiles/image_pipeline.dir/main.cpp.o -o image_pipeline  /usr/lib/libopencv_imgcodecs.so.4.13.0 /usr/lib/libopencv_imgproc.so.4.13.0 -lpthread -lrt /usr/lib/libopencv_core.so.4.13.0

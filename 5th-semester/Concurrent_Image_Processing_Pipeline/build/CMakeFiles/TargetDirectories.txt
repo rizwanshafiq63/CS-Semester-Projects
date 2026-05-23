@@ -1,0 +1,3 @@
+/home/rizz/Programming/New_Project/OS_Project_Simple/build/CMakeFiles/image_pipeline.dir
+/home/rizz/Programming/New_Project/OS_Project_Simple/build/CMakeFiles/edit_cache.dir
+/home/rizz/Programming/New_Project/OS_Project_Simple/build/CMakeFiles/rebuild_cache.dir

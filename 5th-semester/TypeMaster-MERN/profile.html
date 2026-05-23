@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - TypeMaster</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/profile.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar-container"></div>
+
+    <!-- Profile Content -->
+    <div class="profile-page">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="d-flex justify-between align-center">
+                    <div>
+                        <h1 class="page-title">Your Profile</h1>
+                        <p class="page-subtitle">Manage your account and view your statistics</p>
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-sm" onclick="logout()">
+                        Logout
+                    </button>
+                </div>
+            </div>
+
+            <div class="profile-grid">
+                <!-- Sidebar -->
+                <div class="profile-sidebar">
+                    <div class="profile-card">
+                        <div class="profile-avatar-wrapper">
+                            <div class="profile-avatar" id="profile-avatar">
+                                <span id="avatar-initial">U</span>
+                            </div>
+                        </div>
+                        
+                        <h2 class="profile-name" id="profile-name">User Name</h2>
+                        <p class="profile-email" id="profile-email">user@example.com</p>
+                        <p class="profile-joined" id="profile-joined">Member since January 2024</p>
+                        
+                        <div class="profile-badges" id="profile-badges">
+                            <!-- Badges will be rendered here -->
+                        </div>
+                    </div>
+
+                    <div class="profile-nav">
+                        <button class="profile-nav-btn active" data-section="overview" onclick="switchSection('overview')">
+                            <span>Overview</span>
+                        </button>
+                        <button class="profile-nav-btn" data-section="edit" onclick="switchSection('edit')">
+                            <span>Edit Profile</span>
+                        </button>
+                        <button class="profile-nav-btn" data-section="history" onclick="switchSection('history')">
+                            <span>Test History</span>
+                        </button>
+                        <button class="profile-nav-btn" data-section="settings" onclick="switchSection('settings')">
+                            <span>Settings</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="profile-content">
+                    <!-- Overview Section -->
+                    <div id="overview-section" class="profile-section active">
+                        <h3 class="section-title">Statistics Overview</h3>
+                        
+                        <div class="stats-grid-detailed">
+                            <div class="stat-card-detailed">
+                                <div class="stat-icon">Tests</div>
+                                <div class="stat-info">
+                                    <span class="stat-value" id="overview-tests">0</span>
+                                    <span class="stat-label">Tests Completed</span>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card-detailed">
+                                <div class="stat-icon">Avg</div>
+                                <div class="stat-info">
+                                    <span class="stat-value" id="overview-avg-wpm">0</span>
+                                    <span class="stat-label">Average WPM</span>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card-detailed">
+                                <div class="stat-icon">Best</div>
+                                <div class="stat-info">
+                                    <span class="stat-value" id="overview-best-wpm">0</span>
+                                    <span class="stat-label">Best WPM</span>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card-detailed">
+                                <div class="stat-icon">Acc</div>
+                                <div class="stat-info">
+                                    <span class="stat-value" id="overview-avg-accuracy">0%</span>
+                                    <span class="stat-label">Avg Accuracy</span>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card-detailed">
+                                <div class="stat-icon">Time</div>
+                                <div class="stat-info">
+                                    <span class="stat-value" id="overview-total-time">0h</span>
+                                    <span class="stat-label">Total Time</span>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card-detailed">
+                                <div class="stat-icon">Trend</div>
+                                <div class="stat-info">
+                                    <span class="stat-value" id="overview-improvement">0%</span>
+                                    <span class="stat-label">Improvement</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="section-title mt-4">Performance Chart</h3>
+                        <div class="chart-container-large">
+                            <canvas id="performance-chart"></canvas>
+                        </div>
+
+                        <h3 class="section-title mt-4">Recent Activity</h3>
+                        <div class="activity-list" id="activity-list">
+                            <!-- Activity will be rendered here -->
+                        </div>
+                    </div>
+
+                    <!-- Edit Profile Section -->
+                    <div id="edit-section" class="profile-section">
+                        <h3 class="section-title">Edit Profile</h3>
+                        
+                        <form id="profile-form" class="profile-form">
+                            <div class="form-group">
+                                <label for="edit-name" class="form-label">Full Name</label>
+                                <input type="text" id="edit-name" class="form-control" placeholder="Your name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-email" class="form-label">Email Address</label>
+                                <input type="email" id="edit-email" class="form-control" placeholder="your@email.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-bio" class="form-label">Bio</label>
+                                <textarea id="edit-bio" class="form-control" rows="4" placeholder="Tell us about yourself..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                        </form>
+
+                        <h3 class="section-title mt-4">Change Password</h3>
+                        
+                        <form id="password-form" class="profile-form">
+                            <div class="form-group">
+                                <label for="current-password" class="form-label">Current Password</label>
+                                <input type="password" id="current-password" class="form-control" placeholder="••••••••">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="new-password" class="form-label">New Password</label>
+                                <input type="password" id="new-password" class="form-control" placeholder="••••••••">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="confirm-new-password" class="form-label">Confirm New Password</label>
+                                <input type="password" id="confirm-new-password" class="form-control" placeholder="••••••••">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-secondary">Update Password</button>
+                        </form>
+                    </div>
+
+                    <!-- Test History Section -->
+                    <div id="history-section" class="profile-section">
+                        <div class="history-header">
+                            <h3 class="section-title">Test History</h3>
+                            <button class="btn btn-secondary btn-sm" onclick="exportHistory()">
+                                Export History
+                            </button>
+                        </div>
+                        
+                        <div class="history-filters mt-2">
+                            <select id="history-filter" class="form-control" onchange="filterHistory()">
+                                <option value="all">All Tests</option>
+                                <option value="week">This Week</option>
+                                <option value="month">This Month</option>
+                                <option value="best">Best Performances</option>
+                            </select>
+                        </div>
+                        
+                        <div class="history-table-container">
+                            <table class="history-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>WPM</th>
+                                        <th>Accuracy</th>
+                                        <th>Time</th>
+                                        <th>Mistakes</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="history-table-body">
+                                    <!-- History will be rendered here -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination-controls profile-pagination" id="history-pagination" style="display: none;">
+                            <button class="btn btn-secondary btn-sm" id="history-prev-btn" type="button">Previous</button>
+                            <span class="pagination-info" id="history-page-info">Page 1 of 1</span>
+                            <button class="btn btn-secondary btn-sm" id="history-next-btn" type="button">Next</button>
+                        </div>
+                        
+                        <div id="no-history" class="no-data-message" style="display: none;">
+                            <p>No tests taken yet. Start typing to build your history!</p>
+                            <a href="typing-test.html" class="btn btn-primary mt-2">Take a Test</a>
+                        </div>
+                    </div>
+
+                    <!-- Settings Section -->
+                    <div id="settings-section" class="profile-section">
+                        <h3 class="section-title">Preferences</h3>
+                        
+                        <div class="settings-group">
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h4>Default Test Duration</h4>
+                                    <p>Set your default typing test duration</p>
+                                </div>
+                                <select id="default-duration" class="form-control setting-select">
+                                    <option value="30">30 seconds</option>
+                                    <option value="60" selected>60 seconds</option>
+                                    <option value="120">120 seconds</option>
+                                </select>
+                            </div>
+                            
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h4>Default Difficulty</h4>
+                                    <p>Choose your preferred difficulty level</p>
+                                </div>
+                                <select id="default-difficulty" class="form-control setting-select">
+                                    <option value="easy">Easy</option>
+                                    <option value="medium" selected>Medium</option>
+                                    <option value="hard">Hard</option>
+                                </select>
+                            </div>
+                            
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h4>Sound Effects</h4>
+                                    <p>Enable typing sound effects</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="sound-effects">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                            
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h4>Show WPM in Real-time</h4>
+                                    <p>Display WPM counter while typing</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="show-wpm" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="saveSettings()">Save Settings</button>
+                        
+                        <h3 class="section-title mt-4 text-error">Danger Zone</h3>
+                        
+                        <div class="danger-zone">
+                            <div class="danger-item">
+                                <div class="danger-info">
+                                    <h4>Clear Test History</h4>
+                                    <p>Permanently delete all your test history</p>
+                                </div>
+                                <button class="btn btn-danger" onclick="clearHistory()">Clear History</button>
+                            </div>
+                            
+                            <div class="danger-item">
+                                <div class="danger-info">
+                                    <h4>Delete Account</h4>
+                                    <p>Permanently delete your account and all data</p>
+                                </div>
+                                <button class="btn btn-danger" onclick="deleteAccount()">Delete Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/profile.js"></script>
+</body>
+</html>

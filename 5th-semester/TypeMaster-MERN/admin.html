@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - TypeMaster</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/leaderboard.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar-container"></div>
+
+    <div class="admin-page">
+        <div class="container">
+            <div class="page-header">
+                <div class="header-content">
+                    <h1 class="page-title">
+                        <span class="title-icon">🛠️</span>
+                        Admin Panel
+                    </h1>
+                    <p class="page-subtitle">Manage typing paragraphs and view results</p>
+                </div>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <h2 class="section-title">Add Paragraph</h2>
+                    <form id="add-paragraph-form">
+                        <div class="form-group">
+                            <label class="form-label" for="add-text">Text</label>
+                            <textarea id="add-text" class="form-control" rows="4" placeholder="Enter typing paragraph..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="add-difficulty">Difficulty</label>
+                            <select id="add-difficulty" class="form-control">
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Paragraph</button>
+                    </form>
+
+                    <h2 class="section-title mt-4">Edit / Disable Paragraph</h2>
+                    <form id="edit-paragraph-form">
+                        <input type="hidden" id="edit-id" value="">
+                        <div class="form-group">
+                            <label class="form-label" for="edit-text">Text</label>
+                            <textarea id="edit-text" class="form-control" rows="4" placeholder="Edit typing paragraph..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="edit-difficulty">Difficulty</label>
+                            <select id="edit-difficulty" class="form-control">
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="edit-isActive" checked>
+                                <span>Active</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary">Save Changes</button>
+                        <button type="button" class="btn btn-danger" onclick="disableSelectedParagraph()" style="margin-left: var(--spacing-md);">
+                            Disable
+                        </button>
+                    </form>
+                </div>
+
+                <div>
+                    <div class="controls-bar admin-controls-bar">
+                        <div class="search-wrapper">
+                            <span class="search-icon">🔍</span>
+                            <input
+                                type="text"
+                                id="admin-search-input"
+                                class="search-input"
+                                placeholder="Search paragraph text..."
+                                autocomplete="off"
+                            >
+                        </div>
+                        <div class="filter-group">
+                            <select id="admin-difficulty-filter" class="form-control admin-filter-select">
+                                <option value="all">All Difficulty</option>
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                            <select id="admin-status-filter" class="form-control admin-filter-select">
+                                <option value="all">All Status</option>
+                                <option value="active">Active</option>
+                                <option value="inactive">Inactive</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="leaderboard-table-container">
+                        <table class="leaderboard-table">
+                            <thead>
+                                <tr>
+                                    <th>Text</th>
+                                    <th>Difficulty</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="admin-paragraphs-body">
+                                <!-- Rendered by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="admin-empty" class="no-results" style="display:none;">
+                        No paragraphs found.
+                    </div>
+                    <div class="pagination-controls" id="admin-pagination" style="display: none;">
+                        <button class="btn btn-secondary btn-sm" id="admin-prev-btn" type="button">Previous</button>
+                        <span class="pagination-info" id="admin-page-info">Page 1 of 1</span>
+                        <button class="btn btn-secondary btn-sm" id="admin-next-btn" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/admin.js"></script>
+</body>
+</html>

@@ -764,7 +764,11 @@ import json
 from bson import json_util
 
 # Connect to MongoDB
-client = pymongo.MongoClient("mongodb+srv://streaming_admin:adb123@cluster0.36uks1x.mongodb.net/streaming?retryWrites=true&w=majority")
+try:
+    client = pymongo.MongoClient("mongodb+srv://<username>:<password>@<cluster-url>/streaming?retryWrites=true&w=majority")
+except Exception as e:
+    print("MongoDB connection failed. Please replace the MongoClient URI on line 767 of generate_dataset.py with your actual credentials.")
+    print(f"Error: {e}")
 db = client["streaming"]
 
 # Import all collections
@@ -799,8 +803,6 @@ print(f"Collections: {db.list_collection_names()}")
     print("  - import_to_mongodb.py (Python script)")
     print("\nTo import, run:")
     print("  python import_to_mongodb.py")
-    print("\nOr for shell:")
-    print("  bash import_to_mongodb.sh")
 
 # ================= EXECUTE =================
 if __name__ == "__main__":

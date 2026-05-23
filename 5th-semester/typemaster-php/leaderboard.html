@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - TypeMaster</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/leaderboard.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar-container"></div>
+
+    <!-- Leaderboard Content -->
+    <div class="leaderboard-page">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="header-content">
+                    <h1 class="page-title">
+                        Leaderboard
+                    </h1>
+                    <p class="page-subtitle">Compete with the best typists from around the world</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn btn-secondary" onclick="exportLeaderboard()">
+                        Export CSV
+                    </button>
+                    <button id="refresh-leaderboard" class="btn btn-primary">
+                        Refresh
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stats Overview -->
+            <div class="leaderboard-stats">
+                <div class="stat-card-small">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="total-users">0</div>
+                        <div class="stat-label">Total Users</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card-small">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="avg-wpm-leaderboard">0</div>
+                        <div class="stat-label">Average WPM</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card-small">
+                    <div class="stat-icon">👑</div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="top-wpm">0</div>
+                        <div class="stat-label">Top WPM</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls Bar -->
+            <div class="controls-bar">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        class="search-input" 
+                        placeholder="Search users..."
+                        autocomplete="off"
+                    >
+                </div>
+                
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">All Time</button>
+                    <button class="filter-btn" data-filter="today">Today</button>
+                    <button class="filter-btn" data-filter="week">This Week</button>
+                    <button class="filter-btn" data-filter="month">This Month</button>
+                </div>
+            </div>
+
+            <!-- Leaderboard Table -->
+            <div class="leaderboard-table-container">
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>User</th>
+                            <th>
+                                <button class="sort-btn" data-sort="wpm">
+                                    WPM
+                                    <span class="sort-icon">⇅</span>
+                                </button>
+                            </th>
+                            <th>
+                                <button class="sort-btn" data-sort="accuracy">
+                                    Accuracy
+                                    <span class="sort-icon">⇅</span>
+                                </button>
+                            </th>
+                            <th>
+                                <button class="sort-btn" data-sort="testsTaken">
+                                    Tests
+                                    <span class="sort-icon">⇅</span>
+                                </button>
+                            </th>
+                            <th>Trend</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboard-body">
+                        <!-- Leaderboard data will be rendered here -->
+                    </tbody>
+                    <tfoot id="leaderboard-table-footer" style="display: none;">
+                        <tr>
+                            <td colspan="6">
+                                <div class="pagination-controls table-pagination" id="leaderboard-pagination">
+                                    <button class="pagination-btn" id="leaderboard-prev-btn" aria-label="Previous page">‹ Previous</button>
+                                    <span class="pagination-info" id="leaderboard-page-info">Page 1 of 1</span>
+                                    <button class="pagination-btn" id="leaderboard-next-btn" aria-label="Next page">Next ›</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+                <!-- No Results Message -->
+                <div id="no-results" class="no-results" style="display: none;">
+                    <div class="no-results-icon">No Data</div>
+                    <h3>No results found</h3>
+                    <p>Try adjusting your search or filters</p>
+                </div>
+            </div>
+
+            <!-- Current User Rank -->
+            <div id="user-rank-section" class="user-rank-section" style="display: none;">
+                <div class="user-rank-card">
+                    <div class="rank-header">
+                        <span class="rank-label">Your Ranking</span>
+                    </div>
+                    <div class="rank-content">
+                        <div class="rank-info">
+                            <div class="user-rank-position">
+                                <span class="rank-number" id="user-rank">-</span>
+                                <span class="rank-suffix">Place</span>
+                            </div>
+                            <div class="user-stats">
+                                <div class="user-stat">
+                                    <span class="stat-label">Your Best WPM</span>
+                                    <span class="stat-value" id="user-best-wpm">0</span>
+                                </div>
+                                <div class="user-stat">
+                                    <span class="stat-label">Tests Taken</span>
+                                    <span class="stat-value" id="user-tests-taken">0</span>
+                                </div>
+                                <div class="user-stat">
+                                    <span class="stat-label">Achievement Tier</span>
+                                    <span class="stat-value" id="user-tier">Bronze</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rank-progress">
+                            <div class="progress-info">
+                                <span>Next Rank</span>
+                                <span id="next-rank-info">-</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" id="rank-progress-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leaderboard Info -->
+            <div class="leaderboard-info">
+                <div class="info-card">
+                    <h3>How Rankings Work</h3>
+                    <ul>
+                        <li>Rankings are based on your highest WPM score</li>
+                        <li>Only your best performance is displayed on the leaderboard</li>
+                        <li>Scores update in real-time after each test</li>
+                        <li>Compete daily, weekly, and monthly for special badges</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Achievement Tiers</h3>
+                    <div class="tier-list">
+                        <div class="tier-item">
+                            <span class="tier-icon">🥉</span>
+                            <span class="tier-name">Bronze</span>
+                            <span class="tier-range">0-50 WPM</span>
+                        </div>
+                        <div class="tier-item">
+                            <span class="tier-icon">🥈</span>
+                            <span class="tier-name">Silver</span>
+                            <span class="tier-range">51-80 WPM</span>
+                        </div>
+                        <div class="tier-item">
+                            <span class="tier-icon">🥇</span>
+                            <span class="tier-name">Gold</span>
+                            <span class="tier-range">81-100 WPM</span>
+                        </div>
+                        <div class="tier-item">
+                            <span class="tier-icon">💎</span>
+                            <span class="tier-name">Platinum</span>
+                            <span class="tier-range">101-120 WPM</span>
+                        </div>
+                        <div class="tier-item">
+                            <span class="tier-icon">👑</span>
+                            <span class="tier-name">Diamond</span>
+                            <span class="tier-range">121+ WPM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/leaderboard.js"></script>
+    <script>
+        // Leaderboard initialization is handled by assets/js/leaderboard.js
+    </script>
+</body>
+</html>

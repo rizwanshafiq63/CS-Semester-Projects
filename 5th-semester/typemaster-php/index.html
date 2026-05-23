@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeMaster - Improve Your Typing Speed</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <style>
+        /* Landing page specific styles */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            padding: var(--spacing-2xl) 0;
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
+            background-color: var(--bg-primary);
+            background-image:
+                linear-gradient(
+                    105deg,
+                    rgba(40, 42, 54, 0.96) 0%,
+                    rgba(40, 42, 54, 0.88) 45%,
+                    rgba(40, 42, 54, 0.72) 100%
+                ),
+                radial-gradient(
+                    circle at 78% 28%,
+                    rgba(139, 233, 253, 0.14) 0%,
+                    rgba(139, 233, 253, 0) 45%
+                ),
+                url("assets/Keyboard.png");
+            background-size: auto, auto, cover;
+            background-position: center, center, right center;
+            background-repeat: no-repeat;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: clamp(90px, 16vh, 170px);
+            background: linear-gradient(
+                to bottom,
+                rgba(40, 42, 54, 0) 0%,
+                rgba(40, 42, 54, 0.72) 58%,
+                var(--bg-primary) 100%
+            );
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            max-width: 600px;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            margin-bottom: var(--spacing-lg);
+            background: linear-gradient(135deg, var(--accent), var(--info));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: rgba(248, 248, 242, 0.88);
+            margin-bottom: var(--spacing-xl);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.42);
+        }
+
+        .hero .btn {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.24);
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-xl);
+            margin: var(--spacing-2xl) 0;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: var(--spacing-xl);
+            background-color: var(--bg-secondary);
+            border-radius: var(--radius-lg);
+            transition: transform var(--transition-normal);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .feature-title {
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .feature-description {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: var(--spacing-2xl);
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            border-radius: var(--radius-xl);
+            margin: var(--spacing-2xl) 0;
+        }
+        
+        .typing-demo {
+            font-family: var(--font-mono);
+            font-size: 1.5rem;
+            background-color: var(--bg-secondary);
+            padding: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+            border-left: 4px solid var(--accent);
+            margin: var(--spacing-xl) 0;
+        }
+        
+        @media (max-width: 1024px) {
+            .hero {
+                background-position: center, center, 62% center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero {
+                min-height: auto;
+                background-position: center, center, 68% center;
+                padding: calc(var(--spacing-2xl) - var(--spacing-sm)) 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation will be loaded here -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Master Your Typing Speed</h1>
+                <p class="hero-subtitle">
+                    Improve your typing skills with our modern, minimalist typing test. 
+                    Track your progress and compete with others on the leaderboard.
+                </p>
+                <div class="d-flex gap-2">
+                    <a href="typing-test.html" class="btn btn-primary btn-lg">
+                        Start Typing Test
+                    </a>
+                    <a href="register.html" class="btn btn-secondary btn-lg">
+                        Create Account
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Typing Box -->
+    <div class="container">
+        <div class="typing-demo">
+            <span style="color: var(--success);">The quick brown fox</span> 
+            <span style="color: var(--text-secondary);">jumps over the lazy dog</span>
+            <div style="margin-top: var(--spacing-md);">
+                <span style="color: var(--accent);">WPM: 65</span> • 
+                <span style="color: var(--success);">Accuracy: 98%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container">
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Real-time Feedback</h3>
+                <p class="feature-description">
+                    Get instant feedback on your typing speed and accuracy as you type.
+                </p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3 class="feature-title">Detailed Statistics</h3>
+                <p class="feature-description">
+                    Track your progress with detailed stats and performance graphs.
+                </p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3 class="feature-title">Global Leaderboard</h3>
+                <p class="feature-description">
+                    Compete with typists from around the world and climb the ranks.
+                </p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3 class="feature-title">Multiple Test Modes</h3>
+                <p class="feature-description">
+                    Choose from different difficulty levels and time durations.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="container">
+        <div class="cta-section">
+            <h2>Ready to Improve Your Typing?</h2>
+            <p class="mb-3" style="color: var(--text-secondary);">
+                Join thousands of users who are already improving their typing speed with TypeMaster.
+            </p>
+            <a href="register.html" class="btn btn-primary">
+                Get Started - It's Free
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadComponent('navbar-container', 'components/navbar.html');
+            loadComponent('footer-container', 'components/footer.html');
+            
+            const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+            if (currentUser) {
+                const ctaButton = document.querySelector('.cta-section .btn');
+                if (ctaButton) {
+                    ctaButton.href = 'typing-test.html';
+                    ctaButton.textContent = 'Go to Typing Test';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

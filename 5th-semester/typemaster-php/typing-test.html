@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test - TypeMaster</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/typing.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar-container"></div>
+
+    <!-- Typing Test Section -->
+    <div class="typing-page">
+        <div class="container">
+            <!-- Test Header -->
+            <div class="test-header">
+                <div class="test-options">
+                    <select id="difficulty-select" class="test-select">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    <select id="duration-select" class="test-select">
+                        <option value="30">30 seconds</option>
+                        <option value="60" selected>60 seconds</option>
+                        <option value="120">120 seconds</option>
+                    </select>
+                </div>
+                
+                <div class="test-actions">
+                    <button id="new-test-btn" class="btn btn-secondary">
+                        New Test
+                    </button>
+                    <button id="restart-btn" class="btn btn-primary">
+                        Restart
+                    </button>
+                </div>
+            </div>
+            <div id="mode-banner" class="alert alert-warning" style="display: none;">
+                Practice Mode: results are not saved to leaderboard.
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <div class="stat-label">WPM</div>
+                    <div class="stat-value" id="wpm">0</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Accuracy</div>
+                    <div class="stat-value" id="accuracy">100%</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Time</div>
+                    <div class="stat-value" id="time">00:00</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Mistakes</div>
+                    <div class="stat-value" id="mistakes">0</div>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+            <!-- Typing Area -->
+            <div class="typing-container">
+                <div class="text-display" id="text-display">
+                    <!-- Text will be rendered here -->
+                </div>
+                
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="typing-input" 
+                        class="typing-input" 
+                        placeholder="Click here and start typing..."
+                        autofocus
+                        autocomplete="off"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        spellcheck="false"
+                    >
+                </div>
+                
+                <div class="keyboard-hint">
+                    <span class="hint-item">Press <kbd>Tab</kbd> to restart</span>
+                    <span class="hint-item">Press <kbd>Enter</kbd> for new test</span>
+                </div>
+            </div>
+
+            <!-- Tips Section -->
+            <div class="typing-tips">
+                <div class="tip-badge">Pro Tip</div>
+                <p id="typing-tip">Focus on accuracy first, speed will come naturally with practice.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div id="results-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Test Complete</h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-icon">W</div>
+                        <div class="result-value" id="final-wpm">0</div>
+                        <div class="result-label">WPM</div>
+                    </div>
+                    
+                    <div class="result-card highlight">
+                        <div class="result-icon">A</div>
+                        <div class="result-value" id="final-accuracy">0%</div>
+                        <div class="result-label">Accuracy</div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-icon">T</div>
+                        <div class="result-value" id="final-time">00:00</div>
+                        <div class="result-label">Time</div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-icon">C</div>
+                        <div class="result-value" id="final-characters">0</div>
+                        <div class="result-label">Characters</div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-icon">M</div>
+                        <div class="result-value" id="mistakes-count">0</div>
+                        <div class="result-label">Mistakes</div>
+                    </div>
+                </div>
+                
+                <div class="result-message" id="result-message">
+                    Great job! Keep practicing to improve your speed.
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModalAndRestart()">
+                    Try Again
+                </button>
+                <button class="btn btn-primary" onclick="newTest()">
+                    New Test
+                </button>
+                <a href="leaderboard.html" class="btn btn-primary">
+                    View Leaderboard
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/typing.js"></script>
+    <script>
+        // Load components
+        document.addEventListener('DOMContentLoaded', () => {
+            loadComponent('navbar-container', 'components/navbar.html');
+            loadComponent('footer-container', 'components/footer.html');
+            
+            // Setup keyboard shortcuts
+            setupKeyboardShortcuts();
+            
+            // Rotate tips
+            rotateTips();
+        });
+        
+        // Close modal
+        function closeModal() {
+            document.getElementById('results-modal').style.display = 'none';
+        }
+        
+        function closeModalAndRestart() {
+            closeModal();
+            if (typingTest) {
+                typingTest.restart();
+            }
+        }
+        
+        function newTest() {
+            closeModal();
+            if (typingTest) {
+                typingTest.newTest();
+            }
+        }
+        
+        // Keyboard shortcuts
+        function setupKeyboardShortcuts() {
+            document.addEventListener('keydown', (e) => {
+                // Tab to restart
+                if (e.key === 'Tab') {
+                    e.preventDefault();
+                    if (typingTest && !typingTest.isCompleted) {
+                        if (confirm('Are you sure you want to restart the test?')) {
+                            typingTest.restart();
+                        }
+                    }
+                }
+                
+                // Escape to close modal
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        }
+        
+        // Rotate typing tips
+        function rotateTips() {
+            const tips = [
+                "Focus on accuracy first, speed will come naturally with practice.",
+                "Keep your eyes on the text, not on the keyboard.",
+                "Maintain a steady rhythm while typing.",
+                "Use all ten fingers for maximum efficiency.",
+                "Practice regularly, even 15 minutes a day helps.",
+                "Take short breaks between tests to rest your hands.",
+                "Correct mistakes as you go, don't leave them for later.",
+                "Position your keyboard at elbow height for comfort."
+            ];
+            
+            let tipIndex = 0;
+            const tipElement = document.getElementById('typing-tip');
+            
+            setInterval(() => {
+                tipIndex = (tipIndex + 1) % tips.length;
+                if (tipElement) {
+                    tipElement.style.opacity = '0';
+                    setTimeout(() => {
+                        tipElement.textContent = tips[tipIndex];
+                        tipElement.style.opacity = '1';
+                    }, 200);
+                }
+            }, 5000);
+        }
+        
+        // Update result message based on performance
+        function updateResultMessage(wpm) {
+            const messageElement = document.getElementById('result-message');
+            let message = '';
+            
+            if (wpm < 30) {
+                message = "Keep practicing! Everyone starts somewhere. Focus on accuracy and speed will follow.";
+            } else if (wpm < 50) {
+                message = "Good progress! You're getting the hang of it. Try to maintain a steady rhythm.";
+            } else if (wpm < 70) {
+                message = "Great job! You're typing faster than average. Keep up the good work!";
+            } else if (wpm < 90) {
+                message = "Excellent! You're well above average. You're becoming a typing master!";
+            } else if (wpm < 120) {
+                message = "Outstanding! You're in the top tier of typists. Impressive speed!";
+            } else {
+                message = "Incredible! You're typing at a professional level. Simply amazing!";
+            }
+            
+            if (messageElement) {
+                messageElement.textContent = message;
+            }
+        }
+        
+        // Click outside modal to close
+        window.onclick = function(event) {
+            const modal = document.getElementById('results-modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
